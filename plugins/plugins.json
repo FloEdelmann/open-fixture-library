@@ -8,6 +8,7 @@
     "aglight",
     "colorsource",
     "d-light",
+    "dmxcontrol3",
     "ecue",
     "millumin",
     "ofl",
@@ -30,6 +31,12 @@
       "exportPluginVersion": "0.2.0",
       "exportTests": [
         "attributes-correctness"
+      ]
+    },
+    "dmxcontrol3": {
+      "name": "DMXControl 3 (DDF3)",
+      "exportTests": [
+        "channel-numbers"
       ]
     },
     "ecue": {
