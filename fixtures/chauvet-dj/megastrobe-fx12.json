@@ -1,0 +1,283 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "Megastrobe FX12",
+  "categories": ["Strobe"],
+  "meta": {
+    "authors": ["Tryll"],
+    "createDate": "2020-10-23",
+    "lastModifyDate": "2020-10-23"
+  },
+  "links": {
+    "manual": [
+      "https://www.chauvetdj.com/wp-content/uploads/2016/02/MegaStrobe_FX12_QRG_Rev3_ML_WO.pdf"
+    ],
+    "productPage": [
+      "https://www.chauvetdj.com/products/megastrobe-fx12/"
+    ]
+  },
+  "physical": {
+    "DMXconnector": "3-pin"
+  },
+  "availableChannels": {
+    "Shutter": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 3],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [4, 255],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Strobe",
+          "speedStart": "slow",
+          "speedEnd": "fast"
+        }
+      ]
+    },
+    "Dimmer": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Shutter 2": {
+      "name": "Shutter",
+      "capabilities": [
+        {
+          "dmxRange": [0, 15],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [16, 32],
+          "type": "SoundSensitivity",
+          "soundSensitivityStart": "low",
+          "soundSensitivityEnd": "high"
+        },
+        {
+          "dmxRange": [33, 49],
+          "type": "Generic",
+          "comment": "PULSE STROBE"
+        },
+        {
+          "dmxRange": [50, 66],
+          "type": "Generic",
+          "comment": "Slow on, Fast Off"
+        },
+        {
+          "dmxRange": [67, 83],
+          "type": "Generic",
+          "comment": "Fast On, Slow Off"
+        },
+        {
+          "dmxRange": [84, 100],
+          "type": "Generic",
+          "comment": "Slow On, Slow Off"
+        },
+        {
+          "dmxRange": [101, 117],
+          "type": "Generic",
+          "comment": "Strobe Slow On, Slow Off"
+        },
+        {
+          "dmxRange": [118, 134],
+          "type": "Generic",
+          "comment": "Strobe"
+        },
+        {
+          "dmxRange": [135, 151],
+          "type": "Generic",
+          "comment": "Pulse Strobe 1"
+        },
+        {
+          "dmxRange": [152, 168],
+          "type": "Generic",
+          "comment": "Pulse Strobe 2"
+        },
+        {
+          "dmxRange": [169, 185],
+          "type": "Generic",
+          "comment": "Slow On, Fast Off"
+        },
+        {
+          "dmxRange": [186, 202],
+          "type": "Generic",
+          "comment": "Fast On, Slow Off"
+        },
+        {
+          "dmxRange": [203, 219],
+          "type": "Generic",
+          "comment": "Slow On, Slow Off"
+        },
+        {
+          "dmxRange": [220, 236],
+          "type": "Generic",
+          "comment": "Strobe Slow On, Slow Off"
+        },
+        {
+          "dmxRange": [237, 255],
+          "type": "Generic",
+          "comment": "SHUTTER"
+        }
+      ]
+    },
+    "Shutter Speed": {
+      "capability": {
+        "type": "Generic",
+        "comment": "Sensitivity OR Shutter Speed"
+      }
+    },
+    "Pixels": {
+      "capability": {
+        "type": "Generic",
+        "comment": "Pixel, Program Speed, or Sound Active Auto"
+      }
+    },
+    "Auto Programs": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 48],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [49, 64],
+          "type": "Generic",
+          "comment": "Auto Program 1"
+        },
+        {
+          "dmxRange": [65, 80],
+          "type": "Generic",
+          "comment": "Auto Program 2 "
+        },
+        {
+          "dmxRange": [81, 96],
+          "type": "Generic",
+          "comment": "Auto Program 3"
+        },
+        {
+          "dmxRange": [97, 112],
+          "type": "Generic",
+          "comment": "Auto Program 4"
+        },
+        {
+          "dmxRange": [113, 128],
+          "type": "Generic",
+          "comment": "Auto Program 5 "
+        },
+        {
+          "dmxRange": [129, 144],
+          "type": "Generic",
+          "comment": "Auto Program 6"
+        },
+        {
+          "dmxRange": [145, 160],
+          "type": "Generic",
+          "comment": "Auto Program 7"
+        },
+        {
+          "dmxRange": [161, 176],
+          "type": "Generic",
+          "comment": "Auto Program 8"
+        },
+        {
+          "dmxRange": [177, 192],
+          "type": "Generic",
+          "comment": "Auto Program 9"
+        },
+        {
+          "dmxRange": [193, 208],
+          "type": "Generic",
+          "comment": "Auto Program 10"
+        },
+        {
+          "dmxRange": [209, 224],
+          "type": "Generic",
+          "comment": "Auto Program 11"
+        },
+        {
+          "dmxRange": [225, 240],
+          "type": "Generic",
+          "comment": "Auto Program 12"
+        },
+        {
+          "dmxRange": [241, 255],
+          "type": "Generic",
+          "comment": "Sound Active (Set CH 4)"
+        }
+      ]
+    },
+    "Dimmer 2": {
+      "name": "Dimmer",
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Dimmer 3": {
+      "name": "Dimmer",
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Dimmer 4": {
+      "name": "Dimmer",
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Dimmer 5": {
+      "name": "Dimmer",
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Dimmer 6": {
+      "name": "Dimmer",
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Shutter Effects": {
+      "capability": {
+        "type": "Generic"
+      }
+    },
+    "Shutter Effect Speed": {
+      "capability": {
+        "type": "Generic"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "2CH",
+      "shortName": "2ch",
+      "channels": [
+        "Shutter",
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "5CH",
+      "shortName": "5ch",
+      "channels": [
+        "Dimmer",
+        "Shutter 2",
+        "Shutter Speed",
+        "Pixels",
+        "Auto Programs"
+      ]
+    },
+    {
+      "name": "8CH",
+      "shortName": "8ch",
+      "channels": [
+        "Dimmer 2",
+        "Dimmer",
+        "Dimmer 3",
+        "Dimmer 4",
+        "Dimmer 5",
+        "Dimmer 6",
+        "Shutter Effects",
+        "Shutter Effect Speed"
+      ]
+    }
+  ]
+}
