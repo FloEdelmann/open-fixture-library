@@ -1,0 +1,96 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "Led Pixel Rail 40 mkII",
+  "categories": ["Pixel Bar"],
+  "meta": {
+    "authors": ["Victorugo"],
+    "createDate": "2020-10-26",
+    "lastModifyDate": "2020-10-26"
+  },
+  "links": {
+    "manual": [
+      "https://images.static-thomann.de/pics/atg/atgdata/document/manual/449739_c_449739_v3_r1_en_online.pdf"
+    ]
+  },
+  "availableChannels": {
+    "Intensity": {
+      "defaultValue": "0%",
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Strobe": {
+      "defaultValue": "0%",
+      "capability": {
+        "type": "StrobeSpeed",
+        "speedStart": "0%",
+        "speedEnd": "100%"
+      }
+    },
+    "Red": {
+      "defaultValue": "0%",
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "defaultValue": "0%",
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "defaultValue": "0%",
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Mode #1": {
+      "capability": {
+        "type": "NoFunction"
+      }
+    },
+    "Mode #2": {
+      "capability": {
+        "type": "NoFunction"
+      }
+    },
+    "Programme speed": {
+      "capability": {
+        "type": "NoFunction"
+      }
+    },
+    "Prog colour selection": {
+      "capability": {
+        "type": "ColorPreset"
+      }
+    },
+    "Microphone sensitivity": {
+      "capability": {
+        "type": "SoundSensitivity",
+        "soundSensitivityStart": "low",
+        "soundSensitivityEnd": "high"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "10ch",
+      "channels": [
+        "Intensity",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "Mode #1",
+        "Mode #2",
+        "Programme speed",
+        "Prog colour selection",
+        "Microphone sensitivity"
+      ]
+    }
+  ]
+}
