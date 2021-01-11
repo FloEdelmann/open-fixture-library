@@ -1,0 +1,86 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "Pixyline 150",
+  "categories": ["Pixel Bar"],
+  "meta": {
+    "authors": ["Manu Florida"],
+    "createDate": "2020-10-23",
+    "lastModifyDate": "2020-10-23"
+  },
+  "links": {
+    "manual": [
+      "https://docs.wixstatic.com/ugd/4d0e30_70370bf311d54ef3887fb2818e3d2905.pdf"
+    ],
+    "productPage": [
+      "https://www.oxolight.com/product-page/pixyline-150"
+    ],
+    "video": [
+      "https://vimeo.com/362011579"
+    ]
+  },
+  "physical": {
+    "dimensions": [980, 170, 163],
+    "weight": 6.5,
+    "power": 120,
+    "DMXconnector": "5-pin XLR IP65",
+    "bulb": {
+      "type": "LED",
+      "colorTemperature": 3000
+    },
+    "lens": {
+      "name": "Beam Angle",
+      "degreesMinMax": [20, 50]
+    }
+  },
+  "availableChannels": {
+    "Dimmer": {
+      "defaultValue": 0,
+      "highlightValue": 255,
+      "capability": {
+        "type": "Intensity",
+        "brightnessStart": "0%",
+        "brightnessEnd": "100%"
+      }
+    },
+    "Red": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Warm White": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "5 Channels 8bit",
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Warm White"
+      ]
+    }
+  ]
+}
