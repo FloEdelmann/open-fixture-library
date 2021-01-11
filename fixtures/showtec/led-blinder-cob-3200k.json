@@ -1,0 +1,124 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "LED Blinder COB 3200K",
+  "categories": ["Blinder", "Dimmer", "Strobe"],
+  "meta": {
+    "authors": ["Eric Bessot"],
+    "createDate": "2020-08-02",
+    "lastModifyDate": "2020-08-02"
+  },
+  "links": {
+    "manual": [
+      "https://www.woodbrass.com/images/woodbrass/SHOWTEC+LED+BLINDER+2+50W.PDF"
+    ]
+  },
+  "physical": {
+    "dimensions": [393, 138, 185],
+    "weight": 4.14,
+    "power": 110,
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "LED",
+      "colorTemperature": 3200
+    },
+    "lens": {
+      "degreesMinMax": [35, 35]
+    }
+  },
+  "availableChannels": {
+    "Dimmer intensity": {
+      "capability": {
+        "type": "Intensity",
+        "brightnessStart": "dark",
+        "brightnessEnd": "bright"
+      }
+    },
+    "Dimmer intensity (Left COB LED)": {
+      "capability": {
+        "type": "Intensity",
+        "brightnessStart": "dark",
+        "brightnessEnd": "bright"
+      }
+    },
+    "Dimmer intensity (Right COB LED)": {
+      "capability": {
+        "type": "Intensity",
+        "brightnessStart": "dark",
+        "brightnessEnd": "bright"
+      }
+    },
+    "Master Dimmer intensity": {
+      "capability": {
+        "type": "Intensity",
+        "brightnessStart": "dark",
+        "brightnessEnd": "bright"
+      }
+    },
+    "Dimmer intensity (Right COB LED) 2": {
+      "name": "Dimmer intensity (Right COB LED)",
+      "capability": {
+        "type": "Intensity",
+        "brightnessStart": "dark",
+        "brightnessEnd": "bright"
+      }
+    },
+    "Dimmer intensity (Right COB LED) 3": {
+      "name": "Dimmer intensity (Right COB LED)",
+      "capability": {
+        "type": "Intensity",
+        "brightnessStart": "dark",
+        "brightnessEnd": "bright"
+      }
+    },
+    "Strobe (Dimmer must be open)": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 15],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [16, 255],
+          "type": "StrobeSpeed",
+          "speedStart": "slow",
+          "speedEnd": "fast"
+        }
+      ]
+    }
+  },
+  "modes": [
+    {
+      "name": "1 channel",
+      "shortName": "1ch",
+      "channels": [
+        "Dimmer intensity"
+      ]
+    },
+    {
+      "name": "2 channels",
+      "shortName": "2ch",
+      "channels": [
+        "Dimmer intensity (Left COB LED)",
+        "Dimmer intensity (Right COB LED)"
+      ]
+    },
+    {
+      "name": "3 channels",
+      "shortName": "3ch",
+      "channels": [
+        "Dimmer intensity (Left COB LED)",
+        "Dimmer intensity (Right COB LED) 3",
+        "Master Dimmer intensity"
+      ]
+    },
+    {
+      "name": "4 channels",
+      "shortName": "4ch",
+      "channels": [
+        "Dimmer intensity (Left COB LED)",
+        "Dimmer intensity (Right COB LED) 2",
+        "Strobe (Dimmer must be open)",
+        "Master Dimmer intensity"
+      ]
+    }
+  ]
+}
