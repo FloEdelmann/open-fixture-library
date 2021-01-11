@@ -1,0 +1,84 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "10Wx9 LED Flat PAR Stage Light",
+  "shortName": "My Pars",
+  "categories": ["Color Changer", "Dimmer"],
+  "meta": {
+    "authors": ["Joe"],
+    "createDate": "2020-09-05",
+    "lastModifyDate": "2020-09-05"
+  },
+  "links": {
+    "manual": [
+      "https://downloads.monoprice.com/files/manuals/612749_Manual_190109.pdf"
+    ],
+    "productPage": [
+      "https://www.monoprice.com/product?p_id=612749"
+    ]
+  },
+  "availableChannels": {
+    "General Dimming": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Red Dimming": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green Dimming": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue Dimming": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "White Dimming": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Strobe Speed": {
+      "capability": {
+        "type": "StrobeSpeed",
+        "speed": "0Hz"
+      }
+    },
+    "Color Macros": {
+      "capability": {
+        "type": "ColorPreset"
+      }
+    },
+    "Macro Speed": {
+      "capability": {
+        "type": "EffectSpeed",
+        "speedStart": "slow",
+        "speedEnd": "fast"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "LED Par",
+      "channels": [
+        "General Dimming",
+        "Red Dimming",
+        "Green Dimming",
+        "Blue Dimming",
+        "White Dimming",
+        "Strobe Speed",
+        "Color Macros",
+        "Macro Speed"
+      ]
+    }
+  ]
+}
