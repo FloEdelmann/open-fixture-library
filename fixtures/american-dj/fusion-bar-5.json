@@ -1,0 +1,246 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "Fusion Bar 5",
+  "categories": ["Laser", "Strobe", "Flower"],
+  "meta": {
+    "authors": ["Tryll"],
+    "createDate": "2020-10-23",
+    "lastModifyDate": "2020-10-23"
+  },
+  "links": {
+    "productPage": [
+      "https://www.adj.com/fusion-fx-bar-5"
+    ]
+  },
+  "physical": {
+    "DMXconnector": "3-pin"
+  },
+  "availableChannels": {
+    "White Dimmer / Strobe": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 7],
+          "type": "Intensity",
+          "brightness": "off"
+        },
+        {
+          "dmxRange": [8, 190],
+          "type": "Intensity",
+          "brightnessStart": "0%",
+          "brightnessEnd": "100%"
+        },
+        {
+          "dmxRange": [191, 200],
+          "type": "Generic",
+          "comment": "Sound Active"
+        },
+        {
+          "dmxRange": [201, 247],
+          "type": "StrobeSpeed",
+          "speedStart": "slow",
+          "speedEnd": "fast"
+        },
+        {
+          "dmxRange": [248, 255],
+          "type": "Intensity",
+          "brightness": "100%"
+        }
+      ]
+    },
+    "MoonFlower Dimmer/Strobe": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 7],
+          "type": "Intensity",
+          "brightness": "off"
+        },
+        {
+          "dmxRange": [8, 190],
+          "type": "Intensity",
+          "brightnessStart": "0%",
+          "brightnessEnd": "100%"
+        },
+        {
+          "dmxRange": [191, 200],
+          "type": "SoundSensitivity",
+          "soundSensitivityStart": "low",
+          "soundSensitivityEnd": "high"
+        },
+        {
+          "dmxRange": [201, 247],
+          "type": "StrobeSpeed",
+          "speedStart": "slow",
+          "speedEnd": "fast"
+        },
+        {
+          "dmxRange": [248, 255],
+          "type": "Intensity",
+          "brightness": "100%"
+        }
+      ]
+    },
+    "MoonFlower Color": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 18],
+          "type": "Generic",
+          "comment": "RED"
+        },
+        {
+          "dmxRange": [19, 37],
+          "type": "Generic",
+          "comment": "RED & GREEN"
+        },
+        {
+          "dmxRange": [38, 56],
+          "type": "Generic",
+          "comment": "GREEN"
+        },
+        {
+          "dmxRange": [57, 75],
+          "type": "Generic",
+          "comment": "GREEN & BLUE"
+        },
+        {
+          "dmxRange": [76, 94],
+          "type": "Generic",
+          "comment": "BLUE"
+        },
+        {
+          "dmxRange": [95, 113],
+          "type": "Generic",
+          "comment": "RED & BLUE"
+        },
+        {
+          "dmxRange": [114, 127],
+          "type": "Generic",
+          "comment": "RED GREEN BLUE"
+        },
+        {
+          "dmxRange": [128, 159],
+          "type": "Generic",
+          "comment": "RED GREEN"
+        },
+        {
+          "dmxRange": [160, 191],
+          "type": "Generic",
+          "comment": "GREEN BLUE"
+        },
+        {
+          "dmxRange": [192, 223],
+          "type": "Generic",
+          "comment": "RED BLUE"
+        },
+        {
+          "dmxRange": [224, 255],
+          "type": "Generic",
+          "comment": "RED GREEN BLUE"
+        }
+      ]
+    },
+    "MoonFlower Rotation": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 9],
+          "type": "Rotation",
+          "speed": "stop"
+        },
+        {
+          "dmxRange": [10, 120],
+          "type": "Rotation",
+          "speedStart": "slow CW",
+          "speedEnd": "fast CW"
+        },
+        {
+          "dmxRange": [121, 134],
+          "type": "Rotation",
+          "speed": "stop"
+        },
+        {
+          "dmxRange": [135, 245],
+          "type": "Rotation",
+          "speedStart": "slow CCW",
+          "speedEnd": "fast CCW"
+        },
+        {
+          "dmxRange": [246, 255],
+          "type": "Rotation",
+          "speed": "stop"
+        }
+      ]
+    },
+    "Red Laser": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 127],
+          "type": "Intensity",
+          "brightness": "off"
+        },
+        {
+          "dmxRange": [128, 255],
+          "type": "Intensity",
+          "brightness": "bright"
+        }
+      ]
+    },
+    "Green Laser": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 127],
+          "type": "Intensity",
+          "brightness": "off"
+        },
+        {
+          "dmxRange": [128, 255],
+          "type": "Intensity",
+          "brightness": "bright"
+        }
+      ]
+    },
+    "Laser Rotation": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 9],
+          "type": "Rotation",
+          "speed": "stop"
+        },
+        {
+          "dmxRange": [10, 120],
+          "type": "Rotation",
+          "speedStart": "slow CW",
+          "speedEnd": "fast CW"
+        },
+        {
+          "dmxRange": [121, 134],
+          "type": "Rotation",
+          "speed": "stop"
+        },
+        {
+          "dmxRange": [135, 245],
+          "type": "Rotation",
+          "speedStart": "slow CCW",
+          "speedEnd": "fast CCW"
+        },
+        {
+          "dmxRange": [246, 255],
+          "type": "Rotation",
+          "speed": "stop"
+        }
+      ]
+    }
+  },
+  "modes": [
+    {
+      "name": "Normal",
+      "channels": [
+        "White Dimmer / Strobe",
+        "MoonFlower Dimmer/Strobe",
+        "MoonFlower Color",
+        "MoonFlower Rotation",
+        "Red Laser",
+        "Green Laser",
+        "Laser Rotation"
+      ]
+    }
+  ]
+}
