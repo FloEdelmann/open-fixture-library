@@ -1,0 +1,92 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "LER-4121DMX",
+  "shortName": "Fibers",
+  "categories": ["Effect"],
+  "meta": {
+    "authors": ["Jurjen Alkema"],
+    "createDate": "2020-09-07",
+    "lastModifyDate": "2020-09-07"
+  },
+  "comment": "Fiber optic LED engine",
+  "links": {
+    "manual": [
+      "http://www.ledlightinghut.com/files/LER%20DMX%20Light%20Engine.pdf"
+    ],
+    "productPage": [
+      "http://www.ledlightinghut.com/files/LER%20DMX%20Light%20Engine.pdf"
+    ]
+  },
+  "physical": {
+    "DMXconnector": "ethernet",
+    "bulb": {
+      "type": "RGBW LED"
+    }
+  },
+  "availableChannels": {
+    "Red": {
+      "defaultValue": "0%",
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "defaultValue": "0%",
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "White": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Effect Speed": {
+      "capability": {
+        "type": "EffectSpeed",
+        "speedStart": "slow",
+        "speedEnd": "fast"
+      }
+    },
+    "Dimmer": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Strobe Speed": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Reserved": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "NoFunction"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "RGBW",
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Effect Speed",
+        "Dimmer",
+        "Strobe Speed",
+        "Reserved"
+      ]
+    }
+  ]
+}
