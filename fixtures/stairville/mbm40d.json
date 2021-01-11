@@ -1,0 +1,62 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "MBM40D",
+  "categories": ["Other"],
+  "meta": {
+    "authors": ["Samuel Walz"],
+    "createDate": "2020-09-11",
+    "lastModifyDate": "2020-09-11"
+  },
+  "comment": "Mirror Ball Motor",
+  "links": {
+    "manual": [
+      "https://images.static-thomann.de/pics/atg/atgdata/document/manual/384315_c_384315_r2_en_online.pdf"
+    ],
+    "productPage": [
+      "https://www.thomann.de/gb/stairville_mbm40d_mirror_ball_motor_dmx.htm"
+    ]
+  },
+  "physical": {
+    "dimensions": [285, 190, 235],
+    "weight": 6,
+    "power": 16,
+    "DMXconnector": "3-pin"
+  },
+  "availableChannels": {
+    "Rotation": {
+      "defaultValue": 128,
+      "capabilities": [
+        {
+          "dmxRange": [0, 0],
+          "type": "Rotation",
+          "speed": "stop"
+        },
+        {
+          "dmxRange": [1, 127],
+          "type": "Rotation",
+          "speedStart": "fast CW",
+          "speedEnd": "slow CW"
+        },
+        {
+          "dmxRange": [128, 128],
+          "type": "Rotation",
+          "speed": "stop"
+        },
+        {
+          "dmxRange": [129, 255],
+          "type": "Rotation",
+          "speedStart": "slow CCW",
+          "speedEnd": "fast CCW"
+        }
+      ]
+    }
+  },
+  "modes": [
+    {
+      "name": "Default",
+      "channels": [
+        "Rotation"
+      ]
+    }
+  ]
+}
