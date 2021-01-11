@@ -1,0 +1,59 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "DL-LED107S",
+  "categories": ["Color Changer", "Dimmer", "Strobe"],
+  "meta": {
+    "authors": ["Kirc"],
+    "createDate": "2020-07-17",
+    "lastModifyDate": "2020-07-17"
+  },
+  "links": {
+    "manual": [
+      "https://www.conrad.de/de/p/renkforce-dl-led107s-led-par-scheinwerfer-anzahl-leds-108-x-schwarz-1312725.html#productDownloads"
+    ],
+    "productPage": [
+      "https://www.conrad.de/de/p/renkforce-dl-led107s-led-par-scheinwerfer-anzahl-leds-108-x-schwarz-1312725.html"
+    ],
+    "video": [
+      "https://www.youtube.com/watch?v=KT35QDe6IRI"
+    ]
+  },
+  "physical": {
+    "dimensions": [180, 90, 180],
+    "weight": 0.875,
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "LED"
+    }
+  },
+  "availableChannels": {
+    "Red": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "3-Kanal ",
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    }
+  ]
+}
