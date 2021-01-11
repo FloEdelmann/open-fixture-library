@@ -1,0 +1,120 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "COB-200A",
+  "categories": ["Color Changer", "Dimmer", "Strobe"],
+  "meta": {
+    "authors": ["G McKenzie"],
+    "createDate": "2020-09-26",
+    "lastModifyDate": "2020-09-26"
+  },
+  "links": {
+    "productPage": [
+      "http://www.entertainmentwarehouse.com.au/catalog/product_info.php?products_id=3460"
+    ]
+  },
+  "physical": {
+    "dimensions": [340, 210, 255],
+    "weight": 5.54,
+    "power": 250,
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "LED"
+    }
+  },
+  "availableChannels": {
+    "Dimmer": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Strobe": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 0],
+          "type": "Generic"
+        },
+        {
+          "dmxRange": [1, 255],
+          "type": "StrobeSpeed",
+          "speedStart": "0.5Hz",
+          "speedEnd": "20Hz"
+        }
+      ]
+    },
+    "Color Macros": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 49],
+          "type": "Generic",
+          "comment": "LED On"
+        },
+        {
+          "dmxRange": [50, 99],
+          "type": "Generic",
+          "comment": "RGBA Colour Chase (100% output)"
+        },
+        {
+          "dmxRange": [100, 149],
+          "type": "Generic",
+          "comment": "RGBA Fade (100% output)"
+        },
+        {
+          "dmxRange": [150, 199],
+          "type": "Generic",
+          "comment": "RGBA Gradient Colour Chase (100% output)"
+        },
+        {
+          "dmxRange": [200, 255],
+          "type": "NoFunction",
+          "comment": "No output"
+        }
+      ]
+    },
+    "W Dimmer": {
+      "capability": {
+        "type": "Intensity",
+        "comment": "Warm White Linear Dimming"
+      }
+    },
+    "R Dimmer": {
+      "capability": {
+        "type": "Intensity",
+        "comment": "Red Linear Dimming"
+      }
+    },
+    "G Dimmer": {
+      "capability": {
+        "type": "Generic",
+        "comment": "Green Linear Dimming"
+      }
+    },
+    "B Dimmer": {
+      "capability": {
+        "type": "Generic",
+        "comment": "Blue Linear Dimming"
+      }
+    },
+    "A Dimmer": {
+      "capability": {
+        "type": "Generic",
+        "comment": "Amber Linear Dimming"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "8 channel",
+      "shortName": "8ch",
+      "channels": [
+        "Dimmer",
+        "Strobe",
+        "Color Macros",
+        "W Dimmer",
+        "R Dimmer",
+        "G Dimmer",
+        "B Dimmer",
+        "A Dimmer"
+      ]
+    }
+  ]
+}
