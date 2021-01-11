@@ -1,0 +1,168 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "F2X48 - VARIABLE COLOUR TEMPERATURE FRESNEL",
+  "shortName": "F2X48",
+  "categories": ["Dimmer"],
+  "meta": {
+    "authors": ["Senny Soon"],
+    "createDate": "2020-09-04",
+    "lastModifyDate": "2020-09-04"
+  },
+  "links": {
+    "manual": [
+      "https://cdn.shopify.com/s/files/1/0304/0549/files/f48x2.pdf?1827875317148034682"
+    ],
+    "productPage": [
+      "https://event-lighting.com.au/products/f2x48"
+    ],
+    "video": [
+      "https://youtu.be/iA3gG2ZWT1A"
+    ]
+  },
+  "physical": {
+    "dimensions": [202, 139, 103],
+    "weight": 2.3,
+    "power": 75,
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "LED CW/WW"
+    },
+    "lens": {
+      "degreesMinMax": [20, 50]
+    }
+  },
+  "availableChannels": {
+    "Dimmer": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Color Temperature": {
+      "defaultValue": 128,
+      "capability": {
+        "type": "ColorTemperature",
+        "colorTemperatureStart": "warm",
+        "colorTemperatureEnd": "cold"
+      }
+    },
+    "Dimmer 2": {
+      "name": "Dimmer",
+      "fineChannelAliases": ["Dimmer 2 fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Shutter / Strobe": {
+      "defaultValue": 255,
+      "capabilities": [
+        {
+          "dmxRange": [0, 7],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Closed"
+        },
+        {
+          "dmxRange": [8, 15],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open"
+        },
+        {
+          "dmxRange": [16, 119],
+          "type": "StrobeSpeed",
+          "speedStart": "1Hz",
+          "speedEnd": "25Hz"
+        },
+        {
+          "dmxRange": [120, 127],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open"
+        },
+        {
+          "dmxRange": [128, 183],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Pulse",
+          "speedStart": "slow",
+          "speedEnd": "slow",
+          "randomTiming": true
+        },
+        {
+          "dmxRange": [184, 191],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open"
+        },
+        {
+          "dmxRange": [192, 247],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Strobe",
+          "soundControlled": true,
+          "speedStart": "slow",
+          "speedEnd": "fast"
+        },
+        {
+          "dmxRange": [248, 255],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open"
+        }
+      ]
+    },
+    "Mode": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 50],
+          "type": "Generic",
+          "comment": "Standard Mode"
+        },
+        {
+          "dmxRange": [51, 101],
+          "type": "Generic",
+          "comment": "Stage Mode"
+        },
+        {
+          "dmxRange": [102, 152],
+          "type": "Generic",
+          "comment": "TV Mode"
+        },
+        {
+          "dmxRange": [153, 203],
+          "type": "Generic",
+          "comment": "Architecture Mode"
+        },
+        {
+          "dmxRange": [204, 255],
+          "type": "Generic",
+          "comment": "Theatre"
+        }
+      ]
+    }
+  },
+  "modes": [
+    {
+      "name": "Single Channel Dimmer",
+      "shortName": "1-chan",
+      "channels": [
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "Dual Channel Dimmer",
+      "shortName": "2-chan",
+      "channels": [
+        "Dimmer",
+        "Color Temperature"
+      ]
+    },
+    {
+      "name": "Full Five Channel Functionality",
+      "shortName": "5-chan",
+      "channels": [
+        "Dimmer 2",
+        "Dimmer 2 fine",
+        "Color Temperature",
+        "Shutter / Strobe",
+        "Mode"
+      ]
+    }
+  ]
+}
