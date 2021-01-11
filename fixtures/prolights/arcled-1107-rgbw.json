@@ -1,0 +1,62 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "ArcLed 1107 RGBW",
+  "shortName": "ArcLed 1107 ",
+  "categories": ["Other", "Stand"],
+  "meta": {
+    "authors": ["prova "],
+    "createDate": "2020-10-19",
+    "lastModifyDate": "2020-10-19"
+  },
+  "links": {
+    "manual": [
+      "https://prolights.it/product/ARCLED1107RGBW?lang=IT"
+    ],
+    "productPage": [
+      "https://prolights.it/product/ARCLED1107RGBW?lang=IT"
+    ],
+    "video": [
+      "https://youtu.be/mOV8UcE9bmE"
+    ]
+  },
+  "availableChannels": {
+    "Dimmer": {
+      "defaultValue": "100%",
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Rosso": {
+      "defaultValue": "100%",
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Blu": {
+      "defaultValue": "100%",
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Strobo": {
+      "defaultValue": "100%",
+      "capability": {
+        "type": "StrobeSpeed",
+        "speedStart": "0%",
+        "speedEnd": "255%"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "ArcLed 1107 RGBW",
+      "shortName": "ArcLed 1107 ",
+      "channels": [
+        "Dimmer",
+        "Rosso",
+        "Blu",
+        "Strobo"
+      ]
+    }
+  ]
+}
