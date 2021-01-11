@@ -149,6 +149,9 @@
     "website": "https://www.etcconnect.com/",
     "rdmId": 25972
   },
+  "etec": {
+    "name": "ETEC"
+  },
   "eurolite": {
     "name": "Eurolite",
     "website": "https://www.steinigke.de/en/Eurolite/"

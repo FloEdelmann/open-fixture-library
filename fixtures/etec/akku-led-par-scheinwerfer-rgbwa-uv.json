@@ -1,0 +1,75 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "Akku LED Par Scheinwerfer RGBWA+UV",
+  "categories": ["Color Changer"],
+  "meta": {
+    "authors": ["Jörg"],
+    "createDate": "2020-08-24",
+    "lastModifyDate": "2020-08-24"
+  },
+  "links": {
+    "productPage": [
+      "https://www.elcotec-electronic.de/LED-Lichttechnik/Spezial-Scheinwerfer/Akku-Scheinwerfer/ETEC-Akku-LED-Par-Scheinwerfer-E412-mit-4x12W-RGBWA-UV-Wireless-DMX::110992.html?gclid=EAIaIQobChMInPvPqY606wIViJSyCh1ylAwWEAAYASAAEgIUhvD_BwE#horizontalTab1"
+    ]
+  },
+  "physical": {
+    "dimensions": [130, 120, 130],
+    "weight": 2.32,
+    "power": 48,
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "LED"
+    }
+  },
+  "availableChannels": {
+    "Red": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "White": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Amber": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Amber"
+      }
+    },
+    "UV": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "UV"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "ETECAkku LED 6ch",
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV"
+      ]
+    }
+  ]
+}
