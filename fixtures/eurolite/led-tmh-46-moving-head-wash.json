@@ -1,0 +1,367 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "LED TMH-46 Moving-Head Wash",
+  "categories": ["Moving Head", "Effect", "Strobe", "Color Changer"],
+  "meta": {
+    "authors": ["Sylvio Schilling"],
+    "createDate": "2020-10-14",
+    "lastModifyDate": "2020-10-14"
+  },
+  "links": {
+    "manual": [
+      "https://www.steinigke.de/download/51785892-Anleitung-128780-1.100-eurolite-led-tmh-46-moving-head-wash-de_en.pdf"
+    ],
+    "productPage": [
+      "https://www.steinigke.de/de/mpn51785892-eurolite-led-tmh-46-moving-head-wash.html"
+    ],
+    "video": [
+      "https://youtu.be/UIvviRHL73Q"
+    ]
+  },
+  "physical": {
+    "dimensions": [145, 140, 180],
+    "weight": 1.5,
+    "power": 45,
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "6in1 10 W LED (RGBAW+UV)"
+    },
+    "lens": {
+      "degreesMinMax": [0, 24]
+    }
+  },
+  "availableChannels": {
+    "Horizontal (PAN)": {
+      "capability": {
+        "type": "Pan",
+        "angleStart": "0deg",
+        "angleEnd": "540deg"
+      }
+    },
+    "Vertical (TILT)": {
+      "fineChannelAliases": ["Vertical (TILT) fine"],
+      "capability": {
+        "type": "Tilt",
+        "angleStart": "0deg",
+        "angleEnd": "220deg"
+      }
+    },
+    "Pan/Tilt Speed": {
+      "capability": {
+        "type": "PanTiltSpeed",
+        "speedStart": "fast",
+        "speedEnd": "slow"
+      }
+    },
+    "Dimmer": {
+      "capability": {
+        "type": "Intensity",
+        "brightnessStart": "0%",
+        "brightnessEnd": "100%"
+      }
+    },
+    "Strobe": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 9],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [10, 249],
+          "type": "StrobeSpeed",
+          "speedStart": "slow",
+          "speedEnd": "fast"
+        },
+        {
+          "dmxRange": [250, 255],
+          "type": "NoFunction"
+        }
+      ]
+    },
+    "Red": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red",
+        "brightnessStart": "0%",
+        "brightnessEnd": "100%"
+      }
+    },
+    "Green": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green",
+        "brightnessStart": "0%",
+        "brightnessEnd": "100%"
+      }
+    },
+    "Blue": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue",
+        "brightnessStart": "0%",
+        "brightnessEnd": "100%"
+      }
+    },
+    "White": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White",
+        "brightnessStart": "0%",
+        "brightnessEnd": "100%"
+      }
+    },
+    "Amber": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Amber",
+        "brightnessStart": "0%",
+        "brightnessEnd": "100%"
+      }
+    },
+    "UV": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "UV",
+        "brightnessStart": "0%",
+        "brightnessEnd": "100%"
+      }
+    },
+    "Motion Macros": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 15],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [16, 44],
+          "type": "Effect",
+          "effectName": "internal program 1",
+          "comment": "internal program 1"
+        },
+        {
+          "dmxRange": [45, 74],
+          "type": "Effect",
+          "effectName": "internal program 2",
+          "comment": "internal program 2"
+        },
+        {
+          "dmxRange": [75, 104],
+          "type": "Effect",
+          "effectName": "internal program 3",
+          "comment": "internal program 3"
+        },
+        {
+          "dmxRange": [105, 128],
+          "type": "Effect",
+          "effectName": "internal program 4",
+          "comment": "internal program 4"
+        },
+        {
+          "dmxRange": [129, 157],
+          "type": "Effect",
+          "effectName": "internal program 1 (sound controlled)",
+          "soundControlled": true,
+          "comment": "internal program 1 (sound controlled)"
+        },
+        {
+          "dmxRange": [158, 187],
+          "type": "Effect",
+          "effectName": "internal program 2 (sound controlled)",
+          "soundControlled": true,
+          "comment": "internal program 2 (sound controlled)"
+        },
+        {
+          "dmxRange": [188, 217],
+          "type": "Effect",
+          "effectName": "internal program 3 (sound controlled)",
+          "soundControlled": true,
+          "comment": "internal program 3 (sound controlled)"
+        },
+        {
+          "dmxRange": [218, 255],
+          "type": "Effect",
+          "effectName": "internal program 4 (sound controlled)",
+          "soundControlled": true,
+          "comment": "internal program 4 (sound controlled)"
+        }
+      ]
+    },
+    "Speed motion macros": {
+      "capability": {
+        "type": "Speed",
+        "speedStart": "slow",
+        "speedEnd": "fast"
+      }
+    },
+    "Color Macros": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 0],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [1, 7],
+          "type": "Effect",
+          "effectName": "Color fade",
+          "comment": "Color Fade"
+        },
+        {
+          "dmxRange": [8, 39],
+          "type": "Effect",
+          "effectName": "internal program 1"
+        },
+        {
+          "dmxRange": [40, 72],
+          "type": "Effect",
+          "effectName": "internal program 2"
+        },
+        {
+          "dmxRange": [73, 105],
+          "type": "Effect",
+          "effectName": "internal program 3"
+        },
+        {
+          "dmxRange": [106, 138],
+          "type": "Effect",
+          "effectName": "internal program 4"
+        },
+        {
+          "dmxRange": [139, 140],
+          "type": "Effect",
+          "effectName": "internal program 5"
+        },
+        {
+          "dmxRange": [141, 167],
+          "type": "Effect",
+          "effectName": "internal program 1 (sound controlled)",
+          "soundControlled": true
+        },
+        {
+          "dmxRange": [168, 195],
+          "type": "Effect",
+          "effectName": "internal program 2 (sound controlled)",
+          "soundControlled": true
+        },
+        {
+          "dmxRange": [196, 223],
+          "type": "Effect",
+          "effectName": "internal program 3 (sound controlled)",
+          "soundControlled": true
+        },
+        {
+          "dmxRange": [224, 251],
+          "type": "Effect",
+          "effectName": "internal program 4 (sound controlled)",
+          "soundControlled": true
+        },
+        {
+          "dmxRange": [252, 255],
+          "type": "Effect",
+          "effectName": "internal program 5 (sound controlled)",
+          "soundControlled": true
+        }
+      ]
+    },
+    "Speed Color Macros": {
+      "capability": {
+        "type": "Effect",
+        "effectName": "Increasing Speed"
+      }
+    },
+    "Reset": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 249],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [250, 255],
+          "type": "Generic",
+          "comment": "Reset"
+        }
+      ]
+    },
+    "Horizontal (PAN) 2": {
+      "name": "Horizontal (PAN)",
+      "capability": {
+        "type": "Pan",
+        "angleStart": "0deg",
+        "angleEnd": "540deg"
+      }
+    },
+    "Horizontal (PAN) 3": {
+      "name": "Horizontal (PAN)",
+      "fineChannelAliases": ["Horizontal (PAN) 3 fine"],
+      "capability": {
+        "type": "Pan",
+        "angleStart": "0deg",
+        "angleEnd": "540deg"
+      }
+    },
+    "Vertical (TILT) 2": {
+      "name": "Vertical (TILT)",
+      "capability": {
+        "type": "Tilt",
+        "angleStart": "0deg",
+        "angleEnd": "220deg"
+      }
+    },
+    "Horizontal (PAN) 4": {
+      "name": "Horizontal (PAN)",
+      "fineChannelAliases": ["Horizontal (PAN) 4 fine"],
+      "capability": {
+        "type": "Pan",
+        "angleStart": "0deg",
+        "angleEnd": "540deg"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "18 Channel",
+      "shortName": "18Ch",
+      "channels": [
+        "Horizontal (PAN) 4",
+        "Horizontal (PAN) 4 fine",
+        "Vertical (TILT)",
+        "Vertical (TILT) fine",
+        "Pan/Tilt Speed",
+        "Dimmer",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "Motion Macros",
+        "Speed motion macros",
+        "Color Macros",
+        "Speed Color Macros",
+        "Reset"
+      ]
+    },
+    {
+      "name": "16 Channel",
+      "shortName": "16Ch",
+      "channels": [
+        "Horizontal (PAN)",
+        "Vertical (TILT) 2",
+        "Pan/Tilt Speed",
+        "Dimmer",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "Motion Macros",
+        "Speed motion macros",
+        "Color Macros",
+        "Speed Color Macros",
+        "Reset"
+      ]
+    }
+  ]
+}
