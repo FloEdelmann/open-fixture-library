@@ -1,0 +1,409 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "LX200Z",
+  "categories": ["Moving Head"],
+  "meta": {
+    "authors": ["Wim Perneel"],
+    "createDate": "2020-10-08",
+    "lastModifyDate": "2020-10-08",
+    "importPlugin": {
+      "plugin": "qlcplus_4.12.1",
+      "date": "2020-10-08",
+      "comment": "created by Q Light Controller Plus (version 4.12.3)"
+    }
+  },
+  "physical": {
+    "dimensions": [244, 322, 179],
+    "weight": 6,
+    "power": 130,
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "LED"
+    },
+    "lens": {
+      "degreesMinMax": [8, 36]
+    }
+  },
+  "availableChannels": {
+    "Pan": {
+      "fineChannelAliases": ["Pan fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "Pan",
+        "angleStart": "0deg",
+        "angleEnd": "540deg"
+      }
+    },
+    "Tilt": {
+      "fineChannelAliases": ["Tilt fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "Tilt",
+        "angleStart": "0deg",
+        "angleEnd": "256deg"
+      }
+    },
+    "Movement speed": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Speed",
+        "comment": "Fastest to slowest",
+        "speedStart": "slow",
+        "speedEnd": "fast",
+        "helpWanted": "Are the automatically added speed values correct?"
+      }
+    },
+    "Movement function": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 15],
+          "type": "Maintenance",
+          "comment": "Normal"
+        },
+        {
+          "dmxRange": [16, 31],
+          "type": "Maintenance",
+          "comment": "Movement with blackout"
+        },
+        {
+          "dmxRange": [32, 255],
+          "type": "NoFunction"
+        }
+      ]
+    },
+    "Shutter function": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 15],
+          "type": "Maintenance",
+          "comment": "Normal shutter functions"
+        },
+        {
+          "dmxRange": [16, 31],
+          "type": "Maintenance",
+          "comment": "Pulse-effect forward"
+        },
+        {
+          "dmxRange": [32, 47],
+          "type": "Maintenance",
+          "comment": "Pluse-effect reverse"
+        },
+        {
+          "dmxRange": [48, 63],
+          "type": "Maintenance",
+          "comment": "Random strobe"
+        },
+        {
+          "dmxRange": [64, 255],
+          "type": "NoFunction"
+        }
+      ]
+    },
+    "Shutter": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 31],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Closed"
+        },
+        {
+          "dmxRange": [32, 223],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Strobe",
+          "speedStart": "slow",
+          "speedEnd": "fast",
+          "comment": "Strobe rate"
+        },
+        {
+          "dmxRange": [224, 255],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open"
+        }
+      ]
+    },
+    "Dimmer": {
+      "fineChannelAliases": ["Dimmer fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Virtual colour function": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 15],
+          "type": "Effect",
+          "effectName": "On function"
+        },
+        {
+          "dmxRange": [16, 31],
+          "type": "Effect",
+          "effectName": "CTC function"
+        },
+        {
+          "dmxRange": [32, 47],
+          "type": "Effect",
+          "effectName": "Forward spin"
+        },
+        {
+          "dmxRange": [48, 63],
+          "type": "Effect",
+          "effectName": "Reverse spin"
+        },
+        {
+          "dmxRange": [64, 79],
+          "type": "Effect",
+          "effectName": "Continuous"
+        },
+        {
+          "dmxRange": [80, 111],
+          "type": "Effect",
+          "effectName": "Color bounce"
+        },
+        {
+          "dmxRange": [112, 255],
+          "type": "NoFunction"
+        }
+      ]
+    },
+    "Virtual colour 1": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Effect",
+        "effectName": "Virtual colour 1"
+      }
+    },
+    "Virtual colour 2": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 0],
+          "type": "Effect",
+          "effectName": "Black"
+        },
+        {
+          "dmxRange": [1, 1],
+          "type": "Effect",
+          "effectName": "Red"
+        },
+        {
+          "dmxRange": [2, 2],
+          "type": "Effect",
+          "effectName": "Green"
+        },
+        {
+          "dmxRange": [3, 3],
+          "type": "Effect",
+          "effectName": "Blue"
+        },
+        {
+          "dmxRange": [4, 45],
+          "type": "Effect",
+          "effectName": "red=0, green=increasing, blue=full, white=0"
+        },
+        {
+          "dmxRange": [46, 87],
+          "type": "Effect",
+          "effectName": "red=0, green=full, blue=decreasing, white=0"
+        },
+        {
+          "dmxRange": [88, 129],
+          "type": "Effect",
+          "effectName": "red=increasing, green=full, blue=0, white=0"
+        },
+        {
+          "dmxRange": [130, 171],
+          "type": "Effect",
+          "effectName": "red=full, green=decreasing, blue=0, white=0"
+        },
+        {
+          "dmxRange": [172, 213],
+          "type": "Effect",
+          "effectName": "red=full, green=0, blue=increasing, white=0"
+        },
+        {
+          "dmxRange": [214, 255],
+          "type": "Effect",
+          "effectName": "red=decreasing, green=0, blue=full, white=0"
+        }
+      ]
+    },
+    "Red": {
+      "fineChannelAliases": ["Red fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "fineChannelAliases": ["Green fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "fineChannelAliases": ["Blue fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "White": {
+      "fineChannelAliases": ["White fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Zoom": {
+      "fineChannelAliases": ["Zoom fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "Zoom",
+        "angleStart": "wide",
+        "angleEnd": "narrow"
+      }
+    },
+    "Control": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 7],
+          "type": "Maintenance",
+          "comment": "Normal"
+        },
+        {
+          "dmxRange": [8, 15],
+          "type": "Maintenance",
+          "comment": "Reset all"
+        },
+        {
+          "dmxRange": [16, 23],
+          "type": "Maintenance",
+          "comment": "Pan&tilt reset"
+        },
+        {
+          "dmxRange": [24, 47],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [48, 55],
+          "type": "Maintenance",
+          "comment": "Other reset"
+        },
+        {
+          "dmxRange": [56, 63],
+          "type": "Maintenance",
+          "comment": "Display off"
+        },
+        {
+          "dmxRange": [64, 71],
+          "type": "Maintenance",
+          "comment": "Display on"
+        },
+        {
+          "dmxRange": [72, 79],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [80, 87],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [88, 95],
+          "type": "Maintenance",
+          "comment": "Hibernation"
+        },
+        {
+          "dmxRange": [96, 255],
+          "type": "NoFunction"
+        }
+      ]
+    }
+  },
+  "modes": [
+    {
+      "name": "15-channel",
+      "shortName": "15ch",
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Movement speed",
+        "Shutter function",
+        "Shutter",
+        "Dimmer",
+        "Virtual colour function",
+        "Virtual colour 1",
+        "Virtual colour 2",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Zoom",
+        "Control"
+      ]
+    },
+    {
+      "name": "17-channel",
+      "shortName": "17ch",
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Movement speed",
+        "Shutter function",
+        "Shutter",
+        "Dimmer",
+        "Virtual colour function",
+        "Virtual colour 1",
+        "Virtual colour 2",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Zoom",
+        "Control"
+      ]
+    },
+    {
+      "name": "24-channel",
+      "shortName": "24ch",
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Movement speed",
+        "Movement function",
+        "Shutter function",
+        "Shutter",
+        "Dimmer",
+        "Dimmer fine",
+        "Virtual colour function",
+        "Virtual colour 1",
+        "Virtual colour 2",
+        "Red",
+        "Red fine",
+        "Green",
+        "Green fine",
+        "Blue",
+        "Blue fine",
+        "White",
+        "White fine",
+        "Zoom",
+        "Zoom fine",
+        "Control"
+      ]
+    }
+  ]
+}
