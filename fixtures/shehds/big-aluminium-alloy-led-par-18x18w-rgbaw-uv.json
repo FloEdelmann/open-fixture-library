@@ -1,0 +1,66 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "(Big) Aluminium Alloy LED Par 18x18W RGBAW+UV",
+  "categories": ["Blinder", "Color Changer"],
+  "meta": {
+    "authors": ["Patty"],
+    "createDate": "2020-07-14",
+    "lastModifyDate": "2020-07-14"
+  },
+  "links": {
+    "productPage": [
+      "https://www.google.com/url?sa=t&source=web&rct=j&url=https://www.shehds.com/aluminum-alloy-led-par-18x12w-rgbw-4in1-led-par-can-par-64-led-spotlight-dj-projector-wash-lighting-stage-lighting-p0100.html&ved=2ahUKEwjXgIe89svqAhXDyDgGHVk0CYIQFjANegQIBBAB&usg=AOvVaw3wbq8vfWxgRSUOm8gr-6dH"
+    ]
+  },
+  "availableChannels": {
+    "Red": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "White": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Amber": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Amber"
+      }
+    },
+    "UV": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "UV"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "6ch",
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV"
+      ]
+    }
+  ]
+}
