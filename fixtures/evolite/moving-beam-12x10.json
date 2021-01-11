@@ -1,0 +1,288 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "moving beam 12x10",
+  "categories": ["Moving Head"],
+  "meta": {
+    "authors": ["jordan"],
+    "createDate": "2020-09-23",
+    "lastModifyDate": "2020-09-23",
+    "importPlugin": {
+      "plugin": "qlcplus_4.12.1",
+      "date": "2020-09-23",
+      "comment": "created by Q Light Controller Plus (version 4.12.2)"
+    }
+  },
+  "physical": {
+    "dimensions": [230, 370, 340],
+    "weight": 6.1,
+    "power": 150,
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "LED"
+    }
+  },
+  "matrix": {
+    "pixelCount": [
+      null,
+      null,
+      1
+    ]
+  },
+  "availableChannels": {
+    "dimmer": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "red": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "green": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "White": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "built-in Dimmer": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Pan": {
+      "fineChannelAliases": ["Pan fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "Pan",
+        "angleStart": "0%",
+        "angleEnd": "100%",
+        "helpWanted": "Can you provide exact angles?"
+      }
+    },
+    "Tilt": {
+      "fineChannelAliases": ["Tilt fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "Tilt",
+        "angleStart": "0%",
+        "angleEnd": "100%",
+        "helpWanted": "Can you provide exact angles?"
+      }
+    },
+    "Pan/Tilt speed": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "PanTiltSpeed",
+        "speedStart": "slow",
+        "speedEnd": "fast"
+      }
+    },
+    "Strobe": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ShutterStrobe",
+        "shutterEffect": "Strobe",
+        "speedStart": "fast",
+        "speedEnd": "slow",
+        "helpWanted": "At which DMX values is strobe disabled?"
+      }
+    },
+    "built in program": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 0],
+          "type": "Maintenance",
+          "comment": "no fonction"
+        },
+        {
+          "dmxRange": [1, 25],
+          "type": "Maintenance",
+          "comment": "Contrôle Relais ON"
+        },
+        {
+          "dmxRange": [26, 50],
+          "type": "Maintenance",
+          "comment": "Contrôle Relais OFF"
+        },
+        {
+          "dmxRange": [51, 90],
+          "type": "Maintenance",
+          "comment": "Sélection des couleurs préprogrammées ( CH14)"
+        },
+        {
+          "dmxRange": [91, 130],
+          "type": "Maintenance",
+          "comment": "Changeur de couleur « couleurs pleines » des couleurs CH14"
+        },
+        {
+          "dmxRange": [131, 170],
+          "type": "Maintenance",
+          "comment": "Changeur de couleurs aléatoire des couleurs CH14"
+        },
+        {
+          "dmxRange": [171, 210],
+          "type": "Maintenance",
+          "comment": "Changeur de couleur progressif des couleurs CH14"
+        },
+        {
+          "dmxRange": [211, 250],
+          "type": "Maintenance",
+          "comment": "Mode Automatique changeur de couleurs"
+        },
+        {
+          "dmxRange": [251, 255],
+          "type": "Maintenance",
+          "comment": "Mode Automatique changeur de couleurs à détection audio"
+        }
+      ]
+    },
+    "Couleurs préprogrammées seulement si CH13 actif": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 20],
+          "type": "ColorPreset"
+        },
+        {
+          "dmxRange": [21, 40],
+          "type": "ColorPreset"
+        },
+        {
+          "dmxRange": [41, 60],
+          "type": "ColorPreset"
+        },
+        {
+          "dmxRange": [61, 80],
+          "type": "ColorPreset"
+        },
+        {
+          "dmxRange": [81, 100],
+          "type": "ColorPreset"
+        },
+        {
+          "dmxRange": [101, 120],
+          "type": "ColorPreset"
+        },
+        {
+          "dmxRange": [121, 140],
+          "type": "ColorPreset"
+        },
+        {
+          "dmxRange": [141, 160],
+          "type": "ColorPreset"
+        },
+        {
+          "dmxRange": [161, 170],
+          "type": "ColorPreset"
+        },
+        {
+          "dmxRange": [171, 200],
+          "type": "ColorPreset"
+        },
+        {
+          "dmxRange": [201, 205],
+          "type": "ColorPreset"
+        },
+        {
+          "dmxRange": [206, 210],
+          "type": "ColorPreset"
+        },
+        {
+          "dmxRange": [211, 215],
+          "type": "ColorPreset"
+        },
+        {
+          "dmxRange": [216, 220],
+          "type": "ColorPreset"
+        },
+        {
+          "dmxRange": [221, 225],
+          "type": "ColorPreset"
+        },
+        {
+          "dmxRange": [226, 230],
+          "type": "ColorPreset"
+        },
+        {
+          "dmxRange": [231, 235],
+          "type": "ColorPreset"
+        },
+        {
+          "dmxRange": [236, 240],
+          "type": "ColorPreset"
+        },
+        {
+          "dmxRange": [241, 245],
+          "type": "ColorPreset"
+        },
+        {
+          "dmxRange": [246, 250],
+          "type": "ColorPreset"
+        },
+        {
+          "dmxRange": [251, 255],
+          "type": "ColorPreset"
+        }
+      ]
+    },
+    "Identification des machines": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 9],
+          "type": "Maintenance",
+          "comment": "nc"
+        },
+        {
+          "dmxRange": [10, 255],
+          "type": "Maintenance",
+          "comment": "id"
+        }
+      ]
+    }
+  },
+  "templateChannels": {},
+  "modes": [
+    {
+      "name": "13 canaux",
+      "channels": [
+        "dimmer",
+        "red",
+        "green",
+        "Blue",
+        "White",
+        "built-in Dimmer",
+        "Pan",
+        "Tilt",
+        "Pan fine",
+        "Tilt fine",
+        "Pan/Tilt speed",
+        "Strobe",
+        "built in program",
+        "Couleurs préprogrammées seulement si CH13 actif",
+        "Identification des machines"
+      ]
+    }
+  ]
+}
