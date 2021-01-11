@@ -1,0 +1,117 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "12x12W LED",
+  "categories": ["Moving Head"],
+  "meta": {
+    "authors": ["Jason"],
+    "createDate": "2020-11-17",
+    "lastModifyDate": "2020-11-17"
+  },
+  "links": {
+    "productPage": [
+      "https://www.shehds.com/products/hot-led-beam-12x12w-rgbw-moving-head-lighting-dmx512-good-for-patry-dj-disco-concert"
+    ]
+  },
+  "physical": {
+    "dimensions": [25, 15, 31],
+    "weight": 4.6,
+    "power": 144,
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "LED"
+    }
+  },
+  "availableChannels": {
+    "X axis rotation": {
+      "defaultValue": 1,
+      "highlightValue": 127,
+      "capability": {
+        "type": "Pan",
+        "angleStart": "0deg",
+        "angleEnd": "630deg"
+      }
+    },
+    "Y axis Rotation": {
+      "defaultValue": 2,
+      "highlightValue": 127,
+      "capability": {
+        "type": "Tilt",
+        "angleStart": "0deg",
+        "angleEnd": "180deg"
+      }
+    },
+    "Total light ajustment": {
+      "defaultValue": 3,
+      "highlightValue": 127,
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Red Dimmer": {
+      "defaultValue": 4,
+      "highlightValue": 127,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green Dimmer": {
+      "defaultValue": 5,
+      "highlightValue": 127,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue Dimmer": {
+      "defaultValue": 6,
+      "highlightValue": 127,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "White Dimmber": {
+      "defaultValue": 7,
+      "highlightValue": 127,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Strobe": {
+      "defaultValue": 8,
+      "highlightValue": 1,
+      "capability": {
+        "type": "StrobeSpeed",
+        "speedStart": "1Hz",
+        "speedEnd": "25Hz"
+      }
+    },
+    "XY axis rotation speed": {
+      "defaultValue": 9,
+      "highlightValue": 50,
+      "capability": {
+        "type": "Rotation",
+        "speedStart": "1rpm",
+        "speedEnd": "50rpm"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "9Channel",
+      "channels": [
+        "X axis rotation",
+        "Y axis Rotation",
+        "Total light ajustment",
+        "Red Dimmer",
+        "Green Dimmer",
+        "Blue Dimmer",
+        "White Dimmber",
+        "Strobe",
+        "XY axis rotation speed"
+      ]
+    }
+  ]
+}
