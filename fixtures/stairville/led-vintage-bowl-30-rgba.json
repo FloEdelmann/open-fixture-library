@@ -1,0 +1,280 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "LED Vintage Bowl 30 RGBA",
+  "shortName": "LED Vintage Bowl",
+  "categories": ["Effect"],
+  "meta": {
+    "authors": ["Manu Larue"],
+    "createDate": "2020-09-12",
+    "lastModifyDate": "2020-09-12"
+  },
+  "links": {
+    "manual": [
+      "https://images.static-thomann.de/pics/atg/atgdata/document/manual/472342_c_472342_472343_r1_en_online.pdf"
+    ],
+    "productPage": [
+      "https://www.thomann.de/fr/stairville_led_vintage_bowl_30_rgba.htm"
+    ],
+    "video": [
+      "https://video2.thomann.de//vidiot/02591c1c/video_i8895p10_yd59vqpa.mp4"
+    ]
+  },
+  "physical": {
+    "dimensions": [400, 425, 220],
+    "weight": 2.9,
+    "power": 40,
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "LED"
+    }
+  },
+  "wheels": {
+    "Fixed colour pattern": {
+      "slots": [
+        {
+          "type": "Open"
+        },
+        {
+          "type": "Color"
+        },
+        {
+          "type": "Color"
+        },
+        {
+          "type": "Color"
+        },
+        {
+          "type": "Color"
+        },
+        {
+          "type": "Color"
+        },
+        {
+          "type": "Color"
+        },
+        {
+          "type": "Color"
+        },
+        {
+          "type": "Color"
+        }
+      ]
+    }
+  },
+  "availableChannels": {
+    "Red": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Amber": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Amber"
+      }
+    },
+    "Effect Speed": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 10],
+          "type": "NoFunction",
+          "comment": "No automatic colour change"
+        },
+        {
+          "dmxRange": [11, 100],
+          "type": "EffectSpeed",
+          "speedStart": "fast",
+          "speedEnd": "slow",
+          "comment": "Automatic colour change as set by channel 1, decreasing speed from fast to slow"
+        },
+        {
+          "dmxRange": [101, 150],
+          "type": "NoFunction",
+          "comment": "No automatic colour change"
+        },
+        {
+          "dmxRange": [151, 255],
+          "type": "EffectSpeed",
+          "speedStart": "slow",
+          "speedEnd": "fast",
+          "comment": "Automatic colour change as set with channel 1, sound-controlled process, increasing sen‐sitivity"
+        }
+      ]
+    },
+    "Operating mode selection": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 63],
+          "type": "NoFunction",
+          "comment": "Constant Colour, the hue is set by channels 2 to 5"
+        },
+        {
+          "dmxRange": [64, 127],
+          "type": "Effect",
+          "effectName": "Automatic colour fade with 7 colours",
+          "parameter": "off",
+          "comment": "Automatic colour fade with 7 colours, channels 2 to 5 without function, speed control viachannel 6"
+        },
+        {
+          "dmxRange": [128, 191],
+          "type": "Effect",
+          "effectName": "Automatic colour change with 12 colours",
+          "parameter": "off",
+          "comment": "Automatic colour change with 12 colours, channels 2 to 5 without function, speed control via channel 6"
+        },
+        {
+          "dmxRange": [192, 255],
+          "type": "Effect",
+          "effectName": "Automatic colour change with 4 colours",
+          "parameter": "off",
+          "comment": "Automatic colour change with 4 colours, channels 2 to 5 without function, speed controlvia channel 6"
+        }
+      ]
+    },
+    "Dimmer": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Fixed colour pattern": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 15],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [16, 255],
+          "type": "Effect",
+          "effectPreset": "ColorJump",
+          "comment": "Colour macros 1 to 31, channels 6 and 7 without function"
+        }
+      ]
+    },
+    "Strobe Speed": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 15],
+          "type": "NoFunction",
+          "comment": "Full brightness, no strobe effect"
+        },
+        {
+          "dmxRange": [16, 255],
+          "type": "StrobeSpeed",
+          "speedStart": "slow",
+          "speedEnd": "fast",
+          "comment": "Strobe effect, increasing speed, if channel 5 = 0...15"
+        }
+      ]
+    },
+    "Operating mode selection 2": {
+      "name": "Operating mode selection",
+      "capabilities": [
+        {
+          "dmxRange": [0, 31],
+          "type": "NoFunction",
+          "comment": "Constant colour, the hue is set by channels 1 to 4"
+        },
+        {
+          "dmxRange": [32, 63],
+          "type": "EffectParameter",
+          "parameterStart": "low",
+          "parameterEnd": "high",
+          "comment": "Fade-out effect, speed controlled by channel 6, channels 1 to 5 without function"
+        },
+        {
+          "dmxRange": [64, 95],
+          "type": "EffectParameter",
+          "parameterStart": "low",
+          "parameterEnd": "high",
+          "comment": "Fade-in effect, speed controlled by channel 6, channels 1 to 5 without function"
+        },
+        {
+          "dmxRange": [96, 127],
+          "type": "EffectParameter",
+          "parameterStart": "low",
+          "parameterEnd": "high",
+          "comment": "Fade-in-out effect, speed controlled by channel 6, channels 1 to 5 without function"
+        },
+        {
+          "dmxRange": [128, 159],
+          "type": "EffectParameter",
+          "parameterStart": "low",
+          "parameterEnd": "high",
+          "comment": "Auto-mix effect, speed controlled by channel 6, channels 1 to 5 without function"
+        },
+        {
+          "dmxRange": [160, 191],
+          "type": "EffectParameter",
+          "parameterStart": "low",
+          "parameterEnd": "high",
+          "comment": "Chase (4 colours), speed controlled by channel 6, channels 1 to 5 without function"
+        },
+        {
+          "dmxRange": [192, 223],
+          "type": "EffectParameter",
+          "parameterStart": "low",
+          "parameterEnd": "high",
+          "comment": "Chase (12 colours), speed controlled by channel 6, channels 1 to 5 without function"
+        },
+        {
+          "dmxRange": [224, 255],
+          "type": "EffectParameter",
+          "parameterStart": "low",
+          "parameterEnd": "high",
+          "comment": "Sound control"
+        }
+      ]
+    }
+  },
+  "modes": [
+    {
+      "name": "4 Channels",
+      "shortName": "4ch",
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber"
+      ]
+    },
+    {
+      "name": "6 Channels",
+      "shortName": "6ch",
+      "channels": [
+        "Operating mode selection",
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Effect Speed"
+      ]
+    },
+    {
+      "name": "8 Channels",
+      "shortName": "8ch",
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Fixed colour pattern",
+        "Strobe Speed",
+        "Operating mode selection 2",
+        "Dimmer"
+      ]
+    }
+  ]
+}
