@@ -1,0 +1,70 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "5-in-1 RGB LED Strip Light",
+  "shortName": "RGB + Tunable White",
+  "categories": ["Color Changer"],
+  "meta": {
+    "authors": ["Terry Morton"],
+    "createDate": "2020-08-17",
+    "lastModifyDate": "2020-08-17"
+  },
+  "links": {
+    "productPage": [
+      "https://www.environmentallights.com/18323-rgbtw-5in1-5050-60-reel.html"
+    ]
+  },
+  "physical": {
+    "dimensions": [950, 12, 3],
+    "weight": 0.5,
+    "power": 92.5,
+    "bulb": {
+      "type": "LED",
+      "lumens": 396
+    }
+  },
+  "availableChannels": {
+    "Warm White": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Green": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Red": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Blue": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Cold White": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "RGBWW",
+      "shortName": "RGB+Tunable White",
+      "channels": [
+        "Warm White",
+        "Green",
+        "Red",
+        "Blue",
+        "Cold White"
+      ]
+    }
+  ]
+}
