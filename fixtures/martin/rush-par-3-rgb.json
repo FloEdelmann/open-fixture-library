@@ -1,0 +1,111 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "RUSH PAR 3 RGB",
+  "shortName": "RUSH PAR 3 RGB",
+  "categories": ["Effect"],
+  "meta": {
+    "authors": ["Tom"],
+    "createDate": "2020-10-14",
+    "lastModifyDate": "2020-10-14"
+  },
+  "links": {
+    "manual": [
+      "https://www.martin.com/en/products/rush-par-3-rgb"
+    ],
+    "productPage": [
+      "https://www.martin.com/en/products/rush-par-3-rgb"
+    ]
+  },
+  "rdm": {
+    "modelId": 0
+  },
+  "wheels": {
+    "Color Wheel": {
+      "slots": [
+        {
+          "type": "Open"
+        }
+      ]
+    }
+  },
+  "availableChannels": {
+    "Shutter / Strobe": {
+      "defaultValue": 10,
+      "capability": {
+        "type": "ShutterStrobe",
+        "shutterEffect": "Open"
+      }
+    },
+    "Dimmer": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Red": {
+      "defaultValue": 255,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "defaultValue": 255,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "defaultValue": 255,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "CTC": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorTemperature",
+        "colorTemperature": "CTO"
+      }
+    },
+    "Color Wheel": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "WheelSlot",
+        "slotNumber": 1
+      }
+    },
+    "Color Temperature": {
+      "capability": {
+        "type": "ColorTemperature",
+        "colorTemperatureStart": "0%",
+        "colorTemperatureEnd": "255%"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "9 Canaux",
+      "shortName": "9 Canaux",
+      "channels": [
+        "Shutter / Strobe",
+        "Dimmer",
+        "Intensity",
+        "Red",
+        "Green",
+        "Blue",
+        "CTC",
+        "Color Wheel",
+        "Color Temperature"
+      ]
+    }
+  ]
+}
