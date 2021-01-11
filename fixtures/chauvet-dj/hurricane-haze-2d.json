@@ -1,0 +1,103 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "Hurricane Haze 2D",
+  "categories": ["Hazer"],
+  "meta": {
+    "authors": ["Tryll"],
+    "createDate": "2020-10-24",
+    "lastModifyDate": "2020-10-24"
+  },
+  "links": {
+    "manual": [
+      "https://www.chauvetdj.com/wp-content/uploads/2015/12/Hurricane_Haze_2D_UM_Rev12_WO-1.pdf"
+    ],
+    "productPage": [
+      "https://www.chauvetdj.com/products/hurricane-haze-2d/"
+    ]
+  },
+  "availableChannels": {
+    "Blower Speed": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 5],
+          "type": "Generic",
+          "comment": "OFF"
+        },
+        {
+          "dmxRange": [6, 75],
+          "type": "Generic",
+          "comment": "Level 1"
+        },
+        {
+          "dmxRange": [76, 125],
+          "type": "Generic",
+          "comment": "Level 2"
+        },
+        {
+          "dmxRange": [126, 165],
+          "type": "Generic",
+          "comment": "Level 3"
+        },
+        {
+          "dmxRange": [166, 185],
+          "type": "Generic",
+          "comment": "Level 4"
+        },
+        {
+          "dmxRange": [186, 255],
+          "type": "Generic",
+          "comment": "Level 5"
+        }
+      ]
+    },
+    "Haze Volume": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 38],
+          "type": "Fog",
+          "fogType": "Haze",
+          "fogOutput": "off"
+        },
+        {
+          "dmxRange": [39, 69],
+          "type": "Fog",
+          "fogType": "Haze",
+          "comment": "Level 1"
+        },
+        {
+          "dmxRange": [70, 101],
+          "type": "Fog",
+          "fogType": "Haze",
+          "comment": "Level 2"
+        },
+        {
+          "dmxRange": [102, 132],
+          "type": "Fog",
+          "fogType": "Haze",
+          "comment": "Level 3"
+        },
+        {
+          "dmxRange": [133, 187],
+          "type": "Fog",
+          "fogType": "Haze",
+          "comment": "Level 4"
+        },
+        {
+          "dmxRange": [188, 255],
+          "type": "Fog",
+          "fogType": "Haze",
+          "comment": "Level 5"
+        }
+      ]
+    }
+  },
+  "modes": [
+    {
+      "name": "2ch",
+      "channels": [
+        "Blower Speed",
+        "Haze Volume"
+      ]
+    }
+  ]
+}
