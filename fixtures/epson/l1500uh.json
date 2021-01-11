@@ -1,0 +1,189 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": " L1500UH",
+  "categories": ["Other"],
+  "meta": {
+    "authors": ["Sam"],
+    "createDate": "2020-10-23",
+    "lastModifyDate": "2020-10-23"
+  },
+  "links": {
+    "manual": [
+      "https://files.support.epson.com/pdf/l1405u/art-net_commands.pdf"
+    ],
+    "productPage": [
+      "https://epson.com/Support/Projectors/Pro-Series/Epson-Pro-L1500UH/s/SPT_V11H910020#manuals"
+    ]
+  },
+  "physical": {
+    "weight": 21,
+    "power": 955,
+    "DMXconnector": "ArtNet",
+    "bulb": {
+      "lumens": 12000
+    }
+  },
+  "availableChannels": {
+    "Luminance (Dimming)": {
+      "defaultValue": "0%",
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Shutter Control": {
+      "defaultValue": 128,
+      "capabilities": [
+        {
+          "dmxRange": [0, 63],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Closed"
+        },
+        {
+          "dmxRange": [64, 191],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [192, 255],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open"
+        }
+      ]
+    },
+    "Display Source": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 7],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [8, 15],
+          "type": "Generic",
+          "comment": "HDMI"
+        },
+        {
+          "dmxRange": [16, 255],
+          "type": "NoFunction"
+        }
+      ]
+    },
+    "Lens Position": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 31],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [32, 63],
+          "type": "Generic",
+          "comment": "Move to Home Position"
+        },
+        {
+          "dmxRange": [64, 255],
+          "type": "NoFunction"
+        }
+      ]
+    },
+    "Horizontal Lens Shift": {
+      "defaultValue": 128,
+      "capability": {
+        "type": "NoFunction"
+      }
+    },
+    "Vertical Lens Shift": {
+      "defaultValue": 128,
+      "capability": {
+        "type": "NoFunction"
+      }
+    },
+    "Zoom": {
+      "defaultValue": 128,
+      "capability": {
+        "type": "Zoom",
+        "angleStart": "wide",
+        "angleEnd": "narrow"
+      }
+    },
+    "Focus": {
+      "defaultValue": 128,
+      "capability": {
+        "type": "Focus",
+        "distanceStart": "far",
+        "distanceEnd": "near"
+      }
+    },
+    "Electronic Distortion": {
+      "defaultValue": 128,
+      "capability": {
+        "type": "NoFunction"
+      }
+    },
+    "Load Lens Memory": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "NoFunction"
+      }
+    },
+    "Power Control Instruction": {
+      "defaultValue": 128,
+      "capabilities": [
+        {
+          "dmxRange": [0, 63],
+          "type": "Generic",
+          "comment": "Power Off"
+        },
+        {
+          "dmxRange": [64, 191],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [192, 255],
+          "type": "Generic",
+          "comment": "Power On"
+        }
+      ]
+    },
+    "Geometry Correction": {
+      "defaultValue": 255,
+      "capability": {
+        "type": "NoFunction"
+      }
+    },
+    "Lock": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 127],
+          "type": "Generic",
+          "comment": "Cannot Operate"
+        },
+        {
+          "dmxRange": [128, 255],
+          "type": "Generic",
+          "comment": "Can Operate"
+        }
+      ]
+    }
+  },
+  "modes": [
+    {
+      "name": "Default",
+      "channels": [
+        "Luminance (Dimming)",
+        "Shutter Control",
+        "Display Source",
+        "Lens Position",
+        "Horizontal Lens Shift",
+        "Vertical Lens Shift",
+        "Zoom",
+        "Focus",
+        "Electronic Distortion",
+        "Load Lens Memory",
+        "Power Control Instruction",
+        "Geometry Correction",
+        "Lock"
+      ]
+    }
+  ]
+}
