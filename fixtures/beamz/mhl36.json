@@ -1,0 +1,276 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "MHL36",
+  "categories": ["Moving Head"],
+  "meta": {
+    "authors": ["Peter Ottosson", "Peter"],
+    "createDate": "2020-11-22",
+    "lastModifyDate": "2020-11-22",
+    "importPlugin": {
+      "plugin": "qlcplus_4.12.1",
+      "date": "2020-11-22",
+      "comment": "created by Q Light Controller Plus (version 4.12.2)"
+    }
+  },
+  "physical": {
+    "dimensions": [140, 180, 145],
+    "weight": 1.65,
+    "power": 85,
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "LED",
+      "colorTemperature": 5500
+    },
+    "lens": {
+      "degreesMinMax": [26, 44]
+    }
+  },
+  "availableChannels": {
+    "Pan": {
+      "fineChannelAliases": ["Pan fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "Pan",
+        "angleStart": "0deg",
+        "angleEnd": "540deg"
+      }
+    },
+    "Tilt": {
+      "fineChannelAliases": ["Tilt fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "Tilt",
+        "angleStart": "0deg",
+        "angleEnd": "180deg"
+      }
+    },
+    "Pan/Tilt speed": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "PanTiltSpeed",
+        "speedStart": "slow",
+        "speedEnd": "fast"
+      }
+    },
+    "Dimmer": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Strobe": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ShutterStrobe",
+        "shutterEffect": "Strobe",
+        "speedStart": "slow",
+        "speedEnd": "fast",
+        "helpWanted": "At which DMX values is strobe disabled?"
+      }
+    },
+    "Red": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "White": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Pan/Tilt mode": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 15],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [16, 44],
+          "type": "Effect",
+          "effectName": "Auto 1"
+        },
+        {
+          "dmxRange": [45, 74],
+          "type": "Effect",
+          "effectName": "Auto 2"
+        },
+        {
+          "dmxRange": [75, 104],
+          "type": "Effect",
+          "effectName": "Auto 3"
+        },
+        {
+          "dmxRange": [105, 128],
+          "type": "Effect",
+          "effectName": "Auto 4"
+        },
+        {
+          "dmxRange": [129, 157],
+          "type": "Effect",
+          "effectName": "Sound 1 (speed ch 13)",
+          "soundControlled": true
+        },
+        {
+          "dmxRange": [158, 187],
+          "type": "Effect",
+          "effectName": "Sound 2 (speed ch 13)",
+          "soundControlled": true
+        },
+        {
+          "dmxRange": [188, 217],
+          "type": "Effect",
+          "effectName": "Sound 3 (speed ch 13)",
+          "soundControlled": true
+        },
+        {
+          "dmxRange": [218, 255],
+          "type": "Effect",
+          "effectName": "Sound 4 (speed ch 13)",
+          "soundControlled": true
+        }
+      ]
+    },
+    "P/T mode speed": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "PanTiltSpeed",
+        "speedStart": "slow",
+        "speedEnd": "fast"
+      }
+    },
+    "Color mode": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 0],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [1, 7],
+          "type": "ColorPreset",
+          "comment": "Auto color change"
+        },
+        {
+          "dmxRange": [8, 39],
+          "type": "ColorPreset",
+          "comment": "Auto 1"
+        },
+        {
+          "dmxRange": [40, 72],
+          "type": "ColorPreset",
+          "comment": "Auto 2"
+        },
+        {
+          "dmxRange": [73, 105],
+          "type": "ColorPreset",
+          "comment": "Auto 3"
+        },
+        {
+          "dmxRange": [106, 138],
+          "type": "ColorPreset",
+          "comment": "Auto 4"
+        },
+        {
+          "dmxRange": [139, 140],
+          "type": "ColorPreset",
+          "comment": "Sound 1 (speed ch 15)"
+        },
+        {
+          "dmxRange": [141, 167],
+          "type": "ColorPreset",
+          "comment": "Sound 2 (speed ch 15)"
+        },
+        {
+          "dmxRange": [168, 195],
+          "type": "ColorPreset",
+          "comment": "Sound 3 (speed ch 15)"
+        },
+        {
+          "dmxRange": [196, 223],
+          "type": "ColorPreset",
+          "comment": "Sound 4 (speed ch 15)"
+        },
+        {
+          "dmxRange": [252, 255],
+          "type": "ColorPreset",
+          "comment": "Sound 5 (speed ch 15)"
+        }
+      ]
+    },
+    "Color mode speed": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "PanTiltSpeed",
+        "speedStart": "slow",
+        "speedEnd": "fast"
+      }
+    },
+    "Reset (255 for 5 sec)": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Maintenance"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "1",
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Pan/Tilt speed",
+        "Dimmer",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Pan/Tilt mode",
+        "P/T mode speed",
+        "Color mode",
+        "Color mode speed",
+        "Reset (255 for 5 sec)"
+      ]
+    },
+    {
+      "name": "2",
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Pan/Tilt speed",
+        "Dimmer",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Pan/Tilt mode",
+        "P/T mode speed",
+        "Color mode",
+        "Color mode speed",
+        "Reset (255 for 5 sec)"
+      ]
+    }
+  ]
+}
