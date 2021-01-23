@@ -1,0 +1,56 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "BT-THEATRE 100EC MkII",
+  "categories": ["Dimmer", "Strobe"],
+  "meta": {
+    "authors": ["Peter"],
+    "createDate": "2020-11-22",
+    "lastModifyDate": "2020-11-22"
+  },
+  "links": {
+    "manual": [
+      "https://briteq-lighting.com/fileuploader/download/download/?d=0&file=custom%2Fupload%2FFile-1462370459.pdf"
+    ],
+    "productPage": [
+      "https://briteq-lighting.com/bt-theatre-100ec-mk2"
+    ]
+  },
+  "physical": {
+    "dimensions": [278, 305, 336],
+    "weight": 6.2,
+    "power": 100,
+    "DMXconnector": "3-pin and 5-pin",
+    "bulb": {
+      "type": "COB LED",
+      "colorTemperature": 3200,
+      "lumens": 7800
+    },
+    "lens": {
+      "name": "Fresnel",
+      "degreesMinMax": [10, 50]
+    }
+  },
+  "availableChannels": {
+    "Dimmer": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Strobe": {
+      "capability": {
+        "type": "StrobeSpeed",
+        "speedStart": "0Hz",
+        "speedEnd": "255Hz"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "Standard",
+      "channels": [
+        "Dimmer",
+        "Strobe"
+      ]
+    }
+  ]
+}
