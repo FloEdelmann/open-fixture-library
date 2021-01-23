@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "Eco-Par 7.10",
+  "categories": ["Color Changer"],
+  "meta": {
+    "authors": ["Peter Ottosson", "Peter"],
+    "createDate": "2020-11-22",
+    "lastModifyDate": "2020-11-22",
+    "importPlugin": {
+      "plugin": "qlcplus_4.12.1",
+      "date": "2020-11-22",
+      "comment": "created by Q Light Controller Plus (version 4.12.2)"
+    }
+  },
+  "physical": {
+    "dimensions": [220, 210, 110],
+    "weight": 1.5,
+    "power": 80,
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "LED",
+      "colorTemperature": 5500
+    },
+    "lens": {
+      "degreesMinMax": [21, 21]
+    }
+  },
+  "availableChannels": {
+    "Dimmer": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Red": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "White": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Strobe": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ShutterStrobe",
+        "shutterEffect": "Strobe",
+        "speedStart": "slow",
+        "speedEnd": "fast",
+        "helpWanted": "At which DMX values is strobe disabled?"
+      }
+    },
+    "Macro": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Effect",
+        "effectName": "Macro"
+      }
+    },
+    "Speed": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Speed",
+        "speedStart": "slow",
+        "speedEnd": "fast",
+        "helpWanted": "Are the automatically added speed values correct?"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "8-channel",
+      "shortName": "8ch",
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Strobe",
+        "Macro",
+        "Speed"
+      ]
+    }
+  ]
+}
