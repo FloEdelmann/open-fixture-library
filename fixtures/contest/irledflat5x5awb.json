@@ -1,0 +1,74 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "irLEDFLAT5x5AWb",
+  "shortName": "Projecteur LED plat blanc ambre",
+  "categories": ["Strobe", "Color Changer", "Dimmer"],
+  "meta": {
+    "authors": ["Laurent"],
+    "createDate": "2020-12-05",
+    "lastModifyDate": "2020-12-05"
+  },
+  "links": {
+    "productPage": [
+      "http://www.contest-lighting.com/downloads/IrLEDFLAT-5x5AW_manuel-V1-2011-12.pdf"
+    ]
+  },
+  "physical": {
+    "dimensions": [240, 265, 110],
+    "weight": 2.8,
+    "power": 5,
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "LED blanc/ambre",
+      "colorTemperature": 4600,
+      "lumens": 310
+    },
+    "lens": {
+      "degreesMinMax": [40, 40]
+    }
+  },
+  "availableChannels": {
+    "White": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Ambre": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Amber"
+      }
+    },
+    "Dimmer": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Strobe": {
+      "capability": {
+        "type": "StrobeSpeed",
+        "speedStart": "0Hz",
+        "speedEnd": "20Hz"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "2 canaux (Blanc, Ambre)",
+      "channels": [
+        "White",
+        "Ambre"
+      ]
+    },
+    {
+      "name": "4 canaux (Blanc, Ambre, Dimmer, Strobe)",
+      "channels": [
+        "White",
+        "Ambre",
+        "Dimmer",
+        "Strobe"
+      ]
+    }
+  ]
+}
