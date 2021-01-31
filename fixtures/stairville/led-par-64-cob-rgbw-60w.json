@@ -1,0 +1,64 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "LED Par 64 COB RGBW 60W",
+  "shortName": "LED Par 64 COB RGBW 60W",
+  "categories": ["Color Changer", "Dimmer"],
+  "meta": {
+    "authors": ["Nicolas"],
+    "createDate": "2020-12-04",
+    "lastModifyDate": "2020-12-04"
+  },
+  "links": {
+    "manual": [
+      "https://img.static-thomann.de/pics/atg/atgdata/document/misc/334995_c_333906_334993_334994_334995_375066_375060_375059_375061_v3_fr_online.pdf"
+    ]
+  },
+  "physical": {
+    "dimensions": [280, 500, 200],
+    "weight": 2.88,
+    "power": 56,
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "LED COB"
+    }
+  },
+  "availableChannels": {
+    "Red": {
+      "defaultValue": "0%",
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "White": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "4 canaux",
+      "shortName": "4 canaux",
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    }
+  ]
+}
