@@ -1,0 +1,694 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "EVI-D70",
+  "categories": ["Moving Head"],
+  "meta": {
+    "authors": ["Bram "],
+    "createDate": "2020-11-25",
+    "lastModifyDate": "2020-11-25"
+  },
+  "links": {
+    "manual": [
+      "https://pro.sony/en_GR/support-resources/evi-d70-d70p-pal-/manual"
+    ],
+    "productPage": [
+      "https://pro.sony/en_GR/products/ptz-network-cameras/evi-d70-d70p-pal-"
+    ]
+  },
+  "physical": {
+    "dimensions": [132, 144, 144],
+    "weight": 0.95,
+    "power": 12,
+    "DMXconnector": "Visca",
+    "lens": {
+      "degreesMinMax": [2.7, 48]
+    }
+  },
+  "availableChannels": {
+    "Pan": {
+      "fineChannelAliases": ["Pan fine"],
+      "defaultValue": "50%",
+      "capability": {
+        "type": "Pan",
+        "angleStart": "-170deg",
+        "angleEnd": "-170deg"
+      }
+    },
+    "Tilt": {
+      "fineChannelAliases": ["Tilt fine"],
+      "defaultValue": "25%",
+      "capability": {
+        "type": "Tilt",
+        "angleStart": "-30deg",
+        "angleEnd": "90deg"
+      }
+    },
+    "Zoom": {
+      "fineChannelAliases": ["Zoom fine"],
+      "defaultValue": "0%",
+      "capability": {
+        "type": "Zoom",
+        "angleStart": "wide",
+        "angleEnd": "narrow"
+      }
+    },
+    "Focus": {
+      "fineChannelAliases": ["Focus fine"],
+      "dmxValueResolution": "8bit",
+      "defaultValue": "0%",
+      "capabilities": [
+        {
+          "dmxRange": [0, 0],
+          "type": "Effect",
+          "effectName": "AutoFocus",
+          "comment": "Autofocus"
+        },
+        {
+          "dmxRange": [1, 255],
+          "type": "Focus",
+          "distanceStart": "far",
+          "distanceEnd": "near"
+        }
+      ]
+    },
+    "Iris": {
+      "defaultValue": "0%",
+      "capabilities": [
+        {
+          "dmxRange": [0, 0],
+          "type": "Effect",
+          "effectName": "AutoExp",
+          "comment": "AutoExp"
+        },
+        {
+          "dmxRange": [1, 1],
+          "type": "Effect",
+          "effectName": "Close"
+        },
+        {
+          "dmxRange": [2, 15],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [16, 16],
+          "type": "Effect",
+          "effectName": "F22"
+        },
+        {
+          "dmxRange": [17, 30],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [31, 31],
+          "type": "Effect",
+          "effectName": "F19"
+        },
+        {
+          "dmxRange": [32, 45],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [46, 46],
+          "type": "Effect",
+          "effectName": "F16"
+        },
+        {
+          "dmxRange": [47, 60],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [61, 61],
+          "type": "Effect",
+          "effectName": "F14"
+        },
+        {
+          "dmxRange": [62, 75],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [76, 76],
+          "type": "Effect",
+          "effectName": "F11"
+        },
+        {
+          "dmxRange": [77, 90],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [91, 91],
+          "type": "Effect",
+          "effectName": "F9.6"
+        },
+        {
+          "dmxRange": [92, 105],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [106, 106],
+          "type": "Effect",
+          "effectName": "F8.0"
+        },
+        {
+          "dmxRange": [107, 120],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [121, 121],
+          "type": "Effect",
+          "effectName": "F6.8"
+        },
+        {
+          "dmxRange": [122, 134],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [135, 135],
+          "type": "Effect",
+          "effectName": "F5.6"
+        },
+        {
+          "dmxRange": [136, 149],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [150, 150],
+          "type": "Effect",
+          "effectName": "F4.8"
+        },
+        {
+          "dmxRange": [151, 164],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [165, 165],
+          "type": "Effect",
+          "effectName": "F4.0"
+        },
+        {
+          "dmxRange": [166, 179],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [180, 180],
+          "type": "Effect",
+          "effectName": "F3.4"
+        },
+        {
+          "dmxRange": [181, 194],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [195, 195],
+          "type": "Effect",
+          "effectName": "F2.8"
+        },
+        {
+          "dmxRange": [196, 209],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [210, 210],
+          "type": "Effect",
+          "effectName": "F2.4"
+        },
+        {
+          "dmxRange": [211, 224],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [225, 225],
+          "type": "Effect",
+          "effectName": "F2.0"
+        },
+        {
+          "dmxRange": [226, 239],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [240, 240],
+          "type": "Effect",
+          "effectName": "F1.6"
+        },
+        {
+          "dmxRange": [241, 254],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [255, 255],
+          "type": "Effect",
+          "effectName": "F1.4"
+        }
+      ]
+    },
+    "Shutter": {
+      "defaultValue": "0%",
+      "capabilities": [
+        {
+          "dmxRange": [0, 0],
+          "type": "Effect",
+          "effectName": "AutoExp",
+          "comment": "AutoExp"
+        },
+        {
+          "dmxRange": [1, 1],
+          "type": "Effect",
+          "effectName": "1 sec"
+        },
+        {
+          "dmxRange": [2, 12],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [13, 13],
+          "type": "Effect",
+          "effectName": "1/2 sec"
+        },
+        {
+          "dmxRange": [14, 24],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [25, 25],
+          "type": "Effect",
+          "effectName": "1/3 sec"
+        },
+        {
+          "dmxRange": [26, 36],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [37, 37],
+          "type": "Effect",
+          "effectName": "1/6 sec"
+        },
+        {
+          "dmxRange": [38, 48],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [49, 49],
+          "type": "Effect",
+          "effectName": "1/12 sec"
+        },
+        {
+          "dmxRange": [50, 60],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [61, 61],
+          "type": "Effect",
+          "effectName": "1/25 sec"
+        },
+        {
+          "dmxRange": [62, 73],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [74, 74],
+          "type": "Effect",
+          "effectName": "1/50sec"
+        },
+        {
+          "dmxRange": [75, 85],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [86, 86],
+          "type": "Effect",
+          "effectName": "1/75 sec"
+        },
+        {
+          "dmxRange": [87, 97],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [98, 98],
+          "type": "Effect",
+          "effectName": "1/100 sec"
+        },
+        {
+          "dmxRange": [99, 109],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [110, 110],
+          "type": "Effect",
+          "effectName": "1/120 sec"
+        },
+        {
+          "dmxRange": [111, 121],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [122, 122],
+          "type": "Effect",
+          "effectName": "1/150 sec"
+        },
+        {
+          "dmxRange": [123, 133],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [134, 134],
+          "type": "Effect",
+          "effectName": "1/215 sec"
+        },
+        {
+          "dmxRange": [135, 145],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [146, 146],
+          "type": "Effect",
+          "effectName": "1/300 sec"
+        },
+        {
+          "dmxRange": [147, 157],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [158, 158],
+          "type": "Effect",
+          "effectName": "1/425 sec"
+        },
+        {
+          "dmxRange": [159, 169],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [170, 170],
+          "type": "Effect",
+          "effectName": "1/600 sec"
+        },
+        {
+          "dmxRange": [171, 181],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [182, 182],
+          "type": "Effect",
+          "effectName": "1/1000 sec"
+        },
+        {
+          "dmxRange": [183, 194],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [195, 195],
+          "type": "Effect",
+          "effectName": "1/1250 sec"
+        },
+        {
+          "dmxRange": [196, 206],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [207, 207],
+          "type": "Effect",
+          "effectName": "1/1750 sec"
+        },
+        {
+          "dmxRange": [208, 218],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [219, 219],
+          "type": "Effect",
+          "effectName": "1/2500 sec"
+        },
+        {
+          "dmxRange": [220, 230],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [231, 231],
+          "type": "Effect",
+          "effectName": "1/3500 sec"
+        },
+        {
+          "dmxRange": [232, 242],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [243, 243],
+          "type": "Effect",
+          "effectName": "1/6000 sec"
+        },
+        {
+          "dmxRange": [244, 254],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [255, 255],
+          "type": "Effect",
+          "effectName": "1/10000 sec"
+        }
+      ]
+    },
+    "Gain": {
+      "defaultValue": "0%",
+      "capabilities": [
+        {
+          "dmxRange": [0, 0],
+          "type": "Effect",
+          "effectName": "Auto Exp"
+        },
+        {
+          "dmxRange": [1, 17],
+          "type": "Effect",
+          "effectName": "-3dB"
+        },
+        {
+          "dmxRange": [18, 34],
+          "type": "Effect",
+          "effectName": "0dB"
+        },
+        {
+          "dmxRange": [35, 51],
+          "type": "Effect",
+          "effectName": "+2dB"
+        },
+        {
+          "dmxRange": [52, 68],
+          "type": "Effect",
+          "effectName": "+4dB"
+        },
+        {
+          "dmxRange": [69, 85],
+          "type": "Effect",
+          "effectName": "+6dB"
+        },
+        {
+          "dmxRange": [86, 102],
+          "type": "Effect",
+          "effectName": "+8dB"
+        },
+        {
+          "dmxRange": [103, 119],
+          "type": "Effect",
+          "effectName": "+10dB"
+        },
+        {
+          "dmxRange": [120, 135],
+          "type": "Effect",
+          "effectName": "+12dB"
+        },
+        {
+          "dmxRange": [136, 152],
+          "type": "Effect",
+          "effectName": "+14dB"
+        },
+        {
+          "dmxRange": [153, 169],
+          "type": "Effect",
+          "effectName": "+16dB"
+        },
+        {
+          "dmxRange": [170, 186],
+          "type": "Effect",
+          "effectName": "+18dB"
+        },
+        {
+          "dmxRange": [187, 203],
+          "type": "Effect",
+          "effectName": "+20dB"
+        },
+        {
+          "dmxRange": [204, 220],
+          "type": "Effect",
+          "effectName": "+22dB"
+        },
+        {
+          "dmxRange": [221, 237],
+          "type": "Effect",
+          "effectName": "+24dB"
+        },
+        {
+          "dmxRange": [238, 254],
+          "type": "Effect",
+          "effectName": "+26dB"
+        },
+        {
+          "dmxRange": [255, 255],
+          "type": "Effect",
+          "effectName": "+28dB"
+        }
+      ]
+    },
+    "Pan Speed": {
+      "defaultValue": "100%",
+      "capability": {
+        "type": "PanTiltSpeed",
+        "speedStart": "slow",
+        "speedEnd": "fast"
+      }
+    },
+    "Tilt speed": {
+      "defaultValue": "100%",
+      "capability": {
+        "type": "PanTiltSpeed",
+        "speedStart": "slow",
+        "speedEnd": "fast"
+      }
+    },
+    "WhiteBalance": {
+      "defaultValue": "0%",
+      "capabilities": [
+        {
+          "dmxRange": [0, 9],
+          "type": "Effect",
+          "effectName": "AutoWB"
+        },
+        {
+          "dmxRange": [10, 19],
+          "type": "Effect",
+          "effectName": "Indoor"
+        },
+        {
+          "dmxRange": [20, 29],
+          "type": "Effect",
+          "effectName": "Outdoor"
+        },
+        {
+          "dmxRange": [30, 39],
+          "type": "Effect",
+          "effectName": "Manual"
+        },
+        {
+          "dmxRange": [40, 255],
+          "type": "NoFunction"
+        }
+      ]
+    },
+    "Mirror": {
+      "defaultValue": "0%",
+      "capabilities": [
+        {
+          "dmxRange": [0, 127],
+          "type": "Effect",
+          "effectName": "Mirror Off"
+        },
+        {
+          "dmxRange": [128, 255],
+          "type": "Effect",
+          "effectName": "Mirror On"
+        }
+      ]
+    },
+    "Freeze": {
+      "defaultValue": "0%",
+      "capabilities": [
+        {
+          "dmxRange": [0, 127],
+          "type": "Effect",
+          "effectName": "Freeze Off"
+        },
+        {
+          "dmxRange": [128, 255],
+          "type": "Effect",
+          "effectName": "Freeze On"
+        }
+      ]
+    },
+    "Infrared": {
+      "defaultValue": "0%",
+      "capabilities": [
+        {
+          "dmxRange": [0, 127],
+          "type": "Effect",
+          "effectName": "Infrared Off"
+        },
+        {
+          "dmxRange": [128, 255],
+          "type": "Effect",
+          "effectName": "Infrared On"
+        }
+      ]
+    },
+    "FX": {
+      "defaultValue": "0%",
+      "capabilities": [
+        {
+          "dmxRange": [0, 9],
+          "type": "Effect",
+          "effectName": "No FX"
+        },
+        {
+          "dmxRange": [10, 19],
+          "type": "Effect",
+          "effectName": "Negative"
+        },
+        {
+          "dmxRange": [20, 29],
+          "type": "Effect",
+          "effectName": "BlackWhite"
+        },
+        {
+          "dmxRange": [30, 255],
+          "type": "NoFunction"
+        }
+      ]
+    },
+    "Red": {
+      "defaultValue": "80%",
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Blue": {
+      "defaultValue": "60%",
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "sACN  (Raspberry Pi)",
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Zoom",
+        "Zoom fine",
+        "Focus",
+        "Focus fine",
+        "Iris",
+        "Shutter",
+        "Gain",
+        "Pan Speed",
+        "Tilt speed",
+        "WhiteBalance",
+        "Mirror",
+        "Freeze",
+        "Infrared",
+        "FX",
+        "Red",
+        "Blue"
+      ]
+    }
+  ]
+}

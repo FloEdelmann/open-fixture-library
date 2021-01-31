@@ -415,6 +415,10 @@
     "comment": "Store brand of electronics retailer ProSound And Stage Lighting.",
     "website": "https://www.pssl.com/collections/solena-professional"
   },
+  "sony": {
+    "name": "Sony",
+    "website": "https://pro.sony/en_GR/home"
+  },
   "soundlight": {
     "name": "SoundLight",
     "website": "http://www.soundlight.de/",
