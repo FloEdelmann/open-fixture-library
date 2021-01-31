@@ -463,5 +463,10 @@
     "name": "Venue",
     "comment": "Venue by Proline",
     "website": "https://venuelightingeffects.com/"
+  },
+  "von-hippel-gmbh": {
+    "name": "von Hippel GmbH",
+    "comment": "Animatronics",
+    "website": "https://von-hippel.de"
   }
 }

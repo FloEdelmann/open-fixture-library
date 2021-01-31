@@ -1,0 +1,44 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "CRD",
+  "shortName": "Cartoon Reindeer",
+  "categories": ["Other"],
+  "meta": {
+    "authors": ["Jens Kracht"],
+    "createDate": "2020-12-02",
+    "lastModifyDate": "2020-12-02"
+  },
+  "links": {
+    "productPage": [
+      "https://von-hippel.de"
+    ]
+  },
+  "physical": {
+    "weight": 13
+  },
+  "availableChannels": {
+    "CRD-K-L": {
+      "defaultValue": 1,
+      "capability": {
+        "type": "Effect",
+        "effectName": "Head laterally left lift/reduce"
+      }
+    },
+    "CRD-K-R": {
+      "defaultValue": 2,
+      "capability": {
+        "type": "Effect",
+        "effectName": "Head laterally right lift/reduce"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "CRD",
+      "channels": [
+        "CRD-K-L",
+        "CRD-K-R"
+      ]
+    }
+  ]
+}
