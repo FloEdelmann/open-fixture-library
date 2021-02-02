@@ -1,0 +1,100 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "irLEDFLAT5x12SIXb-Air",
+  "categories": ["Color Changer", "Dimmer", "Strobe"],
+  "meta": {
+    "authors": ["Laurent"],
+    "createDate": "2020-12-05",
+    "lastModifyDate": "2020-12-05"
+  },
+  "links": {
+    "manual": [
+      "http://www.contest-lighting.com/downloads/IrLEDFLAT-5x12SIXair_manuel-V1-web-fr.pdf"
+    ]
+  },
+  "physical": {
+    "dimensions": [240, 265, 110],
+    "weight": 2.8,
+    "power": 80,
+    "DMXconnector": "3-pin XLR IP65",
+    "lens": {
+      "degreesMinMax": [40, 40]
+    }
+  },
+  "availableChannels": {
+    "Red": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "White": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Amber": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Amber"
+      }
+    },
+    "UV": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "UV"
+      }
+    },
+    "Dimmer": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Strobe": {
+      "capability": {
+        "type": "StrobeSpeed",
+        "speedStart": "0Hz",
+        "speedEnd": "20Hz"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "6 ch RVBWA UV",
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV"
+      ]
+    },
+    {
+      "name": "8 ch RVBWA UV dimmer Strobe",
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "Dimmer",
+        "Strobe"
+      ]
+    }
+  ]
+}
