@@ -1,0 +1,80 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "irLEDFLAT5x5QCb",
+  "shortName": "projecteur LED 4 couleurs",
+  "categories": ["Color Changer", "Dimmer", "Strobe"],
+  "meta": {
+    "authors": ["Laurent"],
+    "createDate": "2020-12-05",
+    "lastModifyDate": "2020-12-05"
+  },
+  "links": {
+    "productPage": [
+      "http://www.contest-lighting.com/downloads/IrLEDFLAT-5x5QC_manuel-V1-2011-12.pdf"
+    ]
+  },
+  "physical": {
+    "dimensions": [240, 265, 110],
+    "weight": 2.8,
+    "power": 30,
+    "DMXconnector": "3-pin XLR IP65",
+    "bulb": {
+      "lumens": 640
+    },
+    "lens": {
+      "degreesMinMax": [40, 40]
+    }
+  },
+  "availableChannels": {
+    "Red": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Dimmer": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Strobe": {
+      "capability": {
+        "type": "StrobeSpeed",
+        "speedStart": "0Hz",
+        "speedEnd": "20Hz"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "3 channels red green blue",
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "5 channels red green blue dimmer strombe",
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Dimmer",
+        "Strobe"
+      ]
+    }
+  ]
+}
