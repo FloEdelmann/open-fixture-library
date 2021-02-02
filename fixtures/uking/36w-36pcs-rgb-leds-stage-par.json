@@ -1,0 +1,47 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "36W 36pcs RGB LEDs Stage Par",
+  "shortName": "Par 36",
+  "categories": ["Color Changer"],
+  "meta": {
+    "authors": ["Mr.Toxman "],
+    "createDate": "2020-10-05",
+    "lastModifyDate": "2020-10-05"
+  },
+  "links": {
+    "manual": [
+      "https://www.uking-online.com/product/uking-36w-36pcs-rgb-leds-stage-par-lighting-dmx512-sound-active-for-party-wedding/"
+    ],
+    "productPage": [
+      "https://www.uking-online.com/product/uking-36w-36pcs-rgb-leds-stage-par-lighting-dmx512-sound-active-for-party-wedding/",
+      "https://www.uking-online.com/product/uking-36w-36pcs-rgb-leds-stage-par-lighting-dmx512-sound-active-for-party-wedding/"
+    ]
+  },
+  "physical": {
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "36LED "
+    },
+    "lens": {
+      "name": "LED ",
+      "degreesMinMax": [0, 30]
+    }
+  },
+  "availableChannels": {
+    "Dimmer": {
+      "defaultValue": 1,
+      "capability": {
+        "type": "Intensity",
+        "brightness": "off"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "RGB ",
+      "channels": [
+        "Dimmer"
+      ]
+    }
+  ]
+}
