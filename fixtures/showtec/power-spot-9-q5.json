@@ -1,0 +1,74 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "Power Spot 9 Q5",
+  "shortName": "Spectral",
+  "categories": ["Other"],
+  "meta": {
+    "authors": ["Eaurélight"],
+    "createDate": "2020-12-12",
+    "lastModifyDate": "2020-12-12"
+  },
+  "links": {
+    "manual": [
+      "https://www.highlite.com/fr/42575-power-spot-9-q5.html"
+    ]
+  },
+  "availableChannels": {
+    "Red": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "White": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Amber": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Amber"
+      }
+    },
+    "Intensity": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Strobe": {
+      "capability": {
+        "type": "StrobeSpeed",
+        "speedStart": "0%",
+        "speedEnd": "255%"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "7",
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "Intensity",
+        "Strobe"
+      ]
+    }
+  ]
+}
