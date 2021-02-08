@@ -1,0 +1,48 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "Z-350 FAZE (fog machine)",
+  "categories": ["Smoke"],
+  "meta": {
+    "authors": ["Laurent"],
+    "createDate": "2020-12-05",
+    "lastModifyDate": "2020-12-05"
+  },
+  "links": {
+    "manual": [
+      "https://antari.com/product-downloads/"
+    ]
+  },
+  "physical": {
+    "dimensions": [320, 153, 391],
+    "weight": 8.82,
+    "DMXconnector": "3-pin XLR IP65"
+  },
+  "availableChannels": {
+    "Haze": {
+      "highlightValue": 1,
+      "constant": true,
+      "capability": {
+        "type": "Fog",
+        "fogType": "Haze"
+      }
+    },
+    "Fog Intensity": {
+      "highlightValue": 2,
+      "constant": true,
+      "capability": {
+        "type": "FogOutput",
+        "fogOutputStart": "weak",
+        "fogOutputEnd": "strong"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "2 ch haze fan",
+      "channels": [
+        "Haze",
+        "Fog Intensity"
+      ]
+    }
+  ]
+}
