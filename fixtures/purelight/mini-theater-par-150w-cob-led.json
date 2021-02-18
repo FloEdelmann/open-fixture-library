@@ -1,0 +1,69 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "Mini Theater PAR 150W COB LED",
+  "shortName": "Mini Theater PAR",
+  "categories": ["Dimmer"],
+  "meta": {
+    "authors": ["Luis "],
+    "createDate": "2020-05-10",
+    "lastModifyDate": "2020-05-10"
+  },
+  "links": {
+    "manual": [
+      "https://www.musicstore.de/INTERSHOP/web/WFS/MusicStore-MusicStoreShop-Site/de_DE/-/EUR/ViewProductAttachment-ResolveManualURL?File=DE_LIG0016694-000.pdf"
+    ],
+    "productPage": [
+      "https://www.musicstore.de/de_DE/EUR/PURElight-Mini-Theater-PAR-150W-COB-LED/art-LIG0016694-000"
+    ]
+  },
+  "physical": {
+    "dimensions": [100, 250, 140],
+    "weight": 2.4,
+    "power": 150,
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "LED",
+      "colorTemperature": 3200,
+      "lumens": 2255
+    },
+    "lens": {
+      "name": "Fresnel",
+      "degreesMinMax": [30, 30]
+    }
+  },
+  "availableChannels": {
+    "Dimmer": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Shutter / Strobe": {
+      "capability": {
+        "type": "StrobeSpeed",
+        "speedStart": "slow",
+        "speedEnd": "fast"
+      }
+    },
+    "Master Dimmer": {
+      "capability": {
+        "type": "Intensity"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "1ch",
+      "channels": [
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "3ch",
+      "channels": [
+        "Master Dimmer",
+        "Shutter / Strobe",
+        "Dimmer"
+      ]
+    }
+  ]
+}
