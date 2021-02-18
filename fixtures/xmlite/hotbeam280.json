@@ -1,0 +1,53 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "HotBeam280",
+  "shortName": "280",
+  "categories": ["Moving Head", "Color Changer", "Flower"],
+  "meta": {
+    "authors": ["zl"],
+    "createDate": "2020-07-03",
+    "lastModifyDate": "2020-07-03"
+  },
+  "links": {
+    "manual": [
+      "http://www.movinghead.net/cn/product/stagelighting/moving_head_light/show111.html"
+    ],
+    "productPage": [
+      "http://www.movinghead.net/cn/product/stagelighting/moving_head_light/show111.html"
+    ]
+  },
+  "rdm": {
+    "modelId": 1,
+    "softwareVersion": "1.1"
+  },
+  "physical": {
+    "weight": 16,
+    "power": 470,
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "YODN MSD 280 R10",
+      "colorTemperature": 4000,
+      "lumens": 12000
+    }
+  },
+  "availableChannels": {
+    "Cyan": {
+      "fineChannelAliases": ["Cyan fine"],
+      "defaultValue": 12,
+      "capability": {
+        "type": "ShutterStrobe",
+        "shutterEffect": "Open"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "24",
+      "rdmPersonalityIndex": 1,
+      "channels": [
+        "Cyan",
+        "Cyan fine"
+      ]
+    }
+  ]
+}
