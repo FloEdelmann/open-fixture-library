@@ -1,0 +1,472 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "DM-RGB400",
+  "shortName": "DM-RGB400",
+  "categories": ["Laser"],
+  "meta": {
+    "authors": ["Jason dinAlt"],
+    "createDate": "2020-07-02",
+    "lastModifyDate": "2020-07-02"
+  },
+  "comment": "The documentation is pretty sketchy on this device. A fair amount of the information was derived experimentally.",
+  "links": {
+    "manual": [
+      "http://www.bsl-lighting.com/wp-content/uploads/2015/01/FLASH-RGB-400-Manual.pdf"
+    ],
+    "other": [
+      "https://www.amazon.com/Sumger-Professional-Projector-illumination-Activated/dp/B07GJHX9W8/ref=sr_1_2?dchild=1&keywords=DM-RGB400&qid=1593722573&sr=8-2",
+      "https://forums.pioneerdj.com/hc/en-us/community/posts/360048262911-Sumger-DM-RGB400-Professional-DMX512-LED-Stage-Light-RGB-Laser-Scanner"
+    ]
+  },
+  "physical": {
+    "dimensions": [400, 180, 280],
+    "weight": 1.1,
+    "power": 18,
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "Laser"
+    }
+  },
+  "availableChannels": {
+    "Mode Selection": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 63],
+          "type": "Effect",
+          "effectName": "Blackout",
+          "comment": "Blackout"
+        },
+        {
+          "dmxRange": [64, 127],
+          "type": "Effect",
+          "effectName": "Auto mode",
+          "comment": "Auto"
+        },
+        {
+          "dmxRange": [128, 191],
+          "type": "Effect",
+          "effectName": "Sound mode",
+          "soundControlled": true,
+          "comment": "Sound"
+        },
+        {
+          "dmxRange": [192, 255],
+          "type": "Effect",
+          "effectName": "Manual mode",
+          "comment": "Manual"
+        }
+      ]
+    },
+    "Pattern": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 7],
+          "type": "Effect",
+          "effectName": "Circle",
+          "comment": "Circle"
+        },
+        {
+          "dmxRange": [8, 15],
+          "type": "Effect",
+          "effectName": "Polygon",
+          "comment": "Polygon"
+        },
+        {
+          "dmxRange": [16, 23],
+          "type": "Effect",
+          "effectName": "Triangle",
+          "comment": "Triangle"
+        },
+        {
+          "dmxRange": [24, 31],
+          "type": "Effect",
+          "effectName": "Square -- distorted",
+          "comment": "Square -- distorted"
+        },
+        {
+          "dmxRange": [32, 39],
+          "type": "Effect",
+          "effectName": "Square -- clean",
+          "comment": "Square -- clean"
+        },
+        {
+          "dmxRange": [40, 47],
+          "type": "Effect",
+          "effectName": "Square-in-square",
+          "comment": "Square-in-square"
+        },
+        {
+          "dmxRange": [48, 55],
+          "type": "Effect",
+          "effectName": "Plus -- bold",
+          "comment": "Plus -- bold"
+        },
+        {
+          "dmxRange": [56, 63],
+          "type": "Effect",
+          "effectName": "Star",
+          "comment": "Star"
+        },
+        {
+          "dmxRange": [64, 71],
+          "type": "Effect",
+          "effectName": "\"L\"",
+          "comment": "\"L\""
+        },
+        {
+          "dmxRange": [72, 79],
+          "type": "Effect",
+          "effectName": "Infinity",
+          "comment": "Infinity"
+        },
+        {
+          "dmxRange": [80, 87],
+          "type": "Effect",
+          "effectName": "Spiral",
+          "comment": "Spiral"
+        },
+        {
+          "dmxRange": [88, 95],
+          "type": "Effect",
+          "effectName": "\"9C\"",
+          "comment": "9C"
+        },
+        {
+          "dmxRange": [96, 103],
+          "type": "Effect",
+          "effectName": "\"P\"",
+          "comment": "\"P\""
+        },
+        {
+          "dmxRange": [104, 111],
+          "type": "Effect",
+          "effectName": "\"(  )\"",
+          "comment": "\"(  )\""
+        },
+        {
+          "dmxRange": [112, 119],
+          "type": "Effect",
+          "effectName": "Sunglasses",
+          "comment": "Sunglasses"
+        },
+        {
+          "dmxRange": [120, 127],
+          "type": "Effect",
+          "effectName": "Zig-zag",
+          "comment": "Zig-zag"
+        },
+        {
+          "dmxRange": [128, 135],
+          "type": "Effect",
+          "effectName": "\"V\"",
+          "speedStart": "slow CW",
+          "speedEnd": "fast CW",
+          "comment": "\"V\""
+        },
+        {
+          "dmxRange": [136, 143],
+          "type": "Effect",
+          "effectName": "\"M\"",
+          "comment": "\"M\""
+        },
+        {
+          "dmxRange": [144, 151],
+          "type": "Effect",
+          "effectName": "Ladder",
+          "comment": "Ladder"
+        },
+        {
+          "dmxRange": [152, 159],
+          "type": "Effect",
+          "effectName": "Line",
+          "comment": "Line"
+        },
+        {
+          "dmxRange": [160, 167],
+          "type": "Effect",
+          "effectName": "\"- - -\"",
+          "comment": "\"- - -\""
+        },
+        {
+          "dmxRange": [168, 175],
+          "type": "Effect",
+          "effectName": "\"---\"",
+          "comment": "\"---\""
+        },
+        {
+          "dmxRange": [176, 183],
+          "type": "Effect",
+          "effectName": "Parallel Lines",
+          "comment": "Parallel Lines"
+        },
+        {
+          "dmxRange": [184, 191],
+          "type": "Effect",
+          "effectName": "Plus -- narrow",
+          "comment": "Plus -- narrow"
+        },
+        {
+          "dmxRange": [192, 199],
+          "type": "Effect",
+          "effectName": "Parallel Lines -- offset",
+          "comment": "Parallel Lines -- offset"
+        },
+        {
+          "dmxRange": [200, 207],
+          "type": "Effect",
+          "effectName": "Corners",
+          "comment": "Corners"
+        },
+        {
+          "dmxRange": [208, 215],
+          "type": "Effect",
+          "effectName": "Squares x 2",
+          "comment": "Squares x 2"
+        },
+        {
+          "dmxRange": [216, 223],
+          "type": "Effect",
+          "effectName": "Squares x 4",
+          "comment": "Squares x 4"
+        },
+        {
+          "dmxRange": [224, 231],
+          "type": "Effect",
+          "effectName": "Square -- small, offset",
+          "comment": "Square -- small, offset"
+        },
+        {
+          "dmxRange": [232, 239],
+          "type": "Effect",
+          "effectName": "Dash x 8",
+          "comment": "Dash x 8"
+        },
+        {
+          "dmxRange": [240, 247],
+          "type": "Effect",
+          "effectName": "Dot-Crescent",
+          "comment": "Dot-Crescent"
+        },
+        {
+          "dmxRange": [248, 255],
+          "type": "Effect",
+          "effectName": "Dot-Cloud",
+          "comment": "Dot-Cloud"
+        }
+      ]
+    },
+    "Zoom": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 127],
+          "type": "Zoom",
+          "angleStart": "wide",
+          "angleEnd": "narrow",
+          "comment": "Manual size adjustment"
+        },
+        {
+          "dmxRange": [128, 191],
+          "type": "Speed",
+          "speedStart": "slow",
+          "speedEnd": "fast",
+          "comment": "Zoom in speed"
+        },
+        {
+          "dmxRange": [192, 255],
+          "type": "Speed",
+          "speedStart": "slow reverse",
+          "speedEnd": "fast reverse",
+          "comment": "Zoom out speed"
+        }
+      ]
+    },
+    "X Rotation": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 127],
+          "type": "Rotation",
+          "angleStart": "0deg",
+          "angleEnd": "360deg",
+          "comment": "Manual x-axis rotation"
+        },
+        {
+          "dmxRange": [128, 191],
+          "type": "Rotation",
+          "speedStart": "slow CW",
+          "speedEnd": "fast CW",
+          "comment": "Auto x-axis rotation"
+        },
+        {
+          "dmxRange": [192, 255],
+          "type": "Rotation",
+          "speedStart": "slow CCW",
+          "speedEnd": "fast CCW",
+          "comment": "Auto x-axis rotation"
+        }
+      ]
+    },
+    "Y Rotation": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 127],
+          "type": "Rotation",
+          "angleStart": "0deg",
+          "angleEnd": "360deg",
+          "comment": "Manual Y-axis rotation"
+        },
+        {
+          "dmxRange": [128, 191],
+          "type": "Rotation",
+          "speedStart": "slow CW",
+          "speedEnd": "fast CW",
+          "comment": "Auto Y-axis rotation"
+        },
+        {
+          "dmxRange": [192, 255],
+          "type": "Rotation",
+          "speedStart": "slow CCW",
+          "speedEnd": "fast CCW",
+          "comment": "Auto Y-axis rotation"
+        }
+      ]
+    },
+    "Z Rotation": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 127],
+          "type": "Rotation",
+          "angleStart": "0deg",
+          "angleEnd": "360deg",
+          "comment": "Manual Z-axis rotation"
+        },
+        {
+          "dmxRange": [128, 191],
+          "type": "Rotation",
+          "speedStart": "slow CW",
+          "speedEnd": "fast CW",
+          "comment": "Auto Z-axis rotation"
+        },
+        {
+          "dmxRange": [192, 255],
+          "type": "Rotation",
+          "speedStart": "slow CCW",
+          "speedEnd": "fast CCW",
+          "comment": "Auto Z-axis rotation"
+        }
+      ]
+    },
+    "X": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 127],
+          "type": "BeamPosition",
+          "horizontalAngleStart": "0deg",
+          "horizontalAngleEnd": "360deg",
+          "comment": "Manual X Offset"
+        },
+        {
+          "dmxRange": [128, 191],
+          "type": "Speed",
+          "speedStart": "slow",
+          "speedEnd": "fast",
+          "comment": "Auto X Offset"
+        },
+        {
+          "dmxRange": [192, 255],
+          "type": "Speed",
+          "speedStart": "slow reverse",
+          "speedEnd": "fast reverse",
+          "comment": "Auto X Offset"
+        }
+      ]
+    },
+    "Y": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 127],
+          "type": "BeamPosition",
+          "verticalAngleStart": "0deg",
+          "verticalAngleEnd": "360deg",
+          "comment": "Manual Y-position"
+        },
+        {
+          "dmxRange": [128, 191],
+          "type": "Speed",
+          "speedStart": "slow",
+          "speedEnd": "fast",
+          "comment": "Auto Y-position"
+        },
+        {
+          "dmxRange": [192, 255],
+          "type": "Speed",
+          "speedStart": "slow reverse",
+          "speedEnd": "fast reverse",
+          "comment": "Auto Y-position"
+        }
+      ]
+    },
+    "Color Presets": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 63],
+          "type": "ColorPreset",
+          "comment": "White",
+          "colors": ["#ffffff"]
+        },
+        {
+          "dmxRange": [64, 95],
+          "type": "ColorPreset",
+          "comment": "Red",
+          "colors": ["#ff0000"]
+        },
+        {
+          "dmxRange": [96, 127],
+          "type": "ColorPreset",
+          "comment": "Green",
+          "colors": ["#00ff00"]
+        },
+        {
+          "dmxRange": [128, 159],
+          "type": "ColorPreset",
+          "comment": "Blue",
+          "colors": ["#0000ff"]
+        },
+        {
+          "dmxRange": [160, 191],
+          "type": "ColorPreset",
+          "comment": "Yellow",
+          "colors": ["#ffff00"]
+        },
+        {
+          "dmxRange": [192, 223],
+          "type": "ColorPreset",
+          "comment": "Magenta",
+          "colors": ["#ff00ff"]
+        },
+        {
+          "dmxRange": [224, 255],
+          "type": "ColorPreset",
+          "comment": "Cyan",
+          "colors": ["#00ffff"]
+        }
+      ]
+    }
+  },
+  "modes": [
+    {
+      "name": "DMX",
+      "shortName": "DMX",
+      "channels": [
+        "Mode Selection",
+        "Pattern",
+        "Zoom",
+        "X Rotation",
+        "Y Rotation",
+        "Z Rotation",
+        "X",
+        "Y",
+        "Color Presets"
+      ]
+    }
+  ]
+}
