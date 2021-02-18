@@ -463,5 +463,10 @@
     "name": "Venue",
     "comment": "Venue by Proline",
     "website": "https://venuelightingeffects.com/"
+  },
+  "xmlite": {
+    "name": "XMLITE",
+    "website": "http://www.movinghead.net",
+    "rdmId": 1
   }
 }
