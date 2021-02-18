@@ -1,0 +1,45 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "614SX",
+  "categories": ["Dimmer"],
+  "meta": {
+    "authors": ["Nino"],
+    "createDate": "2020-05-24",
+    "lastModifyDate": "2020-05-24"
+  },
+  "links": {
+    "manual": [
+      "https://www.la-bs.com/Objets/614SX_A_dt.pdf"
+    ],
+    "productPage": [
+      "https://www.robertjuliat.com/Product_Specifications/Fiches_FR/Standard/DSFR049_614SX.pdf"
+    ]
+  },
+  "physical": {
+    "dimensions": [330, 240, 740],
+    "weight": 12.5,
+    "power": 1000,
+    "bulb": {
+      "type": "tungsten",
+      "colorTemperature": 3400
+    }
+  },
+  "availableChannels": {
+    "Dimmer": {
+      "capability": {
+        "type": "Intensity",
+        "brightnessStart": "0%",
+        "brightnessEnd": "100%",
+        "comment": "only with an external dimmer"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "Dimmer",
+      "channels": [
+        "Dimmer"
+      ]
+    }
+  ]
+}
