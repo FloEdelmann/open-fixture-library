@@ -1,0 +1,144 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "LED Z-200 TCL",
+  "categories": ["Effect"],
+  "meta": {
+    "authors": ["Heiko Fanieng"],
+    "createDate": "2020-05-03",
+    "lastModifyDate": "2020-05-03"
+  },
+  "links": {
+    "manual": [
+      "https://www.steinigke.de/download/51918516-Anleitung-58253-1.100-eurolite-led-z-200-strahleneffekt-de_en.pdf"
+    ],
+    "productPage": [
+      "https://www.steinigke.de/de/mpn51918516-eurolite-led-z-200-strahleneffekt.html"
+    ],
+    "video": [
+      "https://www.steinigke.de/download/51918516-Video-55873-eurolite-led-z-200-strahleneffekt-de_en_es_fr.flv"
+    ]
+  },
+  "physical": {
+    "dimensions": [360, 380, 280],
+    "weight": 2.45,
+    "power": 40,
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "LED TCL"
+    }
+  },
+  "availableChannels": {
+    "Motor Rotation": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 20],
+          "type": "Rotation",
+          "speedStart": "stop",
+          "speedEnd": "stop",
+          "comment": "No rotation"
+        },
+        {
+          "dmxRange": [21, 170],
+          "type": "Rotation",
+          "speedStart": "slow CW",
+          "speedEnd": "slow CW",
+          "comment": "Step by step counter clockwise rotation"
+        },
+        {
+          "dmxRange": [171, 255],
+          "type": "Rotation",
+          "speedStart": "slow CW",
+          "speedEnd": "slow CCW",
+          "comment": "Clockwise and counter clockwise rotation"
+        }
+      ]
+    },
+    "LED effects": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 35],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open",
+          "comment": "All LEDs on"
+        },
+        {
+          "dmxRange": [36, 70],
+          "type": "Effect",
+          "effectName": "Strobe-effect",
+          "speedStart": "1Hz",
+          "speedEnd": "34Hz",
+          "comment": "Strobe-effect"
+        },
+        {
+          "dmxRange": [71, 105],
+          "type": "Effect",
+          "effectName": "Fade",
+          "comment": "Fade"
+        },
+        {
+          "dmxRange": [106, 140],
+          "type": "Effect",
+          "effectName": "Color-change",
+          "comment": "Color-change"
+        },
+        {
+          "dmxRange": [141, 175],
+          "type": "Effect",
+          "effectName": "Color-change + strobe",
+          "comment": "Color-change + strobe"
+        },
+        {
+          "dmxRange": [176, 210],
+          "type": "Effect",
+          "effectName": "Cross-fade",
+          "comment": "Cross-fade"
+        },
+        {
+          "dmxRange": [211, 255],
+          "type": "Effect",
+          "effectName": "Cross-fade + strobe",
+          "comment": "Cross-fade + strobe"
+        }
+      ]
+    },
+    "Speed settings for control channel 2": {
+      "capability": {
+        "type": "Speed",
+        "speedStart": "slow",
+        "speedEnd": "fast",
+        "comment": "Increasing speed"
+      }
+    },
+    "Red": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "6chan",
+      "channels": [
+        "Motor Rotation",
+        "LED effects",
+        "Speed settings for control channel 2",
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    }
+  ]
+}
