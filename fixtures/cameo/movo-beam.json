@@ -1,0 +1,113 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "MOVO BEAM",
+  "shortName": "LED",
+  "categories": ["Dimmer", "Color Changer", "Effect", "Moving Head", "Strobe"],
+  "meta": {
+    "authors": ["FLORENT"],
+    "createDate": "2020-06-22",
+    "lastModifyDate": "2020-06-22"
+  },
+  "links": {
+    "manual": [
+      "https://www.thomann.de/fr/adj_ikon_profile.htm"
+    ]
+  },
+  "physical": {
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "colorTemperature": 6000
+    }
+  },
+  "availableChannels": {
+    "Strobe": {
+      "defaultValue": 15,
+      "capability": {
+        "type": "ShutterStrobe",
+        "shutterEffect": "Open"
+      }
+    },
+    "Dimer": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "DIMER MOD": {
+      "capability": {
+        "type": "Generic",
+        "comment": "COURBES"
+      }
+    },
+    "Pan": {
+      "fineChannelAliases": ["Pan fine"],
+      "capability": {
+        "type": "Pan",
+        "angleStart": "50%",
+        "angleEnd": "50%"
+      }
+    },
+    "Pan inf": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 5],
+          "type": "PanContinuous",
+          "speed": "fast CW"
+        },
+        {
+          "dmxRange": [6, 126],
+          "type": "PanContinuous",
+          "speedStart": "fast CW",
+          "speedEnd": "slow CW"
+        },
+        {
+          "dmxRange": [127, 128],
+          "type": "PanContinuous",
+          "speed": "stop"
+        },
+        {
+          "dmxRange": [129, 255],
+          "type": "PanContinuous",
+          "speed": "fast CCW"
+        }
+      ]
+    },
+    "Tilt ": {
+      "fineChannelAliases": ["Tilt  fine"],
+      "capability": {
+        "type": "Tilt",
+        "angleStart": "0%",
+        "angleEnd": "100%"
+      }
+    },
+    "Pan 2": {
+      "name": "Pan",
+      "fineChannelAliases": ["Pan 2 fine"],
+      "constant": true,
+      "capability": {
+        "type": "Pan",
+        "angleStart": "0%",
+        "angleEnd": "100%"
+      }
+    },
+    "Pan 3": {
+      "name": "Pan",
+      "fineChannelAliases": ["Pan 3 fine"],
+      "capability": {
+        "type": "Pan",
+        "angleStart": "0%",
+        "angleEnd": "100%"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "15 ch",
+      "channels": [
+        "Tilt ",
+        "Tilt  fine",
+        "Pan 3",
+        "Pan 3 fine"
+      ]
+    }
+  ]
+}
