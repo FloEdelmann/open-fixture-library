@@ -1,0 +1,54 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "IKON PROFILE",
+  "categories": ["Other", "Dimmer", "Strobe"],
+  "meta": {
+    "authors": ["FLORENT"],
+    "createDate": "2020-06-22",
+    "lastModifyDate": "2020-06-22"
+  },
+  "links": {
+    "manual": [
+      "https://www.thomann.de/fr/adj_ikon_profile.htm"
+    ]
+  },
+  "rdm": {
+    "modelId": 1
+  },
+  "physical": {
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "colorTemperature": 6000
+    }
+  },
+  "availableChannels": {
+    "Strobe": {
+      "defaultValue": 15,
+      "capability": {
+        "type": "ShutterStrobe",
+        "shutterEffect": "Open"
+      }
+    },
+    "DIMER": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Dimer Mod": {
+      "capability": {
+        "type": "Generic",
+        "comment": "DIM MOD"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "3 Chanel",
+      "channels": [
+        "Strobe",
+        "DIMER",
+        "Dimer Mod"
+      ]
+    }
+  ]
+}
