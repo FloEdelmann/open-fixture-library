@@ -1,0 +1,37 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "MercyTM",
+  "shortName": "Prueba",
+  "categories": ["Matrix", "Smoke"],
+  "meta": {
+    "authors": ["Radixshoter"],
+    "createDate": "2020-06-30",
+    "lastModifyDate": "2020-06-30"
+  },
+  "comment": "Prueba128",
+  "links": {
+    "video": [
+      "https://discord.gg/RkZU6sm"
+    ]
+  },
+  "availableChannels": {
+    "Fog": {
+      "highlightValue": 2,
+      "precedence": "HTP",
+      "capability": {
+        "type": "Fog",
+        "fogType": "Fog",
+        "fogOutput": "strong"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "MercyTM",
+      "shortName": "MercyTM",
+      "channels": [
+        "Fog"
+      ]
+    }
+  ]
+}
