@@ -1,0 +1,140 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "RUSH BLINDER 1 WW",
+  "categories": ["Blinder", "Dimmer", "Strobe"],
+  "meta": {
+    "authors": ["Dark Llama"],
+    "createDate": "2020-06-01",
+    "lastModifyDate": "2020-06-01"
+  },
+  "comment": "Some of the control/shutter channels are not complete due to no matching parameters in OFL.",
+  "links": {
+    "manual": [
+      "https://www.martin.com/en/site_elements/rush-blinder-1-ww-user-manual"
+    ],
+    "productPage": [
+      "https://www.martin.com/en/products/rush-blinder-1-ww"
+    ]
+  },
+  "physical": {
+    "dimensions": [441, 177, 400],
+    "weight": 9.5,
+    "power": 448,
+    "DMXconnector": "3-pin and 5-pin",
+    "bulb": {
+      "type": "2x2 100W COB WW LEDs"
+    },
+    "lens": {
+      "degreesMinMax": [70, 70]
+    }
+  },
+  "availableChannels": {
+    "Dimmer": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Dimmer, Lamp 1": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Dimmer, Lamp 2": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Dimmer, Lamp 3": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Dimmer, Lamp 4": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Shutter": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 7],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Closed"
+        },
+        {
+          "dmxRange": [8, 15],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open"
+        },
+        {
+          "dmxRange": [16, 131],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Strobe",
+          "speedStart": "slow",
+          "speedEnd": "fast"
+        },
+        {
+          "dmxRange": [132, 239],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [240, 247],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Strobe",
+          "speedStart": "slow",
+          "speedEnd": "fast",
+          "randomTiming": true
+        },
+        {
+          "dmxRange": [248, 255],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open"
+        }
+      ]
+    },
+    "Master Dimmer": {
+      "fineChannelAliases": ["Master Dimmer fine"],
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Control": {
+      "capability": {
+        "type": "NoFunction"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "1 Channel",
+      "shortName": "1ch",
+      "channels": [
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "4 Channel",
+      "shortName": "4ch",
+      "channels": [
+        "Dimmer, Lamp 1",
+        "Dimmer, Lamp 2",
+        "Dimmer, Lamp 3",
+        "Dimmer, Lamp 4"
+      ]
+    },
+    {
+      "name": "8 Channel",
+      "shortName": "8ch",
+      "channels": [
+        "Shutter",
+        "Master Dimmer",
+        "Master Dimmer fine",
+        "Control",
+        "Dimmer, Lamp 1",
+        "Dimmer, Lamp 2",
+        "Dimmer, Lamp 3",
+        "Dimmer, Lamp 4"
+      ]
+    }
+  ]
+}
