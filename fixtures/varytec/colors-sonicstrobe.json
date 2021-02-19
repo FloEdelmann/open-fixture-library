@@ -1,0 +1,101 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "Colors SonicStrobe",
+  "categories": ["Dimmer", "Color Changer", "Strobe"],
+  "meta": {
+    "authors": ["Paolo"],
+    "createDate": "2020-10-19",
+    "lastModifyDate": "2020-10-19"
+  },
+  "links": {
+    "manual": [
+      "https://images.static-thomann.de/pics/atg/atgdata/document/manual/472595_c_472595_r1_en_online.pdf"
+    ],
+    "productPage": [
+      "https://www.thomann.de/fr/varytec_colors_sonicstrobe.htm"
+    ],
+    "video": [
+      "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjkwrv48MDsAhVj4uAKHZVLCOsQwqsBMAB6BAgKEAM&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dloksq55ijCU&usg=AOvVaw2YcJJtnbtbZ9PKc2H9omQk"
+    ]
+  },
+  "availableChannels": {
+    "Strobe led Intensity": {
+      "capability": {
+        "type": "ShutterStrobe",
+        "shutterEffect": "Open"
+      }
+    },
+    "Strobe LED speed": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 8],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [9, 255],
+          "type": "StrobeSpeed",
+          "speed": "20Hz"
+        }
+      ]
+    },
+    "Ambiant Led Intensity": {
+      "capability": {
+        "type": "Intensity",
+        "brightnessStart": "0%",
+        "brightnessEnd": "100%"
+      }
+    },
+    "Ambiant Led Strobe": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 8],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [9, 255],
+          "type": "StrobeSpeed",
+          "speedStart": "9Hz",
+          "speedEnd": "20Hz"
+        }
+      ]
+    },
+    "Red": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red",
+        "brightnessStart": "0%",
+        "brightnessEnd": "100%"
+      }
+    },
+    "Green": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green",
+        "brightnessStart": "0%",
+        "brightnessEnd": "100%"
+      }
+    },
+    "Blue": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue",
+        "brightnessStart": "0%",
+        "brightnessEnd": "100%"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "7ch",
+      "channels": [
+        "Strobe led Intensity",
+        "Strobe LED speed",
+        "Ambiant Led Intensity",
+        "Ambiant Led Strobe",
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    }
+  ]
+}
