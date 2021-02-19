@@ -1,0 +1,83 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "Spectral PC600Z",
+  "categories": ["Other"],
+  "meta": {
+    "authors": ["Eaurélight"],
+    "createDate": "2020-12-12",
+    "lastModifyDate": "2020-12-12"
+  },
+  "links": {
+    "manual": [
+      "https://www.highlite.com/fr/43551-spectral-pc-600z.html"
+    ]
+  },
+  "availableChannels": {
+    "Dimmer Intensity": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Red": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "White": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Strobe": {
+      "capability": {
+        "type": "ColorPreset"
+      }
+    },
+    "Zoom": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Zoom 2": {
+      "name": "Zoom",
+      "capability": {
+        "type": "NoFunction"
+      }
+    },
+    "Dimmer": {
+      "capability": {
+        "type": "NoFunction"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "9",
+      "channels": [
+        "Dimmer Intensity",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Strobe",
+        "Zoom",
+        "Zoom 2",
+        "Dimmer"
+      ]
+    }
+  ]
+}
