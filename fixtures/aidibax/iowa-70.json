@@ -1,0 +1,129 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "Iowa-70",
+  "shortName": "I-70",
+  "categories": ["Moving Head"],
+  "meta": {
+    "authors": ["Alvaro"],
+    "createDate": "2020-08-29",
+    "lastModifyDate": "2020-08-29"
+  },
+  "links": {
+    "manual": [
+      "https://www.madridhifi.com/crm/documents/produit/0/0/10107900/photos/pdf/1/Manual%20User%20Audibax%20Iowa.pdf"
+    ],
+    "productPage": [
+      "https://www.madridhifi.com/p/audibax-iowa-70-cabeza-movil-wash/"
+    ],
+    "video": [
+      "https://www.youtube.com/watch?v=HsKCYZY_jvM&feature=emb_logo"
+    ]
+  },
+  "physical": {
+    "dimensions": [175, 175, 235],
+    "weight": 2.7,
+    "power": 100,
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "4-in-1 LED"
+    }
+  },
+  "availableChannels": {
+    "Pan": {
+      "capability": {
+        "type": "Pan",
+        "angle": "540deg"
+      }
+    },
+    "Tilt": {
+      "capability": {
+        "type": "Tilt",
+        "angle": "180deg"
+      }
+    },
+    "Dimmer": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 7],
+          "type": "Intensity",
+          "brightnessStart": "off",
+          "brightnessEnd": "off"
+        },
+        {
+          "dmxRange": [8, 135],
+          "type": "Intensity"
+        },
+        {
+          "dmxRange": [136, 240],
+          "type": "StrobeSpeed",
+          "speed": "slow"
+        },
+        {
+          "dmxRange": [241, 255],
+          "type": "NoFunction"
+        }
+      ]
+    },
+    "Red": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red",
+        "brightnessStart": "dark",
+        "brightnessEnd": "bright"
+      }
+    },
+    "Green": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green",
+        "brightnessStart": "dark",
+        "brightnessEnd": "bright"
+      }
+    },
+    "Blue": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue",
+        "brightnessStart": "dark",
+        "brightnessEnd": "bright"
+      }
+    },
+    "White": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White",
+        "brightnessStart": "dark",
+        "brightnessEnd": "bright"
+      }
+    },
+    "Pan/Tilt Speed": {
+      "capability": {
+        "type": "PanTiltSpeed",
+        "speedStart": "slow",
+        "speedEnd": "fast"
+      }
+    },
+    "No function": {
+      "capability": {
+        "type": "NoFunction"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "9 channels",
+      "shortName": "9 CH",
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Pan/Tilt Speed",
+        "No function"
+      ]
+    }
+  ]
+}
