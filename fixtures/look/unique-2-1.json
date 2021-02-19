@@ -1,0 +1,50 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "Unique 2.1",
+  "categories": ["Smoke"],
+  "meta": {
+    "authors": ["LG"],
+    "createDate": "2020-05-07",
+    "lastModifyDate": "2020-05-07"
+  },
+  "links": {
+    "manual": [
+      "https://www.looksolutions.com/uploads/pdf/en_fr/bed_unique21_frz.pdf"
+    ],
+    "productPage": [
+      "https://www.looksolutions.com/news/2/127/UNIQUE-2.1/d,detail_produkte.html#3"
+    ],
+    "video": [
+      "https://www.youtube.com/watch?v=jj9r3ME-byg"
+    ]
+  },
+  "physical": {
+    "dimensions": [470, 250, 250],
+    "weight": 8.7,
+    "power": 1500,
+    "DMXconnector": "5-pin"
+  },
+  "availableChannels": {
+    "Fog": {
+      "capability": {
+        "type": "Fog",
+        "fogType": "Fog"
+      }
+    },
+    "Fan": {
+      "capability": {
+        "type": "Generic",
+        "comment": "Fan"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "Standard",
+      "channels": [
+        "Fog",
+        "Fan"
+      ]
+    }
+  ]
+}
