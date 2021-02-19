@@ -1,0 +1,417 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "Spectral PC 600Z IP65",
+  "shortName": "Spectral PC 600Z",
+  "categories": ["Color Changer"],
+  "meta": {
+    "authors": ["LG"],
+    "createDate": "2020-05-07",
+    "lastModifyDate": "2020-05-07"
+  },
+  "links": {
+    "manual": [
+      "https://assets.highlite.com/attachments/MANUAL/43551_MANUAL_GB_V2.pdf"
+    ],
+    "productPage": [
+      "https://www.highlite.com/fr/43551-spectral-pc-600z.html"
+    ],
+    "video": [
+      "https://www.youtube.com/watch?v=kOe4Yvz5HOk"
+    ]
+  },
+  "rdm": {
+    "modelId": 0
+  },
+  "physical": {
+    "dimensions": [240, 300, 243],
+    "weight": 5.8,
+    "power": 85,
+    "DMXconnector": "3-pin XLR IP65",
+    "bulb": {
+      "type": "RGBW Led",
+      "colorTemperature": 6000
+    },
+    "lens": {
+      "degreesMinMax": [4.5, 45]
+    }
+  },
+  "availableChannels": {
+    "Dimmer": {
+      "capability": {
+        "type": "Intensity",
+        "brightnessStart": "dark",
+        "brightnessEnd": "bright"
+      }
+    },
+    "Saturation": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Hue": {
+      "fineChannelAliases": ["Hue fine"],
+      "capability": {
+        "type": "Intensity",
+        "brightnessStart": "0%",
+        "brightnessEnd": "100%"
+      }
+    },
+    "Color Macros Color Temperature": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 10],
+          "type": "ColorPreset",
+          "comment": "Not functional"
+        },
+        {
+          "dmxRange": [11, 30],
+          "type": "ColorTemperature",
+          "colorTemperature": "2700K",
+          "comment": "White 1: 2700K"
+        },
+        {
+          "dmxRange": [31, 50],
+          "type": "ColorTemperature",
+          "colorTemperature": "3000K",
+          "comment": "White 2: 3000K"
+        },
+        {
+          "dmxRange": [51, 70],
+          "type": "ColorTemperature",
+          "colorTemperature": "3200K",
+          "comment": "White 3: 3200K"
+        },
+        {
+          "dmxRange": [71, 90],
+          "type": "ColorTemperature",
+          "colorTemperature": "3500K",
+          "comment": "White 4: 3500K"
+        },
+        {
+          "dmxRange": [91, 110],
+          "type": "ColorTemperature",
+          "colorTemperature": "4000K",
+          "comment": "White 5: 4000K"
+        },
+        {
+          "dmxRange": [111, 130],
+          "type": "ColorTemperature",
+          "colorTemperature": "4200K",
+          "comment": "White 6: 4200K"
+        },
+        {
+          "dmxRange": [131, 150],
+          "type": "ColorTemperature",
+          "colorTemperature": "4500K",
+          "comment": "White 7: 4500K"
+        },
+        {
+          "dmxRange": [151, 170],
+          "type": "ColorTemperature",
+          "colorTemperature": "5600K",
+          "comment": "White 8: 5600K"
+        },
+        {
+          "dmxRange": [171, 190],
+          "type": "ColorTemperature",
+          "colorTemperature": "6000K",
+          "comment": "White 9: 6000K"
+        },
+        {
+          "dmxRange": [191, 210],
+          "type": "ColorTemperature",
+          "colorTemperature": "6500K",
+          "comment": "White 10: 6500K"
+        },
+        {
+          "dmxRange": [211, 230],
+          "type": "ColorTemperature",
+          "colorTemperature": "7200K",
+          "comment": "White 11: 7200K"
+        },
+        {
+          "dmxRange": [231, 255],
+          "type": "ColorTemperature",
+          "colorTemperature": "8000K",
+          "comment": "White 12: 9000K"
+        }
+      ]
+    },
+    "Strobe": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 9],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [10, 99],
+          "type": "StrobeSpeed",
+          "speed": "50bpm",
+          "comment": "Strobe flash frequency, from slow to fast"
+        },
+        {
+          "dmxRange": [100, 109],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [110, 179],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Pulse",
+          "comment": "Pulse strobe"
+        },
+        {
+          "dmxRange": [180, 189],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [190, 255],
+          "type": "ShutterStrobe",
+          "shutterEffect": "RampUp",
+          "comment": "Random strobe"
+        }
+      ]
+    },
+    "Zoom": {
+      "capability": {
+        "type": "Zoom",
+        "angleStart": "narrow",
+        "angleEnd": "wide"
+      }
+    },
+    "Zoom fonction": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 200],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [201, 220],
+          "type": "Generic",
+          "comment": "Zoom reset"
+        },
+        {
+          "dmxRange": [221, 255],
+          "type": "NoFunction"
+        }
+      ]
+    },
+    "Dimmer speed": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 9],
+          "type": "Speed",
+          "speed": "slow"
+        },
+        {
+          "dmxRange": [10, 29],
+          "type": "Speed",
+          "speed": "slow"
+        },
+        {
+          "dmxRange": [30, 69],
+          "type": "Speed",
+          "speed": "fast"
+        },
+        {
+          "dmxRange": [70, 129],
+          "type": "Speed",
+          "speed": "slow"
+        },
+        {
+          "dmxRange": [130, 189],
+          "type": "Speed",
+          "speed": "slow"
+        },
+        {
+          "dmxRange": [190, 255],
+          "type": "Speed",
+          "speedStart": "slow",
+          "speedEnd": "fast"
+        }
+      ]
+    },
+    "Red": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Blue": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "White": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Color Macros": {
+      "capability": {
+        "type": "ColorPreset",
+        "comment": "Color macro"
+      }
+    },
+    "Programs": {
+      "capability": {
+        "type": "Effect",
+        "effectName": "Program"
+      }
+    },
+    "Auto speed": {
+      "capability": {
+        "type": "Speed",
+        "speedStart": "slow",
+        "speedEnd": "fast"
+      }
+    },
+    "Dimmer 2": {
+      "name": "Dimmer",
+      "fineChannelAliases": ["Dimmer 2 fine"],
+      "capability": {
+        "type": "Intensity",
+        "brightnessStart": "dark",
+        "brightnessEnd": "bright"
+      }
+    },
+    "Dimmer 3": {
+      "name": "Dimmer",
+      "fineChannelAliases": ["Dimmer 3 fine"],
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Red 2": {
+      "name": "Red",
+      "fineChannelAliases": ["Red 2 fine"],
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green 2": {
+      "name": "Green",
+      "fineChannelAliases": ["Green 2 fine"],
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue 2": {
+      "name": "Blue",
+      "fineChannelAliases": ["Blue 2 fine"],
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "White 2": {
+      "name": "White",
+      "fineChannelAliases": ["White 2 fine"],
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Color Macros 2": {
+      "name": "Color Macros",
+      "capability": {
+        "type": "ColorPreset"
+      }
+    },
+    "Dimmer 4": {
+      "name": "Dimmer",
+      "fineChannelAliases": ["Dimmer 4 fine"],
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Dimmer 5": {
+      "name": "Dimmer",
+      "fineChannelAliases": ["Dimmer 5 fine"],
+      "capability": {
+        "type": "Intensity"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "9 channels HSIC",
+      "shortName": "HSIC",
+      "channels": [
+        "Dimmer",
+        "Hue",
+        "Hue fine",
+        "Saturation",
+        "Color Macros Color Temperature",
+        "Strobe",
+        "Zoom",
+        "Zoom fonction",
+        "Dimmer speed"
+      ]
+    },
+    {
+      "name": "9 channels SSP",
+      "shortName": "RGBW strobe zoom",
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Strobe",
+        "Zoom",
+        "Zoom fonction",
+        "Dimmer speed"
+      ]
+    },
+    {
+      "name": "12 channels (TOUR)",
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Color Macros",
+        "Strobe",
+        "Programs",
+        "Auto speed",
+        "Zoom",
+        "Zoom fonction",
+        "Dimmer speed"
+      ]
+    },
+    {
+      "name": "17 channels (TR16)",
+      "channels": [
+        "Dimmer 5",
+        "Dimmer 5 fine",
+        "Red 2",
+        "Red 2 fine",
+        "Green 2",
+        "Green 2 fine",
+        "Blue 2",
+        "Blue 2 fine",
+        "White 2",
+        "White 2 fine",
+        "Color Macros 2",
+        "Strobe",
+        "Programs",
+        "Auto speed",
+        "Zoom",
+        "Zoom fonction",
+        "Dimmer speed"
+      ]
+    }
+  ]
+}
