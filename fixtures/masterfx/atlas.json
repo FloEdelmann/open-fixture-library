@@ -1,0 +1,191 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "Atlas",
+  "categories": ["Smoke"],
+  "meta": {
+    "authors": ["Ashton D'Avanzo "],
+    "createDate": "2020-12-22",
+    "lastModifyDate": "2020-12-22"
+  },
+  "links": {
+    "productPage": [
+      "https://masterfx.com/product/atlas/"
+    ]
+  },
+  "physical": {
+    "dimensions": [355.6, 228.6, 482.6],
+    "weight": 23,
+    "power": 1700,
+    "DMXconnector": "5-pin"
+  },
+  "availableChannels": {
+    "Fog Output": {
+      "defaultValue": 1,
+      "highlightValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 4],
+          "type": "FogOutput",
+          "fogOutputStart": "off",
+          "fogOutputEnd": "weak"
+        },
+        {
+          "dmxRange": [5, 255],
+          "type": "FogOutput",
+          "fogOutputStart": "weak",
+          "fogOutputEnd": "strong"
+        }
+      ]
+    },
+    "Red": {
+      "defaultValue": 2,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Amber": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "White": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Effect Speed": {
+      "defaultValue": 7,
+      "capabilities": [
+        {
+          "dmxRange": [0, 1],
+          "type": "EffectSpeed",
+          "speedStart": "slow",
+          "speedEnd": "fast"
+        },
+        {
+          "dmxRange": [2, 31],
+          "type": "Time",
+          "time": "0s"
+        },
+        {
+          "dmxRange": [32, 62],
+          "type": "Time",
+          "time": "0.5s"
+        },
+        {
+          "dmxRange": [63, 93],
+          "type": "Time",
+          "time": "1s"
+        },
+        {
+          "dmxRange": [94, 125],
+          "type": "Time",
+          "time": "2s"
+        },
+        {
+          "dmxRange": [126, 156],
+          "type": "Time",
+          "time": "3s"
+        },
+        {
+          "dmxRange": [157, 187],
+          "type": "Time",
+          "time": "4s"
+        },
+        {
+          "dmxRange": [188, 218],
+          "type": "Time",
+          "time": "5s"
+        },
+        {
+          "dmxRange": [219, 255],
+          "type": "Time",
+          "time": "instant"
+        }
+      ]
+    },
+    "Strobe": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 5],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [6, 255],
+          "type": "StrobeSpeed",
+          "speedStart": "0Hz",
+          "speedEnd": "20Hz"
+        }
+      ]
+    },
+    "Dimmer": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 0],
+          "type": "Intensity",
+          "brightness": "off"
+        },
+        {
+          "dmxRange": [1, 127],
+          "type": "Maintenance",
+          "parameter": "low"
+        },
+        {
+          "dmxRange": [128, 255],
+          "type": "Maintenance",
+          "parameter": "off"
+        }
+      ]
+    },
+    "Reserved": {
+      "defaultValue": 10,
+      "capabilities": [
+        {
+          "dmxRange": [0, 0],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [1, 127],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [128, 255],
+          "type": "NoFunction"
+        }
+      ]
+    }
+  },
+  "modes": [
+    {
+      "name": "10 channel",
+      "shortName": "10ch",
+      "channels": [
+        "Fog Output",
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "White",
+        "Effect Speed",
+        "Strobe",
+        "Dimmer",
+        "Reserved"
+      ]
+    }
+  ]
+}
