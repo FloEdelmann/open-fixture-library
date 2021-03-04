@@ -1,0 +1,404 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "SUNBEAM",
+  "shortName": "Sun60P",
+  "categories": ["Pixel Bar"],
+  "meta": {
+    "authors": ["Karl Humbug"],
+    "createDate": "2020-12-30",
+    "lastModifyDate": "2020-12-30"
+  },
+  "comment": "20x3 (RGB) LED-Bar",
+  "links": {
+    "manual": [
+      "http://www.lightpower-files.de/Assets/LI_Bedienungsanleitung_Sunbeam_50_100_FC.pdf"
+    ],
+    "productPage": [
+      "http://laser-imagineering.de/produkte/sunbeam-fc/"
+    ],
+    "other": [
+      "https://www.lightpower.de/produkt/sunbeam-100-fc-102213/"
+    ]
+  },
+  "physical": {
+    "dimensions": [1000, 120, 80],
+    "weight": 10,
+    "power": 125,
+    "DMXconnector": "5-pin",
+    "lens": {
+      "name": "Normal narrow",
+      "degreesMinMax": [15, 25]
+    }
+  },
+  "availableChannels": {
+    "Intensity R 01": {
+      "defaultValue": "0%",
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity G 01": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity B 01": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity R 02": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity G 02": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity B 02": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity R 03": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity G 03": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity B 03": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity R 04": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity G 04": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity B 04": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity R 05": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity G 05": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity B 05": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity R 06": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity G 06": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity  B 06": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity R 07": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity G 07": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity B 07": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity R 08": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity G 08": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity B 08": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity R 09": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity G 09": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity B 09": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity R 10": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity G 10": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity B 10": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity R 11": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity G 11": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity B 11": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity R 12": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity G 12": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity B 12": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity R 13": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity G 13": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity B 13": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity R 14": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity G 14": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity B 14": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity R 15": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity G 15": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity B 15": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity R 16": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity G 16": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity B 16": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity R 17": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity G 17": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity B 17": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity R 18": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity G 18": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity B 18": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity R 19": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity G 19": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity B 19": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity R 20": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity G 20": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity B 20": {
+      "capability": {
+        "type": "Intensity"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "60 P",
+      "shortName": "Independant Each LED",
+      "channels": [
+        "Intensity R 01",
+        "Intensity G 01",
+        "Intensity B 01",
+        "Intensity R 02",
+        "Intensity G 02",
+        "Intensity B 02",
+        "Intensity R 03",
+        "Intensity G 03",
+        "Intensity B 03",
+        "Intensity R 04",
+        "Intensity G 04",
+        "Intensity B 04",
+        "Intensity R 05",
+        "Intensity G 05",
+        "Intensity B 05",
+        "Intensity R 06",
+        "Intensity G 06",
+        "Intensity  B 06",
+        "Intensity R 07",
+        "Intensity G 07",
+        "Intensity B 07",
+        "Intensity R 08",
+        "Intensity G 08",
+        "Intensity B 08",
+        "Intensity R 09",
+        "Intensity G 09",
+        "Intensity B 09",
+        "Intensity R 10",
+        "Intensity G 10",
+        "Intensity B 10",
+        "Intensity R 11",
+        "Intensity G 11",
+        "Intensity B 11",
+        "Intensity R 12",
+        "Intensity G 12",
+        "Intensity B 12",
+        "Intensity R 13",
+        "Intensity G 13",
+        "Intensity B 13",
+        "Intensity R 14",
+        "Intensity G 14",
+        "Intensity B 14",
+        "Intensity R 15",
+        "Intensity G 15",
+        "Intensity B 15",
+        "Intensity R 16",
+        "Intensity G 16",
+        "Intensity B 16",
+        "Intensity R 17",
+        "Intensity G 17",
+        "Intensity B 17",
+        "Intensity R 18",
+        "Intensity G 18",
+        "Intensity B 18",
+        "Intensity R 19",
+        "Intensity G 19",
+        "Intensity B 19",
+        "Intensity R 20",
+        "Intensity G 20",
+        "Intensity B 20"
+      ]
+    }
+  ]
+}
