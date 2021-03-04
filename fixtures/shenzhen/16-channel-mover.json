@@ -1,0 +1,146 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "16 channel mover",
+  "categories": ["Moving Head"],
+  "meta": {
+    "authors": ["Double D"],
+    "createDate": "2020-12-29",
+    "lastModifyDate": "2020-12-29"
+  },
+  "links": {
+    "other": [
+      "https://www.dropbox.com/sh/2zpbbncoh2oywge/AAA7cnrALxurYE-pIoMi16-Ma"
+    ]
+  },
+  "physical": {
+    "bulb": {
+      "type": "led"
+    }
+  },
+  "availableChannels": {
+    "X-axis": {
+      "capability": {
+        "type": "Pan",
+        "angle": "540deg"
+      }
+    },
+    "Y-Axis": {
+      "capability": {
+        "type": "Tilt",
+        "angle": "270deg"
+      }
+    },
+    "XY-Speed": {
+      "capability": {
+        "type": "Speed",
+        "speedStart": "fast",
+        "speedEnd": "slow"
+      }
+    },
+    "Dimming": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Red": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red",
+        "brightnessStart": "dark",
+        "brightnessEnd": "bright"
+      }
+    },
+    "Green": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green",
+        "brightnessStart": "dark",
+        "brightnessEnd": "bright"
+      }
+    },
+    "Blue": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue",
+        "brightnessStart": "dark",
+        "brightnessEnd": "bright"
+      }
+    },
+    "White": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White",
+        "brightnessStart": "dark",
+        "brightnessEnd": "bright"
+      }
+    },
+    "Strobe": {
+      "capability": {
+        "type": "StrobeSpeed",
+        "speedStart": "slow",
+        "speedEnd": "fast"
+      }
+    },
+    "Focus": {
+      "capability": {
+        "type": "Focus",
+        "distanceStart": "near",
+        "distanceEnd": "far"
+      }
+    },
+    "No function": {
+      "capability": {
+        "type": "NoFunction"
+      }
+    },
+    "Function Speed": {
+      "capability": {
+        "type": "NoFunction"
+      }
+    },
+    "X- Axis Tune": {
+      "capability": {
+        "type": "NoFunction"
+      }
+    },
+    "Y-Axis Tuning": {
+      "capability": {
+        "type": "NoFunction"
+      }
+    },
+    "Reset ": {
+      "capability": {
+        "type": "NoFunction",
+        "comment": "255 for 5sec"
+      }
+    },
+    "Reserved": {
+      "capability": {
+        "type": "NoFunction"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "Normal",
+      "channels": [
+        "X-axis",
+        "Y-Axis",
+        "XY-Speed",
+        "Dimming",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Strobe",
+        "Focus",
+        "No function",
+        "Function Speed",
+        "X- Axis Tune",
+        "Y-Axis Tuning",
+        "Reset ",
+        "Reserved"
+      ]
+    }
+  ]
+}
