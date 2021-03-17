@@ -1,0 +1,88 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "Kolorado Quad zoom",
+  "shortName": "Kolorado",
+  "categories": ["Color Changer"],
+  "meta": {
+    "authors": ["TOF"],
+    "createDate": "2020-10-29",
+    "lastModifyDate": "2020-10-29"
+  },
+  "links": {
+    "manual": [
+      "https://www.chauvetprofessional.com/wp-content/uploads/2018/01/COLORado_2_Quad_Zoom_UM_Rev3.pdf"
+    ],
+    "productPage": [
+      "https://www.chauvetprofessional.com/products/colorado-2-quad-zoom/"
+    ],
+    "video": [
+      "https://www.youtube.com/watch?time_continue=7&v=a5TP9ug8hX0&feature=emb_logo"
+    ]
+  },
+  "availableChannels": {
+    "Dimmer": {
+      "defaultValue": "0%",
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Red": {
+      "defaultValue": "0%",
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "defaultValue": "0%",
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "defaultValue": "0%",
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "White": {
+      "defaultValue": "0%",
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Zoom": {
+      "defaultValue": "0%",
+      "capability": {
+        "type": "Zoom",
+        "angleStart": "narrow",
+        "angleEnd": "wide"
+      }
+    },
+    "No function": {
+      "defaultValue": "0%",
+      "constant": true,
+      "capability": {
+        "type": "NoFunction"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "AR2Z",
+      "shortName": "AR2Z",
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Zoom",
+        "No function"
+      ]
+    }
+  ]
+}
