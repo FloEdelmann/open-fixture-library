@@ -1,0 +1,428 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "LED Bar 8 Sectors",
+  "categories": ["Color Changer"],
+  "meta": {
+    "authors": ["Wolfgang Frohloff", "Wolfgang"],
+    "createDate": "2021-01-28",
+    "lastModifyDate": "2021-01-28",
+    "importPlugin": {
+      "plugin": "qlcplus_4.12.1",
+      "date": "2021-01-28",
+      "comment": "created by Q Light Controller Plus (version 4.12.3)"
+    }
+  },
+  "physical": {
+    "dimensions": [1000, 89, 66],
+    "weight": 2.5,
+    "power": 36,
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "LED"
+    }
+  },
+  "matrix": {
+    "pixelCount": [
+      8,
+      1,
+      1
+    ]
+  },
+  "availableChannels": {
+    "Red First Segment": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green First Segment": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue First Segment": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Red Second Segment": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green Second Segment": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue Second Segment": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Red Third Segment": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green Third Segment": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue Third Segment": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Red Fourth Segment": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green Fourth Segment": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue Fourth Segment": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Flash Frequency": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ShutterStrobe",
+        "shutterEffect": "Strobe",
+        "speedStart": "slow",
+        "speedEnd": "fast",
+        "helpWanted": "At which DMX values is strobe disabled?"
+      }
+    },
+    "Dimmer": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Red all": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Blue all": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Green all": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Red Fifth Segment": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green Fifth Segment": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue Fifth Segment": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Red Sixth Segment": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green Sixth Segment": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue Sixth Segment": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Red Seventh Segment": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Blue Seventh Segment": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Green Seventh Segment": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Red Eighth Segment": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green Eighth Segment": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue Eighth Segment": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Red First Segment 1 1": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green First Segment 1 1": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue First Segment 1 1": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Red Second Segment 1 1": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green Second Segment 1 1": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue Second Segment 1 1": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Red Third Segment 1 1": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green Third Segment 1 1": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue Third Segment 1 1": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Red Fourth Segment 1 1": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green Fourth Segment 1 1": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue Fourth Segment 1 1": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    }
+  },
+  "templateChannels": {},
+  "modes": [
+    {
+      "name": "14-channel - DMX 4 - E001",
+      "shortName": "14ch - DMX 4 - E001",
+      "channels": [
+        "Red First Segment",
+        "Green First Segment",
+        "Blue First Segment",
+        "Red Second Segment",
+        "Green Second Segment",
+        "Blue Second Segment",
+        "Red Third Segment",
+        "Green Third Segment",
+        "Blue Third Segment",
+        "Red Fourth Segment",
+        "Green Fourth Segment",
+        "Blue Fourth Segment",
+        "Flash Frequency",
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "3-channel - DMX 2 - d001",
+      "shortName": "3ch - DMX 2 - d001",
+      "channels": [
+        "Red all",
+        "Green all",
+        "Blue all"
+      ]
+    },
+    {
+      "name": "4-channel - DMX 3 - C001",
+      "shortName": "4ch - DMX 3 - C001",
+      "channels": [
+        "Red all",
+        "Green all",
+        "Blue all",
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "26-channel - DMX 6 - H001",
+      "shortName": "26ch - DMX 6 - H001",
+      "channels": [
+        "Red First Segment",
+        "Green First Segment",
+        "Blue First Segment",
+        "Red Second Segment",
+        "Green Second Segment",
+        "Blue Second Segment",
+        "Red Third Segment",
+        "Green Third Segment",
+        "Blue Third Segment",
+        "Red Fourth Segment",
+        "Green Fourth Segment",
+        "Blue Fourth Segment",
+        "Red Fifth Segment",
+        "Green Fifth Segment",
+        "Blue Fifth Segment",
+        "Red Sixth Segment",
+        "Green Sixth Segment",
+        "Blue Sixth Segment",
+        "Red Seventh Segment",
+        "Green Seventh Segment",
+        "Blue Seventh Segment",
+        "Red Eighth Segment",
+        "Green Eighth Segment",
+        "Blue Eighth Segment",
+        "Flash Frequency",
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "8 Sectors - 26-channel - DMX-6 - H001",
+      "shortName": "8 Sectors - 26ch - DMX-6 - H001",
+      "channels": [
+        "Red First Segment",
+        "Green First Segment",
+        "Blue First Segment",
+        "Red Second Segment",
+        "Green Second Segment",
+        "Blue Second Segment",
+        "Red Third Segment",
+        "Green Third Segment",
+        "Blue Third Segment",
+        "Red Fourth Segment",
+        "Green Fourth Segment",
+        "Blue Fourth Segment",
+        "Red Fifth Segment",
+        "Green Fifth Segment",
+        "Blue Fifth Segment",
+        "Red Sixth Segment",
+        "Green Sixth Segment",
+        "Blue Sixth Segment",
+        "Red Seventh Segment",
+        "Green Seventh Segment",
+        "Blue Seventh Segment",
+        "Red Eighth Segment",
+        "Green Eighth Segment",
+        "Blue Eighth Segment",
+        "Flash Frequency",
+        "Dimmer"
+      ]
+    }
+  ]
+}
