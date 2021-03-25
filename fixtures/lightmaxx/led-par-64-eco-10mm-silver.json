@@ -1,0 +1,100 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "LED Par 64 eco 10mm silver",
+  "categories": ["Color Changer"],
+  "meta": {
+    "authors": ["Wolfgang Frohloff", "Wolfgang"],
+    "createDate": "2021-01-28",
+    "lastModifyDate": "2021-01-28",
+    "importPlugin": {
+      "plugin": "qlcplus_4.12.1",
+      "date": "2021-01-28",
+      "comment": "created by Q Light Controller Plus (version 4.12.3)"
+    }
+  },
+  "physical": {
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "LED"
+    }
+  },
+  "matrix": {
+    "pixelCount": [
+      null,
+      null,
+      1
+    ]
+  },
+  "availableChannels": {
+    "Function": {
+      "defaultValue": 50,
+      "capabilities": [
+        {
+          "dmxRange": [50, 99],
+          "type": "Effect",
+          "effectName": "Fixed Colour (Ch. 3-5)"
+        },
+        {
+          "dmxRange": [100, 149],
+          "type": "Effect",
+          "effectName": "Strobe (Speed Ch. 2)"
+        },
+        {
+          "dmxRange": [150, 199],
+          "type": "Effect",
+          "effectName": "Colour Change (Speed Ch. 2)"
+        },
+        {
+          "dmxRange": [250, 255],
+          "type": "Effect",
+          "effectName": "Fixed White"
+        }
+      ]
+    },
+    "Strobe Speed": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ShutterStrobe",
+        "shutterEffect": "Strobe",
+        "speedStart": "fast",
+        "speedEnd": "slow",
+        "helpWanted": "At which DMX values is strobe disabled?"
+      }
+    },
+    "Red": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    }
+  },
+  "templateChannels": {},
+  "modes": [
+    {
+      "name": "5-channel",
+      "shortName": "5ch",
+      "channels": [
+        "Function",
+        "Strobe Speed",
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    }
+  ]
+}
