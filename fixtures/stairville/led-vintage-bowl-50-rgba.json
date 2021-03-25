@@ -1,0 +1,67 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "led vintage bowl 50 RGBA",
+  "shortName": "Bowl 50",
+  "categories": ["Other"],
+  "meta": {
+    "authors": ["olivier marzullo"],
+    "createDate": "2021-02-01",
+    "lastModifyDate": "2021-02-01"
+  },
+  "links": {
+    "manual": [
+      "https://im.static-thomann.de/pics/atg/atgdata/document/manual/472342_c_472342_472343_r1_en_online.pdf"
+    ],
+    "productPage": [
+      "https://im.static-thomann.de/pics/atg/atgdata/document/manual/472342_c_472342_472343_r1_en_online.pdf"
+    ],
+    "video": [
+      "https://im.static-thomann.de/pics/atg/atgdata/document/manual/472342_c_472342_472343_r1_en_online.pdf"
+    ]
+  },
+  "physical": {
+    "DMXconnector": "3-pin"
+  },
+  "availableChannels": {
+    "Intensity red": {
+      "fineChannelAliases": ["Intensity red fine"],
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity green": {
+      "fineChannelAliases": ["Intensity green fine"],
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity Blue": {
+      "fineChannelAliases": ["Intensity Blue fine"],
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Intensity amber": {
+      "fineChannelAliases": ["Intensity amber fine"],
+      "capability": {
+        "type": "Intensity"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "intensity Red",
+      "channels": [
+        "Intensity red",
+        "Intensity red fine",
+        "Intensity green",
+        "Intensity green fine",
+        "Intensity Blue",
+        "Intensity Blue fine",
+        "Intensity amber",
+        "Intensity amber fine"
+      ]
+    }
+  ]
+}
