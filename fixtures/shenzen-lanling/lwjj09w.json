@@ -1,0 +1,100 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": " LWJJ09W",
+  "categories": ["Flower"],
+  "meta": {
+    "authors": ["Breaker"],
+    "createDate": "2021-02-01",
+    "lastModifyDate": "2021-02-01"
+  },
+  "links": {
+    "productPage": [
+      "https://lanlingtech.en.made-in-china.com/product/ybLmtHeUndYw/China-Butterfly-Effect-Double-LED-Derby-Stage-Light.html"
+    ]
+  },
+  "physical": {
+    "dimensions": [205, 170, 90],
+    "weight": 1.6,
+    "power": 9,
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "led"
+    }
+  },
+  "availableChannels": {
+    "Select": {
+      "capability": {
+        "type": "EffectParameter",
+        "parameterStart": "low",
+        "parameterEnd": "high"
+      }
+    },
+    "White/RED/Blue": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Yellow"
+      }
+    },
+    "White/Yellow/Orange": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Yellow"
+      }
+    },
+    "Blue/Green": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Color Wheel Rotation": {
+      "capability": {
+        "type": "Rotation",
+        "speedStart": "slow CW",
+        "speedEnd": "fast CW"
+      }
+    },
+    "Strobe": {
+      "capability": {
+        "type": "StrobeSpeed",
+        "speed": "15Hz"
+      }
+    },
+    "Color Wheel Rotation Flow": {
+      "capability": {
+        "type": "Rotation",
+        "speed": "fast CW"
+      }
+    },
+    "Rotation": {
+      "capability": {
+        "type": "WheelRotation",
+        "speedStart": "slow CW",
+        "speedEnd": "fast CW"
+      }
+    },
+    "Rotation Speed": {
+      "capability": {
+        "type": "Speed",
+        "speedStart": "slow",
+        "speedEnd": "fast"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "Select",
+      "channels": [
+        "Select",
+        "White/RED/Blue",
+        "White/Yellow/Orange",
+        "Blue/Green",
+        "Color Wheel Rotation",
+        "Strobe",
+        "Color Wheel Rotation Flow",
+        "Rotation",
+        "Rotation Speed"
+      ]
+    }
+  ]
+}
