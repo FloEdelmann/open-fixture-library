@@ -1,0 +1,226 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "uking RGB 24*3W LED BAR",
+  "shortName": "LedBar",
+  "categories": ["Pixel Bar"],
+  "meta": {
+    "authors": ["Pgr1hd"],
+    "createDate": "2021-02-02",
+    "lastModifyDate": "2021-02-02"
+  },
+  "links": {
+    "manual": [
+      "https://www.uking-online.com/wp-content/uploads/2020/06/ZQ-B354.pdf"
+    ],
+    "productPage": [
+      "https://www.uking-online.com/product/b354-led-bar-rgb-24-leds-wall-light-with-remote-controller/"
+    ],
+    "video": [
+      "https://www.youtube.com/watch?v=loWKdObPylw"
+    ]
+  },
+  "physical": {
+    "DMXconnector": "3-pin"
+  },
+  "availableChannels": {
+    "Dimmer": {
+      "capability": {
+        "type": "Intensity",
+        "comment": "R1"
+      }
+    },
+    "Dimmer 2": {
+      "name": "Dimmer",
+      "capability": {
+        "type": "Intensity",
+        "comment": "G1"
+      }
+    },
+    "Dimmer 3": {
+      "name": "Dimmer",
+      "capability": {
+        "type": "Intensity",
+        "comment": "B1"
+      }
+    },
+    "Dimmer 4": {
+      "name": "Dimmer",
+      "capability": {
+        "type": "Intensity",
+        "comment": "R2"
+      }
+    },
+    "Dimmer 5": {
+      "name": "Dimmer",
+      "capability": {
+        "type": "Intensity",
+        "comment": "G2"
+      }
+    },
+    "Dimmer 6": {
+      "name": "Dimmer",
+      "capability": {
+        "type": "Intensity",
+        "comment": "B2"
+      }
+    },
+    "Dimmer 7": {
+      "name": "Dimmer",
+      "capability": {
+        "type": "Intensity",
+        "comment": "R3"
+      }
+    },
+    "Dimmer 8": {
+      "name": "Dimmer",
+      "capability": {
+        "type": "Intensity",
+        "comment": "G3"
+      }
+    },
+    "Dimmer 9": {
+      "name": "Dimmer",
+      "capability": {
+        "type": "Intensity",
+        "comment": "B3"
+      }
+    },
+    "Dimmer 10": {
+      "name": "Dimmer",
+      "capability": {
+        "type": "Intensity",
+        "comment": "R4"
+      }
+    },
+    "Dimmer 11": {
+      "name": "Dimmer",
+      "capability": {
+        "type": "Intensity",
+        "comment": "G4"
+      }
+    },
+    "Dimmer 12": {
+      "name": "Dimmer",
+      "capability": {
+        "type": "Intensity",
+        "comment": "B4"
+      }
+    },
+    "Dimmer 13": {
+      "name": "Dimmer",
+      "capability": {
+        "type": "Intensity",
+        "comment": "R5"
+      }
+    },
+    "Dimmer 14": {
+      "name": "Dimmer",
+      "capability": {
+        "type": "Intensity",
+        "comment": "G5"
+      }
+    },
+    "Dimmer 15": {
+      "name": "Dimmer",
+      "capability": {
+        "type": "Intensity",
+        "comment": "B5"
+      }
+    },
+    "Dimmer 16": {
+      "name": "Dimmer",
+      "capability": {
+        "type": "Intensity",
+        "comment": "R6"
+      }
+    },
+    "Dimmer 17": {
+      "name": "Dimmer",
+      "capability": {
+        "type": "Intensity",
+        "comment": "G6"
+      }
+    },
+    "Dimmer 18": {
+      "name": "Dimmer",
+      "capability": {
+        "type": "Intensity",
+        "comment": "B6"
+      }
+    },
+    "Dimmer 19": {
+      "name": "Dimmer",
+      "capability": {
+        "type": "Intensity",
+        "comment": "R7"
+      }
+    },
+    "Dimmer 20": {
+      "name": "Dimmer",
+      "capability": {
+        "type": "Intensity",
+        "comment": "G7"
+      }
+    },
+    "Dimmer 21": {
+      "name": "Dimmer",
+      "capability": {
+        "type": "Intensity",
+        "comment": "B7"
+      }
+    },
+    "Dimmer 22": {
+      "name": "Dimmer",
+      "capability": {
+        "type": "Intensity",
+        "comment": "R8"
+      }
+    },
+    "Dimmer 23": {
+      "name": "Dimmer",
+      "capability": {
+        "type": "Intensity",
+        "comment": "G8"
+      }
+    },
+    "Dimmer 24": {
+      "name": "Dimmer",
+      "capability": {
+        "type": "Intensity",
+        "comment": "B8"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "RGB 24*3W LED",
+      "shortName": "24ch",
+      "channels": [
+        "Dimmer",
+        "Dimmer 2",
+        "Dimmer 3",
+        "Dimmer 4",
+        "Dimmer 5",
+        "Dimmer 6",
+        "Dimmer 7",
+        "Dimmer 8",
+        "Dimmer 9",
+        "Dimmer 10",
+        "Dimmer 11",
+        "Dimmer 12",
+        "Dimmer 13",
+        "Dimmer 14",
+        "Dimmer 15",
+        "Dimmer 16",
+        "Dimmer 17",
+        "Dimmer 18",
+        "Dimmer 19",
+        "Dimmer 20",
+        "Dimmer 21",
+        "Dimmer 22",
+        "Dimmer 23",
+        "Dimmer 24"
+      ]
+    }
+  ]
+}
