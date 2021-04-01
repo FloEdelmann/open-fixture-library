@@ -1,0 +1,109 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "MOVING HEAD MH710",
+  "shortName": "MOVING HEAD MH710",
+  "categories": ["Moving Head"],
+  "meta": {
+    "authors": ["Anthony Brown"],
+    "createDate": "2021-02-02",
+    "lastModifyDate": "2021-02-02"
+  },
+  "links": {
+    "manual": [
+      "https://mediadl.musictribe.com/download/documents/behringer/EUROLIGHT%20MOVING%20HEAD%20MH710_QSG_WW.pdf"
+    ],
+    "productPage": [
+      "https://www.behringer.com/product.html?modelCode=P0E62"
+    ],
+    "video": [
+      "https://www.behringer.com/product.html?modelCode=P0E62"
+    ]
+  },
+  "rdm": {
+    "modelId": 1,
+    "softwareVersion": "0"
+  },
+  "physical": {
+    "DMXconnector": "3-pin"
+  },
+  "availableChannels": {
+    "Pan": {
+      "capability": {
+        "type": "Pan",
+        "angleStart": "0deg",
+        "angleEnd": "630deg",
+        "comment": "Horizontal "
+      }
+    },
+    "Tilt": {
+      "capability": {
+        "type": "Tilt",
+        "angleStart": "0deg",
+        "angleEnd": "220deg"
+      }
+    },
+    "Dimmer": {
+      "capability": {
+        "type": "Intensity",
+        "comment": "Need changing"
+      }
+    },
+    "Red": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "White": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Dimmer 2": {
+      "name": "Dimmer",
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "No function": {
+      "capability": {
+        "type": "NoFunction"
+      }
+    },
+    "Reserved": {
+      "capability": {
+        "type": "NoFunction"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "9CH",
+      "shortName": "9ch",
+      "channels": [
+        "Pan",
+        "Tilt",
+        "No function",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Dimmer 2",
+        "Reserved"
+      ]
+    }
+  ]
+}
