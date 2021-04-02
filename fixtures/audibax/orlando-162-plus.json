@@ -1,0 +1,75 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "Orlando 162 Plus",
+  "shortName": "Orlando-162-P",
+  "categories": ["Color Changer"],
+  "meta": {
+    "authors": ["josequioss"],
+    "createDate": "2021-02-20",
+    "lastModifyDate": "2021-02-20"
+  },
+  "links": {
+    "productPage": [
+      "https://www.madridhifi.com/m/audibax"
+    ]
+  },
+  "physical": {
+    "weight": 2.1,
+    "power": 180,
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "LED"
+    },
+    "lens": {
+      "degreesMinMax": [0, 23]
+    }
+  },
+  "availableChannels": {
+    "Intensity": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Red": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Strobe Speed": {
+      "defaultValue": 5,
+      "capability": {
+        "type": "StrobeSpeed",
+        "speed": "slow"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "4 Channels",
+      "shortName": "4-channel",
+      "channels": [
+        "Intensity",
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    }
+  ]
+}
