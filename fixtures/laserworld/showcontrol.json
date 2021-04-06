@@ -1,0 +1,145 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "Showcontrol",
+  "categories": ["Other"],
+  "meta": {
+    "authors": ["Sven Reichard"],
+    "createDate": "2021-02-21",
+    "lastModifyDate": "2021-02-21"
+  },
+  "comment": "Lasershowsoftware Control via DMX or Artnet",
+  "links": {
+    "manual": [
+      "https://www.showcontroller.com/de/bedienungsanleitung/0-showcontroller-live/7-fernsteuerung-der-software/7-b-artnet-steuerung-der-software"
+    ],
+    "productPage": [
+      "https://www.showcontroller.com/de"
+    ]
+  },
+  "wheels": {
+    "Szene": {
+      "slots": [
+        {
+          "type": "Gobo"
+        }
+      ]
+    },
+    "Bank": {
+      "slots": [
+        {
+          "type": "Open"
+        },
+        {
+          "type": "Gobo",
+          "name": "Bank"
+        }
+      ]
+    }
+  },
+  "availableChannels": {
+    "Szene": {
+      "precedence": "LTP",
+      "capability": {
+        "type": "WheelSlot",
+        "slotNumber": 1
+      }
+    },
+    "Bank": {
+      "defaultValue": 1,
+      "precedence": "LTP",
+      "capability": {
+        "type": "WheelSlot",
+        "slotNumber": 2
+      }
+    },
+    "Strobe": {
+      "defaultValue": 0,
+      "precedence": "LTP",
+      "capability": {
+        "type": "ShutterStrobe",
+        "shutterEffect": "Strobe",
+        "speedStart": "1Hz",
+        "speedEnd": "256Hz"
+      }
+    },
+    "Size XY": {
+      "highlightValue": 125,
+      "capability": {
+        "type": "Zoom",
+        "angleStart": "narrow",
+        "angleEnd": "wide"
+      }
+    },
+    "Size X": {
+      "defaultValue": 125,
+      "highlightValue": 125,
+      "precedence": "LTP",
+      "capability": {
+        "type": "Zoom",
+        "angleStart": "narrow",
+        "angleEnd": "wide"
+      }
+    },
+    "Size Y": {
+      "defaultValue": "50%",
+      "precedence": "LTP",
+      "capability": {
+        "type": "Zoom",
+        "angleStart": "narrow",
+        "angleEnd": "wide"
+      }
+    },
+    "Position X": {
+      "capability": {
+        "type": "Pan",
+        "angleStart": "0deg",
+        "angleEnd": "360deg"
+      }
+    },
+    "Position Y": {
+      "capability": {
+        "type": "Tilt",
+        "angleStart": "0deg",
+        "angleEnd": "380deg"
+      }
+    },
+    "Color": {
+      "capability": {
+        "type": "ColorPreset"
+      }
+    },
+    "Speed": {
+      "defaultValue": "0%",
+      "capability": {
+        "type": "Speed",
+        "speedStart": "slow",
+        "speedEnd": "fast"
+      }
+    },
+    "Intensity": {
+      "defaultValue": 0,
+      "highlightValue": "100%",
+      "capability": {
+        "type": "Intensity"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "Standard",
+      "channels": [
+        "Szene",
+        "Bank",
+        "Strobe",
+        "Color",
+        "Size XY",
+        "Size X",
+        "Size Y",
+        "Position X",
+        "Position Y",
+        "Speed",
+        "Intensity"
+      ]
+    }
+  ]
+}
