@@ -1,0 +1,361 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "Giga Bar240 LED CW / WW",
+  "shortName": "giga_bar240_led_cw_ww",
+  "categories": ["Dimmer", "Strobe", "Color Changer"],
+  "meta": {
+    "authors": ["François Bouffard"],
+    "createDate": "2021-02-24",
+    "lastModifyDate": "2021-02-24"
+  },
+  "comment": "LED CW / WW",
+  "links": {
+    "manual": [
+      "https://im.static-thomann.de/pics//atg/atgdata/document/manual/c_453680_r1_en_online.pdf"
+    ],
+    "productPage": [
+      "https://www.thomann.de/fr/varytec_giga_bar_240_led_cw_ww_30.htm"
+    ]
+  },
+  "physical": {
+    "dimensions": [1084, 65, 88],
+    "weight": 2.6,
+    "power": 25,
+    "DMXconnector": "3-pin XLR IP65"
+  },
+  "availableChannels": {
+    "Intensity warm white": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity cold white": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Dimmer": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Strobe": {
+      "capability": {
+        "type": "StrobeSpeed",
+        "speedStart": "0Hz",
+        "speedEnd": "6000Hz"
+      }
+    },
+    "Warm and cold white adjustment with channels 2 and 3": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 9],
+          "type": "ColorIntensity",
+          "color": "White"
+        },
+        {
+          "dmxRange": [10, 19],
+          "type": "ColorIntensity",
+          "color": "Warm White"
+        },
+        {
+          "dmxRange": [20, 29],
+          "type": "ColorIntensity",
+          "color": "White"
+        },
+        {
+          "dmxRange": [30, 39],
+          "type": "ColorIntensity",
+          "color": "Cold White"
+        },
+        {
+          "dmxRange": [40, 49],
+          "type": "ColorPreset",
+          "comment": "Programme02"
+        },
+        {
+          "dmxRange": [50, 59],
+          "type": "ColorPreset",
+          "comment": "Programme03"
+        },
+        {
+          "dmxRange": [60, 69],
+          "type": "ColorPreset",
+          "comment": "Programme04"
+        },
+        {
+          "dmxRange": [70, 79],
+          "type": "ColorPreset",
+          "comment": "Programme05"
+        },
+        {
+          "dmxRange": [80, 89],
+          "type": "ColorPreset",
+          "comment": "Programme06"
+        },
+        {
+          "dmxRange": [90, 99],
+          "type": "ColorPreset",
+          "comment": "Programme07"
+        },
+        {
+          "dmxRange": [100, 109],
+          "type": "ColorPreset",
+          "comment": "Programme08"
+        },
+        {
+          "dmxRange": [110, 119],
+          "type": "ColorPreset",
+          "comment": "Programme09"
+        },
+        {
+          "dmxRange": [120, 129],
+          "type": "ColorPreset",
+          "comment": "Programme10"
+        },
+        {
+          "dmxRange": [130, 139],
+          "type": "ColorPreset",
+          "comment": "Programme11"
+        },
+        {
+          "dmxRange": [140, 149],
+          "type": "ColorPreset",
+          "comment": "Programme12"
+        },
+        {
+          "dmxRange": [150, 159],
+          "type": "ColorPreset",
+          "comment": "Programme13"
+        },
+        {
+          "dmxRange": [160, 169],
+          "type": "ColorPreset",
+          "comment": "Programme14"
+        },
+        {
+          "dmxRange": [170, 179],
+          "type": "ColorPreset",
+          "comment": "Programme15"
+        },
+        {
+          "dmxRange": [180, 189],
+          "type": "ColorPreset",
+          "comment": "Programme16"
+        },
+        {
+          "dmxRange": [190, 199],
+          "type": "ColorPreset",
+          "comment": "Programme17"
+        },
+        {
+          "dmxRange": [200, 209],
+          "type": "ColorPreset",
+          "comment": "Programme18"
+        },
+        {
+          "dmxRange": [210, 219],
+          "type": "ColorPreset",
+          "comment": "Programme19"
+        },
+        {
+          "dmxRange": [220, 229],
+          "type": "ColorPreset",
+          "comment": "Programme20"
+        },
+        {
+          "dmxRange": [230, 255],
+          "type": "SoundSensitivity",
+          "soundSensitivityStart": "low",
+          "soundSensitivityEnd": "high"
+        }
+      ]
+    },
+    "Sound mode": {
+      "capability": {
+        "type": "SoundSensitivity",
+        "soundSensitivityStart": "low",
+        "soundSensitivityEnd": "high"
+      }
+    },
+    "Intensity Warm White 1 segment": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Intensity Cold White 1 segment": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Intensity Warm White 2 segment": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Intensity Cold White 2 segment": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Intensity Warm White 3 segment": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Intensity Cold White 3 segment": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White",
+        "brightness": "bright",
+        "comment": "sdfjklsdkj"
+      }
+    },
+    "Intensity Cold White 3 segment 2": {
+      "name": "Intensity Cold White 3 segment",
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Intensity Warm White 4 segment": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Intensity Cold White 3 segment 3": {
+      "name": "Intensity Cold White 3 segment",
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Intensity Cold White 4 segment": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Intensity Warm White 5 segment": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Intensity Cold White 5 segment": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Intensity Warm White 6 segment": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Intensity Cold White 6 segment": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Intensity Warm White 7 segment": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Intensity Cold White 7 segment": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Intensity Cold White 7 segment 2": {
+      "name": "Intensity Cold White 7 segment",
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Intensity Warm White 8 segment": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Intensity Cold White 8 segment": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Intensity Cold White 3 segment 4": {
+      "name": "Intensity Cold White 3 segment",
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "2_CH",
+      "shortName": "2_ch",
+      "channels": [
+        "Intensity warm white",
+        "Intensity cold white"
+      ]
+    },
+    {
+      "name": "4_CH",
+      "shortName": "4_ch",
+      "channels": [
+        "Dimmer",
+        "Intensity warm white",
+        "Intensity cold white",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "6_CH",
+      "shortName": "6_ch",
+      "channels": [
+        "Dimmer",
+        "Intensity warm white",
+        "Intensity cold white",
+        "Warm and cold white adjustment with channels 2 and 3",
+        "Sound mode",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "16_CH",
+      "shortName": "16_ch",
+      "channels": [
+        "Intensity Warm White 1 segment",
+        "Intensity Cold White 1 segment",
+        "Intensity Warm White 2 segment",
+        "Intensity Cold White 2 segment",
+        "Intensity Warm White 3 segment",
+        "Intensity Cold White 3 segment",
+        "Intensity Warm White 4 segment",
+        "Intensity Cold White 4 segment",
+        "Intensity Warm White 5 segment",
+        "Intensity Cold White 5 segment",
+        "Intensity Warm White 6 segment",
+        "Intensity Cold White 6 segment",
+        "Intensity Warm White 7 segment",
+        "Intensity Cold White 7 segment 2",
+        "Intensity Warm White 8 segment",
+        "Intensity Cold White 8 segment"
+      ]
+    }
+  ]
+}
