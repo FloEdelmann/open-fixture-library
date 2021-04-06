@@ -1,0 +1,172 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "LPC015",
+  "categories": ["Color Changer"],
+  "meta": {
+    "authors": ["David Magnus"],
+    "createDate": "2021-03-05",
+    "lastModifyDate": "2021-03-05",
+    "importPlugin": {
+      "plugin": "qlcplus_4.12.1",
+      "date": "2021-03-05",
+      "comment": "created by Q Light Controller Plus (version 4.12.3)"
+    }
+  },
+  "physical": {
+    "dimensions": [210, 210, 104],
+    "weight": 1.7,
+    "power": 150,
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "54 x 3W LEDs"
+    }
+  },
+  "availableChannels": {
+    "Master dimmer": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Red": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Strobe": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ShutterStrobe",
+        "shutterEffect": "Strobe",
+        "speedStart": "slow",
+        "speedEnd": "fast",
+        "helpWanted": "At which DMX values is strobe disabled?"
+      }
+    },
+    "Color macros": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 50],
+          "type": "ColorPreset",
+          "comment": "Dimming"
+        },
+        {
+          "dmxRange": [51, 100],
+          "type": "ColorPreset",
+          "comment": "Colour Selection"
+        },
+        {
+          "dmxRange": [101, 150],
+          "type": "ColorPreset",
+          "comment": "Colour Transistion"
+        },
+        {
+          "dmxRange": [151, 200],
+          "type": "ColorPreset",
+          "comment": "Colour Shade"
+        },
+        {
+          "dmxRange": [201, 250],
+          "type": "ColorPreset",
+          "comment": "Colour Pulse"
+        },
+        {
+          "dmxRange": [251, 255],
+          "type": "ColorPreset",
+          "comment": "Sound Mode"
+        }
+      ]
+    },
+    "Sound Activated Options": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 30],
+          "type": "Effect",
+          "effectName": "Red"
+        },
+        {
+          "dmxRange": [31, 60],
+          "type": "Effect",
+          "effectName": "Green"
+        },
+        {
+          "dmxRange": [61, 92],
+          "type": "Effect",
+          "effectName": "Blue"
+        },
+        {
+          "dmxRange": [93, 123],
+          "type": "Effect",
+          "effectName": "Warm White"
+        },
+        {
+          "dmxRange": [124, 154],
+          "type": "Effect",
+          "effectName": "Yellow"
+        },
+        {
+          "dmxRange": [155, 185],
+          "type": "Effect",
+          "effectName": "Violet"
+        },
+        {
+          "dmxRange": [186, 216],
+          "type": "Effect",
+          "effectName": "Turqoise"
+        },
+        {
+          "dmxRange": [217, 247],
+          "type": "Effect",
+          "effectName": "White"
+        },
+        {
+          "dmxRange": [248, 255],
+          "type": "Effect",
+          "effectName": "Change Colour"
+        }
+      ]
+    }
+  },
+  "modes": [
+    {
+      "name": "7-channel",
+      "shortName": "7ch",
+      "channels": [
+        "Master dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Strobe",
+        "Color macros",
+        "Sound Activated Options"
+      ]
+    },
+    {
+      "name": "3-channel",
+      "shortName": "3ch",
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    }
+  ]
+}
