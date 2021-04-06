@@ -1,0 +1,307 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "B Narrow",
+  "categories": ["Moving Head"],
+  "meta": {
+    "authors": ["OK"],
+    "createDate": "2021-02-27",
+    "lastModifyDate": "2021-02-27"
+  },
+  "links": {
+    "manual": [
+      "https://www.luxibel.com/sites/default/files/2018-04/LUXIBEL%20SPEC%20SHEET%20B%20NARROW_0.pdf"
+    ],
+    "productPage": [
+      "https://www.luxibel.com/en/products/moving-heads/b-narrow"
+    ],
+    "video": [
+      "https://www.youtube.com/watch?v=lCgcorfcREw"
+    ]
+  },
+  "physical": {
+    "dimensions": [295, 440, 195],
+    "weight": 12.6,
+    "power": 700,
+    "DMXconnector": "3-pin"
+  },
+  "wheels": {
+    "Gobo Wheel": {
+      "slots": [
+        {
+          "type": "Open"
+        },
+        {
+          "type": "Gobo"
+        },
+        {
+          "type": "Gobo"
+        },
+        {
+          "type": "Gobo"
+        },
+        {
+          "type": "Gobo"
+        },
+        {
+          "type": "Gobo"
+        },
+        {
+          "type": "Gobo"
+        },
+        {
+          "type": "Gobo"
+        }
+      ]
+    }
+  },
+  "availableChannels": {
+    "Pan": {
+      "fineChannelAliases": ["Pan fine"],
+      "capability": {
+        "type": "Pan",
+        "angleStart": "0deg",
+        "angleEnd": "540deg"
+      }
+    },
+    "Tilt": {
+      "fineChannelAliases": ["Tilt fine"],
+      "capability": {
+        "type": "Tilt",
+        "angleStart": "0deg",
+        "angleEnd": "270deg"
+      }
+    },
+    "Pan/Tilt Speed": {
+      "capability": {
+        "type": "PanTiltSpeed",
+        "speedStart": "fast",
+        "speedEnd": "slow"
+      }
+    },
+    "Dimmer": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Strobe": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 7],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open"
+        },
+        {
+          "dmxRange": [8, 250],
+          "type": "StrobeSpeed",
+          "speedStart": "slow",
+          "speedEnd": "fast"
+        },
+        {
+          "dmxRange": [251, 255],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open"
+        }
+      ]
+    },
+    "Color Presets": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 15],
+          "type": "ColorPreset",
+          "comment": "White"
+        },
+        {
+          "dmxRange": [16, 31],
+          "type": "ColorPreset",
+          "comment": "Color 1"
+        },
+        {
+          "dmxRange": [32, 47],
+          "type": "ColorPreset",
+          "comment": "Color 2"
+        },
+        {
+          "dmxRange": [48, 63],
+          "type": "ColorPreset",
+          "comment": "Color 3"
+        },
+        {
+          "dmxRange": [64, 79],
+          "type": "ColorPreset",
+          "comment": "Color 4"
+        },
+        {
+          "dmxRange": [80, 95],
+          "type": "ColorPreset",
+          "comment": "Color 5"
+        },
+        {
+          "dmxRange": [96, 111],
+          "type": "ColorPreset",
+          "comment": "Color 6"
+        },
+        {
+          "dmxRange": [112, 127],
+          "type": "ColorPreset",
+          "comment": "Color 7"
+        },
+        {
+          "dmxRange": [128, 191],
+          "type": "EffectSpeed",
+          "speedStart": "slow",
+          "speedEnd": "fast",
+          "comment": "CW slow to fast"
+        },
+        {
+          "dmxRange": [192, 255],
+          "type": "EffectSpeed",
+          "speedStart": "slow",
+          "speedEnd": "fast",
+          "comment": "CCW slot to fast"
+        }
+      ]
+    },
+    "Gobo Wheel": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 6],
+          "type": "WheelSlot",
+          "slotNumber": 0,
+          "comment": "OPEN"
+        },
+        {
+          "dmxRange": [7, 13],
+          "type": "WheelSlot",
+          "slotNumber": 1,
+          "comment": "GOBO 1"
+        },
+        {
+          "dmxRange": [14, 20],
+          "type": "WheelSlot",
+          "slotNumber": 2,
+          "comment": "GOBO 2"
+        },
+        {
+          "dmxRange": [21, 27],
+          "type": "WheelSlot",
+          "slotNumber": 3,
+          "comment": "GOBO 3"
+        },
+        {
+          "dmxRange": [28, 34],
+          "type": "WheelSlot",
+          "slotNumber": 4,
+          "comment": "GOBO 4"
+        },
+        {
+          "dmxRange": [35, 41],
+          "type": "WheelSlot",
+          "slotNumber": 5,
+          "comment": "GOBO 5"
+        },
+        {
+          "dmxRange": [42, 48],
+          "type": "WheelSlot",
+          "slotNumber": 6,
+          "comment": "GOBO 6"
+        },
+        {
+          "dmxRange": [49, 55],
+          "type": "WheelSlot",
+          "slotNumber": 7,
+          "comment": "GOBO 7"
+        },
+        {
+          "dmxRange": [56, 63],
+          "type": "WheelSlot",
+          "slotNumber": 8,
+          "comment": "GOBO 8"
+        },
+        {
+          "dmxRange": [64, 70],
+          "type": "WheelSlotRotation",
+          "speed": "fast CW",
+          "comment": "Gobo 8 shake speed from slow to fast"
+        },
+        {
+          "dmxRange": [71, 77],
+          "type": "WheelSlotRotation",
+          "speed": "fast CW",
+          "comment": "Gobo 7 shake speed from slow to fast"
+        },
+        {
+          "dmxRange": [78, 84],
+          "type": "WheelSlotRotation",
+          "speed": "fast CW",
+          "comment": "Gobo 6 shake speed from slow to fast"
+        },
+        {
+          "dmxRange": [85, 91],
+          "type": "WheelSlotRotation",
+          "speed": "fast CW",
+          "comment": "Gobo 5 shake speed from slow to fast"
+        },
+        {
+          "dmxRange": [92, 98],
+          "type": "WheelSlotRotation",
+          "speed": "fast CW",
+          "comment": "Gobo 4 shake speed from slow to fast"
+        },
+        {
+          "dmxRange": [99, 105],
+          "type": "WheelSlotRotation",
+          "speed": "fast CW",
+          "comment": "Gobo 3 shake speed from slow to fast"
+        },
+        {
+          "dmxRange": [106, 112],
+          "type": "WheelSlotRotation",
+          "speed": "fast CW",
+          "comment": "Gobo 2 shake speed from slow to fast"
+        },
+        {
+          "dmxRange": [113, 119],
+          "type": "WheelSlotRotation",
+          "speed": "fast CW",
+          "comment": "Gobo 1 shake speed from slow to fast"
+        },
+        {
+          "dmxRange": [120, 127],
+          "type": "WheelSlot",
+          "slotNumber": 1,
+          "comment": "OPEN"
+        },
+        {
+          "dmxRange": [128, 191],
+          "type": "WheelRotation",
+          "speedStart": "slow CW",
+          "speedEnd": "fast CW",
+          "comment": "Gobo Rotate CW slow to fast"
+        },
+        {
+          "dmxRange": [192, 255],
+          "type": "WheelRotation",
+          "speedStart": "slow CW",
+          "speedEnd": "fast CW",
+          "comment": "Gobo Rotate CCW slow to fast"
+        }
+      ]
+    }
+  },
+  "modes": [
+    {
+      "name": "16 Channel",
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Pan/Tilt Speed",
+        "Dimmer",
+        "Strobe",
+        "Color Presets",
+        "Gobo Wheel"
+      ]
+    }
+  ]
+}
