@@ -1,0 +1,354 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "E3 LED Wash",
+  "categories": ["Moving Head", "Color Changer"],
+  "meta": {
+    "authors": ["Toby Lewis"],
+    "createDate": "2021-03-07",
+    "lastModifyDate": "2021-03-07"
+  },
+  "links": {
+    "manual": [
+      "https://www.showtech.com.au/product/e3-led-wash/"
+    ],
+    "productPage": [
+      "https://www.showtech.com.au/product/e3-led-wash/"
+    ],
+    "video": [
+      "https://www.showtech.com.au/product/e3-led-wash/"
+    ]
+  },
+  "availableChannels": {
+    "Pan": {
+      "fineChannelAliases": ["Pan fine"],
+      "capability": {
+        "type": "Pan",
+        "angle": "540deg"
+      }
+    },
+    "Tilt": {
+      "fineChannelAliases": ["Tilt fine"],
+      "capability": {
+        "type": "Tilt",
+        "angle": "270deg"
+      }
+    },
+    "Pan/Tilt Speed": {
+      "capability": {
+        "type": "PanTiltSpeed",
+        "speedStart": "fast",
+        "speedEnd": "slow"
+      }
+    },
+    "Special Function": {
+      "capability": {
+        "type": "NoFunction"
+      }
+    },
+    "Red": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red",
+        "brightnessStart": "0%",
+        "brightnessEnd": "100%"
+      }
+    },
+    "Green": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green",
+        "brightnessStart": "0%",
+        "brightnessEnd": "100%"
+      }
+    },
+    "Blue": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue",
+        "brightnessStart": "0%",
+        "brightnessEnd": "100%"
+      }
+    },
+    "White": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White",
+        "brightnessStart": "0%",
+        "brightnessEnd": "100%"
+      }
+    },
+    "Dimmer": {
+      "capability": {
+        "type": "Intensity",
+        "brightnessStart": "0%",
+        "brightnessEnd": "100%"
+      }
+    },
+    "Shutter": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 31],
+          "type": "Generic",
+          "comment": "Shutter Closed"
+        },
+        {
+          "dmxRange": [32, 63],
+          "type": "NoFunction",
+          "comment": "Shutter Open"
+        },
+        {
+          "dmxRange": [64, 95],
+          "type": "StrobeSpeed",
+          "speedStart": "slow",
+          "speedEnd": "fast",
+          "comment": "Shutter Effect Slow to Fast"
+        },
+        {
+          "dmxRange": [96, 127],
+          "type": "NoFunction",
+          "comment": "Shutter Open"
+        },
+        {
+          "dmxRange": [128, 159],
+          "type": "Generic",
+          "comment": "Pulse Effect in Sequences"
+        },
+        {
+          "dmxRange": [160, 191],
+          "type": "NoFunction",
+          "comment": "Shutter Open"
+        },
+        {
+          "dmxRange": [192, 223],
+          "type": "StrobeSpeed",
+          "speedStart": "slow",
+          "speedEnd": "fast",
+          "comment": "Random Shutter Effect"
+        },
+        {
+          "dmxRange": [224, 255],
+          "type": "NoFunction",
+          "comment": "Shuter Open"
+        }
+      ]
+    },
+    "Colour Function": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 19],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [20, 39],
+          "type": "Generic",
+          "comment": "CTC Function"
+        },
+        {
+          "dmxRange": [40, 59],
+          "type": "Generic",
+          "comment": "Forward Spin"
+        },
+        {
+          "dmxRange": [60, 79],
+          "type": "Generic",
+          "comment": "Reverse Spin"
+        },
+        {
+          "dmxRange": [80, 99],
+          "type": "Generic",
+          "comment": "Continuous"
+        },
+        {
+          "dmxRange": [100, 255],
+          "type": "NoFunction"
+        }
+      ]
+    },
+    "Colour Temp": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 223],
+          "type": "ColorTemperature",
+          "colorTemperatureStart": "2000K",
+          "colorTemperatureEnd": "3000K"
+        },
+        {
+          "dmxRange": [224, 231],
+          "type": "Generic",
+          "comment": "White 3200K"
+        },
+        {
+          "dmxRange": [232, 239],
+          "type": "Generic",
+          "comment": "White 4200K"
+        },
+        {
+          "dmxRange": [240, 247],
+          "type": "Generic",
+          "comment": "White 5600K"
+        },
+        {
+          "dmxRange": [248, 255],
+          "type": "Generic",
+          "comment": "White 8000K"
+        }
+      ]
+    },
+    "Auto Program": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 10],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [11, 70],
+          "type": "Generic",
+          "comment": "4 Colour Snap"
+        },
+        {
+          "dmxRange": [71, 130],
+          "type": "Generic",
+          "comment": "4 Colour Fade"
+        },
+        {
+          "dmxRange": [131, 190],
+          "type": "Generic",
+          "comment": "15 Colour Snap"
+        },
+        {
+          "dmxRange": [191, 255],
+          "type": "Generic",
+          "comment": "15 Colour Fade"
+        }
+      ]
+    },
+    "Auto Program Speed": {
+      "capability": {
+        "type": "Speed",
+        "speedStart": "slow",
+        "speedEnd": "fast"
+      }
+    },
+    "Motor Show": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 10],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [11, 58],
+          "type": "Generic",
+          "comment": "Motor Show 1"
+        },
+        {
+          "dmxRange": [59, 106],
+          "type": "Generic",
+          "comment": "Motor Show 2"
+        },
+        {
+          "dmxRange": [107, 154],
+          "type": "Generic",
+          "comment": "Motor Show 3"
+        },
+        {
+          "dmxRange": [155, 202],
+          "type": "Generic",
+          "comment": "Motor Show 4"
+        },
+        {
+          "dmxRange": [203, 255],
+          "type": "Generic",
+          "comment": "Motor Show 5"
+        }
+      ]
+    },
+    "Motor Show Speed": {
+      "capability": {
+        "type": "Speed",
+        "speedStart": "slow",
+        "speedEnd": "fast"
+      }
+    },
+    "Zoom": {
+      "capability": {
+        "type": "Zoom",
+        "angleStart": "0%",
+        "angleEnd": "100%"
+      }
+    },
+    "Dimmer Speed Mode": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 51],
+          "type": "Generic",
+          "comment": "Dinner Speed from Display Menu"
+        },
+        {
+          "dmxRange": [52, 101],
+          "type": "Generic",
+          "comment": "Dimmer Speed Mode Off"
+        },
+        {
+          "dmxRange": [102, 152],
+          "type": "Generic",
+          "comment": "Dimmer Speed Mode 1 (fast)"
+        },
+        {
+          "dmxRange": [153, 203],
+          "type": "Generic",
+          "comment": "Dimmer Speed Mode 2 (middle)"
+        },
+        {
+          "dmxRange": [204, 255],
+          "type": "Generic",
+          "comment": "Dimmer Speed Mode 3 (slow)"
+        }
+      ]
+    }
+  },
+  "modes": [
+    {
+      "name": "20ch",
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Pan/Tilt Speed",
+        "Special Function",
+        "Dimmer",
+        "Shutter",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Colour Function",
+        "Colour Temp",
+        "Auto Program",
+        "Auto Program Speed",
+        "Motor Show",
+        "Motor Show Speed",
+        "Zoom",
+        "Dimmer Speed Mode"
+      ]
+    },
+    {
+      "name": "13ch",
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Pan/Tilt Speed",
+        "Special Function",
+        "Dimmer",
+        "Shutter",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Zoom"
+      ]
+    }
+  ]
+}
