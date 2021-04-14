@@ -1,0 +1,420 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "BulletPAR",
+  "categories": ["Color Changer"],
+  "meta": {
+    "authors": ["Patrick Wong"],
+    "createDate": "2021-03-12",
+    "lastModifyDate": "2021-03-12"
+  },
+  "comment": "An IP65 outdoor RGBL colors PAR for all kinds of applications",
+  "links": {
+    "productPage": [
+      "http://colordeve.com/ProductInfoCategory?categoryId=75573&PageInfoId=0"
+    ]
+  },
+  "rdm": {
+    "modelId": 173
+  },
+  "physical": {
+    "dimensions": [283, 355, 233],
+    "weight": 6.5,
+    "power": 200,
+    "DMXconnector": "5-pin XLR IP65",
+    "bulb": {
+      "type": "LEDs",
+      "colorTemperature": 2765,
+      "lumens": 3000
+    },
+    "lens": {
+      "name": "12 x PMMA Convex ",
+      "degreesMinMax": [6.5, 50]
+    }
+  },
+  "availableChannels": {
+    "Intensity-High": {
+      "capability": {
+        "type": "Intensity",
+        "comment": "High byte"
+      }
+    },
+    "Intensity-Low": {
+      "capability": {
+        "type": "Intensity",
+        "comment": "Low byte"
+      }
+    },
+    "Red-High": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red",
+        "comment": "High byte"
+      }
+    },
+    "Red-Low": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red",
+        "comment": "low byte"
+      }
+    },
+    "Green-High": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green",
+        "comment": "High byte"
+      }
+    },
+    "Green-Low": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue-High": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Blue-Low": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Lime-High": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Lime"
+      }
+    },
+    "Lime-Low": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Lime"
+      }
+    },
+    "Zoom": {
+      "capability": {
+        "type": "Zoom",
+        "angleStart": "narrow",
+        "angleEnd": "wide"
+      }
+    },
+    "Color Presets": {
+      "capability": {
+        "type": "ColorPreset"
+      }
+    },
+    "Strobe": {
+      "capability": {
+        "type": "StrobeSpeed",
+        "speedStart": "0.4Hz",
+        "speedEnd": "30Hz"
+      }
+    },
+    "Strobe Duration": {
+      "capability": {
+        "type": "StrobeDuration",
+        "duration": "1ms"
+      }
+    },
+    "Control": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 2],
+          "type": "Maintenance",
+          "comment": "Varies of DMX remote setting"
+        },
+        {
+          "dmxRange": [3, 5],
+          "type": "Maintenance",
+          "comment": "Display On/Off"
+        },
+        {
+          "dmxRange": [6, 29],
+          "type": "NoFunction",
+          "comment": "Reserved"
+        },
+        {
+          "dmxRange": [30, 47],
+          "type": "Zoom",
+          "angleStart": "narrow",
+          "angleEnd": "wide",
+          "comment": "VNSP - XWFL"
+        },
+        {
+          "dmxRange": [48, 149],
+          "type": "NoFunction",
+          "comment": "Reserved"
+        },
+        {
+          "dmxRange": [150, 173],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open",
+          "comment": "Refresh rate 600Hz - 25Khz"
+        },
+        {
+          "dmxRange": [174, 182],
+          "type": "Effect",
+          "effectName": "Curves"
+        },
+        {
+          "dmxRange": [183, 200],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open",
+          "comment": "Tungsten simulation"
+        },
+        {
+          "dmxRange": [201, 206],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open",
+          "comment": "Color Calibration On/Off"
+        },
+        {
+          "dmxRange": [207, 249],
+          "type": "NoFunction",
+          "comment": "Reserved"
+        },
+        {
+          "dmxRange": [250, 252],
+          "type": "Maintenance",
+          "comment": "Reset"
+        },
+        {
+          "dmxRange": [253, 255],
+          "type": "NoFunction",
+          "comment": "reserved"
+        }
+      ]
+    },
+    "Intensity": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Red": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Lime": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Lime"
+      }
+    },
+    "Zoom 2": {
+      "name": "Zoom",
+      "capability": {
+        "type": "Zoom",
+        "angleStart": "narrow",
+        "angleEnd": "wide"
+      }
+    },
+    "Cyan-High": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Cyan"
+      }
+    },
+    "Cyan-Low": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Cyan"
+      }
+    },
+    "Magenta-High": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Magenta"
+      }
+    },
+    "Magenta-Low": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Magenta"
+      }
+    },
+    "Yellow-High": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Yellow"
+      }
+    },
+    "Yellow-Low": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Yellow"
+      }
+    },
+    "Cyan": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Cyan"
+      }
+    },
+    "Magenta": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Magenta"
+      }
+    },
+    "Yellow": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Yellow"
+      }
+    },
+    "HUE-High": {
+      "capability": {
+        "type": "ColorPreset"
+      }
+    },
+    "HUE-Low": {
+      "capability": {
+        "type": "ColorPreset"
+      }
+    },
+    "Saturation": {
+      "capability": {
+        "type": "ColorPreset"
+      }
+    },
+    "CCT": {
+      "capability": {
+        "type": "ColorTemperature",
+        "colorTemperatureStart": "2700K",
+        "colorTemperatureEnd": "6500K"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "RGBL 16bit",
+      "shortName": "RGBL16b",
+      "channels": [
+        "Intensity-High",
+        "Intensity-Low",
+        "Red-High",
+        "Red-Low",
+        "Green-High",
+        "Green-Low",
+        "Blue-High",
+        "Blue-Low",
+        "Lime-High",
+        "Lime-Low",
+        "Zoom",
+        "Color Presets",
+        "Strobe",
+        "Strobe Duration",
+        "Control"
+      ]
+    },
+    {
+      "name": "RGBL 8 bit",
+      "shortName": "RGBL8b",
+      "channels": [
+        "Intensity",
+        "Red",
+        "Green",
+        "Blue",
+        "Lime",
+        "Zoom",
+        "Color Presets",
+        "Strobe",
+        "Strobe Duration",
+        "Control"
+      ]
+    },
+    {
+      "name": "CMY 16 bit",
+      "shortName": "CMY16b",
+      "channels": [
+        "Intensity-High",
+        "Intensity-Low",
+        "Cyan-High",
+        "Cyan-Low",
+        "Magenta-High",
+        "Magenta-Low",
+        "Yellow-High",
+        "Yellow-Low",
+        "Zoom",
+        "Color Presets",
+        "Strobe",
+        "Strobe Duration",
+        "Control"
+      ]
+    },
+    {
+      "name": "CMY 8 bit",
+      "shortName": "CMY8b",
+      "channels": [
+        "Intensity",
+        "Cyan",
+        "Magenta",
+        "Yellow",
+        "Zoom",
+        "Color Presets",
+        "Strobe",
+        "Strobe Duration",
+        "Control"
+      ]
+    },
+    {
+      "name": "HSIC",
+      "shortName": "HSIC",
+      "channels": [
+        "Intensity",
+        "HUE-High",
+        "HUE-Low",
+        "Saturation",
+        "CCT",
+        "Zoom",
+        "Color Presets",
+        "Strobe",
+        "Strobe Duration",
+        "Control"
+      ]
+    },
+    {
+      "name": "RGB",
+      "shortName": "RGB",
+      "channels": [
+        "Intensity",
+        "Red",
+        "Green",
+        "Blue",
+        "Zoom",
+        "Color Presets",
+        "Strobe",
+        "Strobe Duration",
+        "Control"
+      ]
+    },
+    {
+      "name": "Concise ",
+      "shortName": "Concise",
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Strobe"
+      ]
+    }
+  ]
+}
