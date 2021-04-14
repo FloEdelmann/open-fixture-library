@@ -1,0 +1,170 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "SpaceX",
+  "categories": ["Stand"],
+  "meta": {
+    "authors": ["AndryFed"],
+    "createDate": "2021-03-25",
+    "lastModifyDate": "2021-03-25"
+  },
+  "links": {
+    "manual": [
+      "https://creamsource.com/wp-content/downloads/manuals/Creamsource-SpaceX-User-Guide-V1.1.pdf"
+    ],
+    "productPage": [
+      "https://creamsource.com/product/spacex/"
+    ],
+    "video": [
+      "https://www.youtube.com/watch?v=pbcdt5TXS1s"
+    ]
+  },
+  "physical": {
+    "dimensions": [590, 590, 197],
+    "weight": 18,
+    "power": 1200,
+    "DMXconnector": "5-pin",
+    "bulb": {
+      "type": "LED"
+    },
+    "lens": {
+      "degreesMinMax": [50, 115]
+    }
+  },
+  "availableChannels": {
+    "Master Leve": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "CCT": {
+      "capability": {
+        "type": "ColorTemperature",
+        "colorTemperatureStart": "2200K",
+        "colorTemperatureEnd": "15000K"
+      }
+    },
+    "Green/Magenta": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 10],
+          "type": "NoFunction",
+          "comment": "Neutral"
+        },
+        {
+          "dmxRange": [11, 133],
+          "type": "ColorIntensity",
+          "color": "Magenta",
+          "brightnessStart": "100%",
+          "brightnessEnd": "1%"
+        },
+        {
+          "dmxRange": [134, 134],
+          "type": "NoFunction",
+          "comment": "Neutral"
+        },
+        {
+          "dmxRange": [135, 255],
+          "type": "ColorIntensity",
+          "color": "Green",
+          "brightnessStart": "1%",
+          "brightnessEnd": "100%"
+        }
+      ]
+    },
+    "CCT-Colour Crossfade": {
+      "capability": {
+        "type": "Intensity",
+        "brightnessStart": "0%",
+        "brightnessEnd": "100%"
+      }
+    },
+    "Red": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "White": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Amber": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Amber"
+      }
+    },
+    "Fan": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 9],
+          "type": "Maintenance",
+          "parameter": "instant",
+          "comment": "Auto. Fans run variable speed, temperature controlled"
+        },
+        {
+          "dmxRange": [10, 49],
+          "type": "Maintenance",
+          "parameter": "low",
+          "comment": "Quiet. Fans will run constantly at low speed"
+        },
+        {
+          "dmxRange": [50, 99],
+          "type": "Maintenance",
+          "parameter": "slow",
+          "comment": "Medium. Fans will run constantly at medium speed"
+        },
+        {
+          "dmxRange": [100, 149],
+          "type": "Maintenance",
+          "parameter": "high",
+          "comment": "High. Fans will run constantly at high speed"
+        },
+        {
+          "dmxRange": [150, 249],
+          "type": "Generic",
+          "comment": "RESERVED"
+        },
+        {
+          "dmxRange": [250, 255],
+          "type": "Maintenance",
+          "parameter": "off",
+          "hold": "short",
+          "comment": "Pause. Fans will stop, until maximum safe operating temperature is reached, then will run in Quiet mode. NOTE: This mode should be only used for short periods of time, as it will shorten the lifespan of the LEDs"
+        }
+      ]
+    }
+  },
+  "modes": [
+    {
+      "name": "Scenario 1: 8 Bits - CCT and RGBWA",
+      "shortName": "Scenario 1",
+      "channels": [
+        "Master Leve",
+        "CCT",
+        "Green/Magenta",
+        "CCT-Colour Crossfade",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "Fan"
+      ]
+    }
+  ]
+}
