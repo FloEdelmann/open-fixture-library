@@ -1,0 +1,34 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "Cob 6UV",
+  "categories": ["Color Changer"],
+  "meta": {
+    "authors": ["josequioss"],
+    "createDate": "2021-03-26",
+    "lastModifyDate": "2021-03-26"
+  },
+  "links": {
+    "productPage": [
+      "https://www.equipson.es/products/cob-6-uv"
+    ]
+  },
+  "availableChannels": {
+    "Red": {
+      "fineChannelAliases": ["Red fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "6 channel",
+      "shortName": "6-channel",
+      "channels": [
+        "Red"
+      ]
+    }
+  ]
+}
