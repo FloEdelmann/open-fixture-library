@@ -1,0 +1,235 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "Led bar-12 QCL RGBW",
+  "categories": ["Color Changer", "Dimmer", "Pixel Bar"],
+  "meta": {
+    "authors": ["Paolom"],
+    "createDate": "2021-03-08",
+    "lastModifyDate": "2021-03-08"
+  },
+  "links": {
+    "manual": [
+      "https://www.thomann.de/fr/onlineexpert_topic_translate_effects_lights.html"
+    ],
+    "productPage": [
+      "https://www.thomann.de/fr/eurolite_led_bar_12_qcl_rgbw.htm"
+    ],
+    "video": [
+      "https://www.youtube.com/watch?v=xz1GlZ7rHPM"
+    ]
+  },
+  "rdm": {
+    "modelId": 0
+  },
+  "physical": {
+    "dimensions": [1085, 65, 100],
+    "weight": 3.2,
+    "power": 24,
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "Led"
+    },
+    "lens": {
+      "degreesMinMax": [17, 17]
+    }
+  },
+  "availableChannels": {
+    "Red": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "White": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Color Temperature": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 9],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [10, 29],
+          "type": "ColorTemperature",
+          "colorTemperatureStart": "2700K",
+          "colorTemperatureEnd": "2700K"
+        },
+        {
+          "dmxRange": [30, 49],
+          "type": "ColorTemperature",
+          "colorTemperatureStart": "3200K",
+          "colorTemperatureEnd": "3200K"
+        },
+        {
+          "dmxRange": [50, 69],
+          "type": "ColorTemperature",
+          "colorTemperatureStart": "3400K",
+          "colorTemperatureEnd": "3400K"
+        },
+        {
+          "dmxRange": [70, 89],
+          "type": "ColorTemperature",
+          "colorTemperatureStart": "4200K",
+          "colorTemperatureEnd": "4200K"
+        },
+        {
+          "dmxRange": [90, 109],
+          "type": "ColorTemperature",
+          "colorTemperatureStart": "4900K",
+          "colorTemperatureEnd": "4900K"
+        },
+        {
+          "dmxRange": [110, 129],
+          "type": "ColorTemperature",
+          "colorTemperatureStart": "5600K",
+          "colorTemperatureEnd": "5600K"
+        },
+        {
+          "dmxRange": [130, 149],
+          "type": "ColorTemperature",
+          "colorTemperatureStart": "6000K",
+          "colorTemperatureEnd": "6000K"
+        },
+        {
+          "dmxRange": [150, 169],
+          "type": "ColorTemperature",
+          "colorTemperatureStart": "6500K",
+          "colorTemperatureEnd": "6500K"
+        },
+        {
+          "dmxRange": [170, 189],
+          "type": "ColorTemperature",
+          "colorTemperatureStart": "7500K",
+          "colorTemperatureEnd": "7500K"
+        },
+        {
+          "dmxRange": [190, 255],
+          "type": "ColorTemperature",
+          "colorTemperatureStart": "8000K",
+          "colorTemperatureEnd": "8000K"
+        }
+      ]
+    },
+    "Dimmer": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Strobe": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 9],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [10, 255],
+          "type": "StrobeSpeed",
+          "speedStart": "0%",
+          "speedEnd": "100%"
+        }
+      ]
+    },
+    "Sound Sensitivity": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 9],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [10, 119],
+          "type": "SoundSensitivity",
+          "soundSensitivity": "low"
+        },
+        {
+          "dmxRange": [120, 255],
+          "type": "SoundSensitivity",
+          "soundSensitivityStart": "low",
+          "soundSensitivityEnd": "high"
+        }
+      ]
+    },
+    "Program Speed": {
+      "capability": {
+        "type": "EffectSpeed",
+        "speedStart": "slow",
+        "speedEnd": "fast"
+      }
+    },
+    "Strobe Speed": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 0],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [1, 5],
+          "type": "SoundSensitivity",
+          "soundSensitivityStart": "low",
+          "soundSensitivityEnd": "high"
+        },
+        {
+          "dmxRange": [6, 10],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [11, 255],
+          "type": "StrobeSpeed",
+          "speedStart": "0%",
+          "speedEnd": "100%"
+        }
+      ]
+    }
+  },
+  "modes": [
+    {
+      "name": "4ch",
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "9ch",
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Color Temperature",
+        "Dimmer",
+        "Strobe",
+        "Sound Sensitivity",
+        "Program Speed"
+      ]
+    },
+    {
+      "name": "6ch",
+      "channels": [
+        "Red",
+        "Blue",
+        "Green",
+        "White",
+        "Dimmer",
+        "Strobe Speed"
+      ]
+    }
+  ]
+}
