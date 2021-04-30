@@ -1,0 +1,366 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "Cluster-S",
+  "categories": ["Effect"],
+  "meta": {
+    "authors": ["René Bütikofer"],
+    "createDate": "2021-03-30",
+    "lastModifyDate": "2021-03-30",
+    "importPlugin": {
+      "plugin": "qlcplus_4.12.1",
+      "date": "2021-03-30",
+      "comment": "created by Q Light Controller Plus (version 4.12.3)"
+    }
+  },
+  "physical": {
+    "dimensions": [190, 258, 182],
+    "weight": 2,
+    "power": 28,
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "LED"
+    }
+  },
+  "availableChannels": {
+    "Color Setting": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 5],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [6, 20],
+          "type": "ColorPreset",
+          "comment": "Red"
+        },
+        {
+          "dmxRange": [21, 35],
+          "type": "ColorPreset",
+          "comment": "Green"
+        },
+        {
+          "dmxRange": [36, 65],
+          "type": "ColorPreset",
+          "comment": "White"
+        },
+        {
+          "dmxRange": [66, 80],
+          "type": "ColorPreset",
+          "comment": "Red/Green"
+        },
+        {
+          "dmxRange": [81, 95],
+          "type": "ColorPreset",
+          "comment": "Red/Blue"
+        },
+        {
+          "dmxRange": [96, 110],
+          "type": "ColorPreset",
+          "comment": "Red/White"
+        },
+        {
+          "dmxRange": [111, 125],
+          "type": "ColorPreset",
+          "comment": "Green/Blue"
+        },
+        {
+          "dmxRange": [126, 140],
+          "type": "ColorPreset",
+          "comment": "Green/White"
+        },
+        {
+          "dmxRange": [141, 155],
+          "type": "ColorPreset",
+          "comment": "Blue/White"
+        },
+        {
+          "dmxRange": [156, 170],
+          "type": "ColorPreset",
+          "comment": "Red/Green/Blue"
+        },
+        {
+          "dmxRange": [171, 185],
+          "type": "ColorPreset",
+          "comment": "Red/Green/White"
+        },
+        {
+          "dmxRange": [186, 200],
+          "type": "ColorPreset",
+          "comment": "Green/Blue/White"
+        },
+        {
+          "dmxRange": [201, 215],
+          "type": "ColorPreset",
+          "comment": "Red/Green/Blue/White"
+        },
+        {
+          "dmxRange": [216, 230],
+          "type": "ColorPreset",
+          "comment": "Automatic (4-Color Chase)"
+        },
+        {
+          "dmxRange": [231, 255],
+          "type": "ColorPreset",
+          "comment": "Automatic (Single/Multi-Color Chase)"
+        }
+      ]
+    },
+    "Strobe Channel": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 5],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [6, 255],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Strobe",
+          "speedStart": "slow",
+          "speedEnd": "fast",
+          "comment": "Strobe"
+        }
+      ]
+    },
+    "Motor Working Channel": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 0],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [1, 127],
+          "type": "Speed",
+          "comment": "Motor Indexing",
+          "speedStart": "slow",
+          "speedEnd": "fast",
+          "helpWanted": "Are the automatically added speed values correct?"
+        },
+        {
+          "dmxRange": [128, 255],
+          "type": "Speed",
+          "comment": "Motor Speed",
+          "speedStart": "slow",
+          "speedEnd": "fast",
+          "helpWanted": "Are the automatically added speed values correct?"
+        }
+      ]
+    },
+    "Strobe": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 9],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Closed"
+        },
+        {
+          "dmxRange": [10, 19],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Strobe",
+          "speedStart": "slow",
+          "speedEnd": "fast",
+          "comment": "Pattern 1"
+        },
+        {
+          "dmxRange": [20, 29],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Strobe",
+          "speedStart": "slow",
+          "speedEnd": "fast",
+          "comment": "Pattern 2"
+        },
+        {
+          "dmxRange": [30, 39],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Strobe",
+          "speedStart": "slow",
+          "speedEnd": "fast",
+          "comment": "Pattern 3"
+        },
+        {
+          "dmxRange": [40, 49],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Strobe",
+          "speedStart": "slow",
+          "speedEnd": "fast",
+          "comment": "Pattern 4"
+        },
+        {
+          "dmxRange": [50, 59],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Strobe",
+          "speedStart": "slow",
+          "speedEnd": "fast",
+          "comment": "Pattern 5"
+        },
+        {
+          "dmxRange": [60, 69],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Strobe",
+          "speedStart": "slow",
+          "speedEnd": "fast",
+          "comment": "Pattern 6"
+        },
+        {
+          "dmxRange": [70, 79],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Strobe",
+          "speedStart": "slow",
+          "speedEnd": "fast",
+          "comment": "Pattern 7"
+        },
+        {
+          "dmxRange": [80, 89],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Strobe",
+          "speedStart": "slow",
+          "speedEnd": "fast",
+          "comment": "Pattern 8"
+        },
+        {
+          "dmxRange": [90, 99],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Strobe",
+          "speedStart": "slow",
+          "speedEnd": "fast",
+          "comment": "Pattern 9"
+        },
+        {
+          "dmxRange": [100, 109],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Strobe",
+          "speedStart": "slow",
+          "speedEnd": "fast",
+          "comment": "Pattern 10"
+        },
+        {
+          "dmxRange": [110, 119],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Strobe",
+          "speedStart": "slow",
+          "speedEnd": "fast",
+          "comment": "Pattern 11"
+        },
+        {
+          "dmxRange": [120, 129],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Strobe",
+          "speedStart": "slow",
+          "speedEnd": "fast",
+          "comment": "Pattern 12"
+        },
+        {
+          "dmxRange": [130, 139],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Strobe",
+          "speedStart": "slow",
+          "speedEnd": "fast",
+          "comment": "Pattern 13"
+        },
+        {
+          "dmxRange": [140, 149],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Strobe",
+          "speedStart": "slow",
+          "speedEnd": "fast",
+          "comment": "Pattern 14"
+        },
+        {
+          "dmxRange": [150, 159],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Strobe",
+          "speedStart": "slow",
+          "speedEnd": "fast",
+          "comment": "Pattern 15"
+        },
+        {
+          "dmxRange": [160, 169],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Strobe",
+          "speedStart": "slow",
+          "speedEnd": "fast",
+          "comment": "Pattern 16"
+        },
+        {
+          "dmxRange": [170, 179],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Strobe",
+          "speedStart": "slow",
+          "speedEnd": "fast",
+          "comment": "Pattern 17"
+        },
+        {
+          "dmxRange": [180, 255],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Strobe",
+          "comment": "Pattern 18 (Slow-Fast) Always ON",
+          "speedStart": "slow",
+          "speedEnd": "fast",
+          "helpWanted": "Are the automatically added speed values correct?"
+        }
+      ]
+    },
+    "Mode Setting": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 9],
+          "type": "Effect",
+          "effectName": "Close"
+        },
+        {
+          "dmxRange": [10, 50],
+          "type": "Effect",
+          "effectName": "AUT Mix"
+        },
+        {
+          "dmxRange": [51, 90],
+          "type": "Effect",
+          "effectName": "AUT Derby"
+        },
+        {
+          "dmxRange": [91, 130],
+          "type": "Effect",
+          "effectName": "AUT Strobe"
+        },
+        {
+          "dmxRange": [131, 170],
+          "type": "Effect",
+          "effectName": "SOU Mix"
+        },
+        {
+          "dmxRange": [171, 210],
+          "type": "Effect",
+          "effectName": "SOU Derby"
+        },
+        {
+          "dmxRange": [211, 255],
+          "type": "Effect",
+          "effectName": "SOU Strobe"
+        }
+      ]
+    }
+  },
+  "modes": [
+    {
+      "name": "1-channel",
+      "shortName": "1ch",
+      "channels": [
+        "Mode Setting"
+      ]
+    },
+    {
+      "name": "4-channel",
+      "shortName": "4ch",
+      "channels": [
+        "Color Setting",
+        "Strobe Channel",
+        "Motor Working Channel",
+        "Strobe"
+      ]
+    }
+  ]
+}

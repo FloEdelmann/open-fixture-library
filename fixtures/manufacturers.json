@@ -193,6 +193,9 @@
     "name": "Gantom",
     "website": "https://www.gantom.com"
   },
+  "gear4music": {
+    "name": "Gear4Music"
+  },
   "generic": {
     "name": "Generic",
     "comment": "Use this pseudo manufacturer if you need to quick patch some channels without having to create a new fixture."
