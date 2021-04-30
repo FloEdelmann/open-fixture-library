@@ -1,0 +1,191 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "LED Wash 7x18W RGBWA+UV",
+  "categories": ["Moving Head"],
+  "meta": {
+    "authors": ["René Bütikofer"],
+    "createDate": "2021-03-30",
+    "lastModifyDate": "2021-03-30",
+    "importPlugin": {
+      "plugin": "qlcplus_4.12.1",
+      "date": "2021-03-30",
+      "comment": "created by Q Light Controller Plus (version 4.12.3)"
+    }
+  },
+  "physical": {
+    "dimensions": [225, 270, 225],
+    "weight": 3.1,
+    "power": 126,
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "LED 7×18W RGBWA+UV"
+    }
+  },
+  "availableChannels": {
+    "X-axis, move": {
+      "fineChannelAliases": ["X-axis,Fine-tuning"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "Pan",
+        "angleStart": "0deg",
+        "angleEnd": "540deg"
+      }
+    },
+    "Y-axis, move": {
+      "fineChannelAliases": ["Y-axis,Fine-tuning"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "Tilt",
+        "angleStart": "0deg",
+        "angleEnd": "180deg"
+      }
+    },
+    "Dimmer/Strobe/Full": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 134],
+          "type": "Intensity",
+          "comment": "Total dimmer, linear dimming-Dark to Bright"
+        },
+        {
+          "dmxRange": [135, 239],
+          "type": "Intensity",
+          "comment": "Strobe,Slow to Fast"
+        },
+        {
+          "dmxRange": [240, 255],
+          "type": "Intensity",
+          "comment": "Full light"
+        }
+      ]
+    },
+    "Red light color control": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green color control": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue light color control": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "White light color control,": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Amber light color control": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Amber"
+      }
+    },
+    "Violet light color control": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "UV"
+      }
+    },
+    "X/Y-axis ,Slow to Fast": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "PanTiltSpeed",
+        "speedStart": "slow",
+        "speedEnd": "fast"
+      }
+    },
+    "Color": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 134],
+          "type": "ColorPreset",
+          "comment": "Color selection"
+        },
+        {
+          "dmxRange": [135, 239],
+          "type": "ColorPreset",
+          "comment": "Color combination"
+        },
+        {
+          "dmxRange": [240, 255],
+          "type": "ColorPreset",
+          "comment": "Color jump"
+        }
+      ]
+    },
+    "Channel 13 Speed": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Speed",
+        "speedStart": "slow",
+        "speedEnd": "fast",
+        "helpWanted": "Are the automatically added speed values correct?"
+      }
+    },
+    "Motor Mode Speed （CH6 color auto run）": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Speed",
+        "speedStart": "slow",
+        "speedEnd": "fast",
+        "helpWanted": "Are the automatically added speed values correct?"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "10-channel",
+      "shortName": "10ch",
+      "channels": [
+        "X-axis, move",
+        "Y-axis, move",
+        "Dimmer/Strobe/Full",
+        "Red light color control",
+        "Green color control",
+        "Blue light color control",
+        "White light color control,",
+        "Amber light color control",
+        "Violet light color control",
+        "X/Y-axis ,Slow to Fast"
+      ]
+    },
+    {
+      "name": "15-channel",
+      "shortName": "15ch",
+      "channels": [
+        "X-axis, move",
+        "X-axis,Fine-tuning",
+        "Y-axis, move",
+        "Y-axis,Fine-tuning",
+        "X/Y-axis ,Slow to Fast",
+        "Dimmer/Strobe/Full",
+        "Red light color control",
+        "Green color control",
+        "Blue light color control",
+        "White light color control,",
+        "Amber light color control",
+        "Violet light color control",
+        "Color",
+        "Channel 13 Speed",
+        "Motor Mode Speed （CH6 color auto run）"
+      ]
+    }
+  ]
+}
