@@ -1,0 +1,579 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "Hero Wash 715 HEX LED",
+  "categories": ["Moving Head"],
+  "meta": {
+    "authors": ["René Bütikofer"],
+    "createDate": "2021-03-31",
+    "lastModifyDate": "2021-03-31",
+    "importPlugin": {
+      "plugin": "qlcplus_4.12.1",
+      "date": "2021-03-31",
+      "comment": "created by Q Light Controller Plus (version 4.12.3)"
+    }
+  },
+  "physical": {
+    "dimensions": [210, 295, 145],
+    "weight": 3.8,
+    "power": 100,
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "LED 7 x 15W RGBAW+UV"
+    },
+    "lens": {
+      "degreesMinMax": [25, 25]
+    }
+  },
+  "availableChannels": {
+    "Rotation (pan) (0° up to the maximum value of the Pan area. middle position: 128)": {
+      "fineChannelAliases": ["Fine adjustment rotation (pan) 16 bit"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "Pan",
+        "angleStart": "0deg",
+        "angleEnd": "540deg"
+      }
+    },
+    "Inclination (tilt) (0° up to the maximum value of the Tilt area. middle position: 128)": {
+      "fineChannelAliases": ["Fine adjustment inclination (pan) 16 bit"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "Tilt",
+        "angleStart": "0deg",
+        "angleEnd": "190deg"
+      }
+    },
+    "Speed of pan and tilt movement, fast (0) to slow (255)": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "PanTiltSpeed",
+        "speedStart": "fast",
+        "speedEnd": "slow"
+      }
+    },
+    "Dimmer intensity from dark (0) to bright (255)": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Shutter (channel 4 must be set to a value between 1 and 255, channel 6 to a value between 10 and 255)": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 9],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open"
+        },
+        {
+          "dmxRange": [10, 250],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Strobe",
+          "speedStart": "0Hz",
+          "speedEnd": "20Hz",
+          "comment": "Stroboscope, increasing speed"
+        },
+        {
+          "dmxRange": [251, 255],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open"
+        }
+      ]
+    },
+    "Colour macros (channel 4 must be set to a value between 1 and 255)": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 10],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [11, 20],
+          "type": "ColorPreset",
+          "comment": "Red, 50% White"
+        },
+        {
+          "dmxRange": [21, 30],
+          "type": "ColorPreset",
+          "comment": "Red"
+        },
+        {
+          "dmxRange": [31, 40],
+          "type": "ColorPreset",
+          "comment": "Red, Amber"
+        },
+        {
+          "dmxRange": [41, 50],
+          "type": "ColorPreset",
+          "comment": "Amber"
+        },
+        {
+          "dmxRange": [51, 60],
+          "type": "ColorPreset",
+          "comment": "Red, 75% Green, Amber"
+        },
+        {
+          "dmxRange": [61, 70],
+          "type": "ColorPreset",
+          "comment": "Red, Green"
+        },
+        {
+          "dmxRange": [71, 80],
+          "type": "ColorPreset",
+          "comment": "Green"
+        },
+        {
+          "dmxRange": [81, 90],
+          "type": "ColorPreset",
+          "comment": "Green, White"
+        },
+        {
+          "dmxRange": [91, 100],
+          "type": "ColorPreset",
+          "comment": "Green, UV"
+        },
+        {
+          "dmxRange": [101, 110],
+          "type": "ColorPreset",
+          "comment": "Green, Blue"
+        },
+        {
+          "dmxRange": [111, 120],
+          "type": "ColorPreset",
+          "comment": "Blue, UV"
+        },
+        {
+          "dmxRange": [121, 130],
+          "type": "ColorPreset",
+          "comment": "Blue"
+        },
+        {
+          "dmxRange": [131, 140],
+          "type": "ColorPreset",
+          "comment": "UV"
+        },
+        {
+          "dmxRange": [141, 150],
+          "type": "ColorPreset",
+          "comment": "UV, 50% Red"
+        },
+        {
+          "dmxRange": [151, 160],
+          "type": "ColorPreset",
+          "comment": "UV, Amber"
+        },
+        {
+          "dmxRange": [161, 170],
+          "type": "ColorPreset",
+          "comment": "UV, Amber, Red"
+        },
+        {
+          "dmxRange": [171, 180],
+          "type": "ColorPreset",
+          "comment": "UV, Red"
+        },
+        {
+          "dmxRange": [181, 190],
+          "type": "ColorPreset",
+          "comment": "Red, White, Amber"
+        },
+        {
+          "dmxRange": [191, 200],
+          "type": "ColorPreset",
+          "comment": "White, Amber"
+        },
+        {
+          "dmxRange": [201, 210],
+          "type": "ColorPreset",
+          "comment": "White"
+        },
+        {
+          "dmxRange": [211, 220],
+          "type": "ColorPreset",
+          "comment": "White, Blue"
+        },
+        {
+          "dmxRange": [221, 230],
+          "type": "ColorPreset",
+          "comment": "Red, Green, Blue, White, Amber, UV"
+        },
+        {
+          "dmxRange": [231, 240],
+          "type": "ColorPreset",
+          "comment": "Colour sequence, increasing speed"
+        },
+        {
+          "dmxRange": [241, 255],
+          "type": "ColorPreset",
+          "comment": "Colour transition (fade), increasing speed"
+        }
+      ]
+    },
+    "Auto programmes (channel 4 must be set to a value between 1 and 255, channel 6 to a value between 10 and 255)": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 10],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [11, 20],
+          "type": "Effect",
+          "effectName": "Preprogrammed automatic show 1"
+        },
+        {
+          "dmxRange": [21, 30],
+          "type": "Effect",
+          "effectName": "Preprogrammed automatic show 2"
+        },
+        {
+          "dmxRange": [31, 40],
+          "type": "Effect",
+          "effectName": "Preprogrammed automatic show 3"
+        },
+        {
+          "dmxRange": [41, 50],
+          "type": "Effect",
+          "effectName": "Preprogrammed automatic show 4"
+        },
+        {
+          "dmxRange": [51, 60],
+          "type": "Effect",
+          "effectName": "Preprogrammed automatic show 5"
+        },
+        {
+          "dmxRange": [61, 70],
+          "type": "Effect",
+          "effectName": "Preprogrammed automatic show 6"
+        },
+        {
+          "dmxRange": [71, 80],
+          "type": "Effect",
+          "effectName": "Preprogrammed automatic show 7"
+        },
+        {
+          "dmxRange": [81, 90],
+          "type": "Effect",
+          "effectName": "Preprogrammed automatic show 8"
+        },
+        {
+          "dmxRange": [91, 230],
+          "type": "Effect",
+          "effectName": "Sound control, from sound control off to high microphone sensitivity",
+          "soundControlled": true
+        },
+        {
+          "dmxRange": [231, 240],
+          "type": "Effect",
+          "effectName": "Reset, if the value is transmitted for at least 3 seconds"
+        },
+        {
+          "dmxRange": [241, 255],
+          "type": "NoFunction"
+        }
+      ]
+    },
+    "Shutter (channels 6 and 8 as well as channels 9, 10, 12 or 13 must be set to a value between 1 and 255, channel 15 to a value between 10 and 255)": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 9],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open"
+        },
+        {
+          "dmxRange": [10, 250],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Strobe",
+          "speedStart": "0Hz",
+          "speedEnd": "20Hz",
+          "comment": "Stroboscope, increasing speed"
+        },
+        {
+          "dmxRange": [251, 255],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open"
+        }
+      ]
+    },
+    "Intensity Red (0 % to 100 %), if channel 6 = 1 ... 255": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Intensity Green (0 % to 100 %), if channel 6 = 1 ... 255": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Intensity Blue (0 % to 100 %), if channel 6 = 1 ... 255": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Intensity White (0 % to 100 %), if channel 6 = 1 ... 255": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Intensity Amber (0 % to 100 %), if channel 6 = 1 ... 255": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Amber"
+      }
+    },
+    "Intensity UV (0 % to 100 %), if channel 6 = 1 ... 255": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "UV"
+      }
+    },
+    "Colour temperature (0 % to 100 %)": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Effect",
+        "effectName": "Colour temperature (0 % to 100 %)"
+      }
+    },
+    "Colour macros (channel 6 must be set to a value between 1 and 255)": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 10],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [11, 20],
+          "type": "ColorPreset",
+          "comment": "Red, 50% White"
+        },
+        {
+          "dmxRange": [21, 30],
+          "type": "ColorPreset",
+          "comment": "Red"
+        },
+        {
+          "dmxRange": [31, 40],
+          "type": "ColorPreset",
+          "comment": "Red, Amber"
+        },
+        {
+          "dmxRange": [41, 50],
+          "type": "ColorPreset",
+          "comment": "Amber"
+        },
+        {
+          "dmxRange": [51, 60],
+          "type": "ColorPreset",
+          "comment": "Red, 75 % Green, Amber"
+        },
+        {
+          "dmxRange": [61, 70],
+          "type": "ColorPreset",
+          "comment": "Red, Green"
+        },
+        {
+          "dmxRange": [71, 80],
+          "type": "ColorPreset",
+          "comment": "Green"
+        },
+        {
+          "dmxRange": [81, 90],
+          "type": "ColorPreset",
+          "comment": "Green, White"
+        },
+        {
+          "dmxRange": [91, 100],
+          "type": "ColorPreset",
+          "comment": "Green, UV"
+        },
+        {
+          "dmxRange": [101, 110],
+          "type": "ColorPreset",
+          "comment": "Green, Blue"
+        },
+        {
+          "dmxRange": [111, 120],
+          "type": "ColorPreset",
+          "comment": "Blue, UV"
+        },
+        {
+          "dmxRange": [121, 130],
+          "type": "ColorPreset",
+          "comment": "Blue"
+        },
+        {
+          "dmxRange": [131, 140],
+          "type": "ColorPreset",
+          "comment": "UV"
+        },
+        {
+          "dmxRange": [141, 150],
+          "type": "ColorPreset",
+          "comment": "UV, 50% Red"
+        },
+        {
+          "dmxRange": [151, 160],
+          "type": "ColorPreset",
+          "comment": "UV, Amber"
+        },
+        {
+          "dmxRange": [161, 170],
+          "type": "ColorPreset",
+          "comment": "UV, Amber, Red"
+        },
+        {
+          "dmxRange": [171, 180],
+          "type": "ColorPreset",
+          "comment": "UV, Red"
+        },
+        {
+          "dmxRange": [181, 190],
+          "type": "ColorPreset",
+          "comment": "Red, White, Amber"
+        },
+        {
+          "dmxRange": [191, 200],
+          "type": "ColorPreset",
+          "comment": "White, Amber"
+        },
+        {
+          "dmxRange": [201, 210],
+          "type": "ColorPreset",
+          "comment": "White"
+        },
+        {
+          "dmxRange": [211, 220],
+          "type": "ColorPreset",
+          "comment": "White, Blue"
+        },
+        {
+          "dmxRange": [221, 230],
+          "type": "ColorPreset",
+          "comment": "Red, Green, Blue, White, Amber, UV"
+        },
+        {
+          "dmxRange": [231, 240],
+          "type": "ColorPreset",
+          "comment": "Colour sequence, increasing speed"
+        },
+        {
+          "dmxRange": [241, 255],
+          "type": "ColorPreset",
+          "comment": "aaa"
+        }
+      ]
+    },
+    "Auto programmes (channel 6 must be set to a value between 1 and 255, channel 15 to a value between 10 and 255)": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 10],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [11, 20],
+          "type": "Effect",
+          "effectName": "Preprogrammed automatic show 1"
+        },
+        {
+          "dmxRange": [21, 30],
+          "type": "Effect",
+          "effectName": "Preprogrammed automatic show 2"
+        },
+        {
+          "dmxRange": [31, 40],
+          "type": "Effect",
+          "effectName": "Preprogrammed automatic show 3"
+        },
+        {
+          "dmxRange": [41, 50],
+          "type": "Effect",
+          "effectName": "Preprogrammed automatic show 4"
+        },
+        {
+          "dmxRange": [51, 60],
+          "type": "Effect",
+          "effectName": "Preprogrammed automatic show 5"
+        },
+        {
+          "dmxRange": [61, 70],
+          "type": "Effect",
+          "effectName": "Preprogrammed automatic show 6"
+        },
+        {
+          "dmxRange": [71, 80],
+          "type": "Effect",
+          "effectName": "Preprogrammed automatic show 7"
+        },
+        {
+          "dmxRange": [81, 90],
+          "type": "Effect",
+          "effectName": "Preprogrammed automatic show 8"
+        },
+        {
+          "dmxRange": [91, 230],
+          "type": "Effect",
+          "effectName": "Sound control, from sound control off to high microphone sensitivity",
+          "soundControlled": true
+        },
+        {
+          "dmxRange": [231, 240],
+          "type": "Effect",
+          "effectName": "Reset, if the value is transmitted for at least 3 seconds"
+        },
+        {
+          "dmxRange": [241, 255],
+          "type": "NoFunction"
+        }
+      ]
+    }
+  },
+  "modes": [
+    {
+      "name": "7-channel",
+      "shortName": "7ch",
+      "channels": [
+        "Rotation (pan) (0° up to the maximum value of the Pan area. middle position: 128)",
+        "Inclination (tilt) (0° up to the maximum value of the Tilt area. middle position: 128)",
+        "Speed of pan and tilt movement, fast (0) to slow (255)",
+        "Dimmer intensity from dark (0) to bright (255)",
+        "Shutter (channel 4 must be set to a value between 1 and 255, channel 6 to a value between 10 and 255)",
+        "Colour macros (channel 4 must be set to a value between 1 and 255)",
+        "Auto programmes (channel 4 must be set to a value between 1 and 255, channel 6 to a value between 10 and 255)"
+      ]
+    },
+    {
+      "name": "16-channel",
+      "shortName": "16ch",
+      "channels": [
+        "Rotation (pan) (0° up to the maximum value of the Pan area. middle position: 128)",
+        "Fine adjustment rotation (pan) 16 bit",
+        "Inclination (tilt) (0° up to the maximum value of the Tilt area. middle position: 128)",
+        "Fine adjustment inclination (pan) 16 bit",
+        "Speed of pan and tilt movement, fast (0) to slow (255)",
+        "Dimmer intensity from dark (0) to bright (255)",
+        "Shutter (channels 6 and 8 as well as channels 9, 10, 12 or 13 must be set to a value between 1 and 255, channel 15 to a value between 10 and 255)",
+        "Intensity Red (0 % to 100 %), if channel 6 = 1 ... 255",
+        "Intensity Green (0 % to 100 %), if channel 6 = 1 ... 255",
+        "Intensity Blue (0 % to 100 %), if channel 6 = 1 ... 255",
+        "Intensity White (0 % to 100 %), if channel 6 = 1 ... 255",
+        "Intensity Amber (0 % to 100 %), if channel 6 = 1 ... 255",
+        "Intensity UV (0 % to 100 %), if channel 6 = 1 ... 255",
+        "Colour temperature (0 % to 100 %)",
+        "Colour macros (channel 6 must be set to a value between 1 and 255)",
+        "Auto programmes (channel 6 must be set to a value between 1 and 255, channel 15 to a value between 10 and 255)"
+      ]
+    }
+  ]
+}
