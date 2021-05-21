@@ -140,6 +140,11 @@
     "name": "EMPiRE Lighting",
     "website": "http://shop.empire-electronic.de/shop-EMPiRE.html"
   },
+  "enttec": {
+    "name": "ENTTEC",
+    "website": "https://www.enttec.com",
+    "rdmId": 17742
+  },
   "epsilon": {
     "name": "Epsilon",
     "website": "https://www.epsilon-pro.com/"

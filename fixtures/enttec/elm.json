@@ -1,0 +1,181 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "ELM",
+  "shortName": "ELM",
+  "categories": ["Other"],
+  "meta": {
+    "authors": ["James Walton"],
+    "createDate": "2021-03-31",
+    "lastModifyDate": "2021-03-31"
+  },
+  "comment": "ENTTEC LED Mapper, LED Mapping and media server software.",
+  "links": {
+    "manual": [
+      "https://enttec-web-cdn.s3-ap-southeast-2.amazonaws.com/download/elm/560/ELM_user_manual_Rev560.pdf"
+    ],
+    "productPage": [
+      "https://www.enttec.co.uk/product/controls/addressable-led-pixel-control/pixel-mapping-software/"
+    ],
+    "video": [
+      "https://www.youtube.com/watch?v=ulBXzLQP0f0&ab_channel=ENTTEC"
+    ]
+  },
+  "physical": {
+    "dimensions": [0, 0, 0],
+    "weight": 0.1,
+    "power": 0.1,
+    "DMXconnector": "Network / ENTTEC DMX USB Pro",
+    "bulb": {
+      "type": "N/A"
+    },
+    "lens": {
+      "name": "N/A"
+    }
+  },
+  "wheels": {
+    "Media Index": {
+      "slots": [
+        {
+          "type": "Gobo",
+          "name": "Media slot range"
+        }
+      ]
+    }
+  },
+  "availableChannels": {
+    "Enable / Disable": {
+      "defaultValue": 255,
+      "highlightValue": 255,
+      "capabilities": [
+        {
+          "dmxRange": [0, 0],
+          "type": "Generic",
+          "comment": "Deactivated"
+        },
+        {
+          "dmxRange": [1, 254],
+          "type": "NoFunction",
+          "comment": "No Function"
+        },
+        {
+          "dmxRange": [255, 255],
+          "type": "Generic",
+          "comment": "Deactivated"
+        }
+      ]
+    },
+    "Media Index": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 0],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [1, 255],
+          "type": "WheelSlot",
+          "slotNumber": 1,
+          "comment": "Full media index range"
+        }
+      ]
+    },
+    "Media Intensity": {
+      "defaultValue": 0,
+      "highlightValue": 255,
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Red Filter": {
+      "defaultValue": 0,
+      "highlightValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red",
+        "comment": "Red colour filter"
+      }
+    },
+    "Green Filter": {
+      "defaultValue": 0,
+      "highlightValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green",
+        "comment": "Green colour filter"
+      }
+    },
+    "Blue Filter": {
+      "defaultValue": 0,
+      "highlightValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue",
+        "comment": "Blue colour filter"
+      }
+    },
+    "Media Playback Speed": {
+      "defaultValue": 25,
+      "highlightValue": 25,
+      "capabilities": [
+        {
+          "dmxRange": [0, 0],
+          "type": "Speed",
+          "speedStart": "stop",
+          "speedEnd": "stop",
+          "comment": "Paused"
+        },
+        {
+          "dmxRange": [1, 24],
+          "type": "Speed",
+          "speedStart": "slow",
+          "speedEnd": "slow",
+          "comment": "Slow"
+        },
+        {
+          "dmxRange": [25, 25],
+          "type": "Speed",
+          "speedStart": "slow",
+          "speedEnd": "fast",
+          "comment": "1x playback speed"
+        },
+        {
+          "dmxRange": [26, 255],
+          "type": "Speed",
+          "speedStart": "slow",
+          "speedEnd": "fast",
+          "comment": "between 1x and 10x playback speed"
+        }
+      ]
+    },
+    "Transition Duration": {
+      "defaultValue": 24,
+      "capabilities": [
+        {
+          "dmxRange": [0, 0],
+          "type": "Time",
+          "time": "instant"
+        },
+        {
+          "dmxRange": [1, 255],
+          "type": "Time",
+          "timeStart": "0.1s",
+          "timeEnd": "20s"
+        }
+      ]
+    }
+  },
+  "modes": [
+    {
+      "name": "Basic",
+      "channels": [
+        "Enable / Disable",
+        "Media Index",
+        "Media Intensity",
+        "Red Filter",
+        "Green Filter",
+        "Blue Filter",
+        "Media Playback Speed",
+        "Transition Duration"
+      ]
+    }
+  ]
+}
