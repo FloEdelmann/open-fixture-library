@@ -1,0 +1,515 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "LED Beam 8x12W RGBW",
+  "categories": ["Color Changer"],
+  "meta": {
+    "authors": ["René Bütikofer"],
+    "createDate": "2021-03-31",
+    "lastModifyDate": "2021-03-31",
+    "importPlugin": {
+      "plugin": "qlcplus_4.12.1",
+      "date": "2021-03-31",
+      "comment": "created by Q Light Controller Plus (version 4.12.3)"
+    }
+  },
+  "physical": {
+    "dimensions": [1070, 130, 80],
+    "weight": 7.5,
+    "power": 96,
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "LED 8x12W RGBW"
+    },
+    "lens": {
+      "degreesMinMax": [8, 8]
+    }
+  },
+  "availableChannels": {
+    "Horizontal operation": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Tilt",
+        "angleStart": "0deg",
+        "angleEnd": "180deg"
+      }
+    },
+    "Horizontal speed": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "TiltContinuous",
+        "speedStart": "slow",
+        "speedEnd": "fast"
+      }
+    },
+    "Built-in effects": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Effect",
+        "effectName": "Built-in effects"
+      }
+    },
+    "Built-in effect speed adjustment": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Speed",
+        "speedStart": "slow",
+        "speedEnd": "fast",
+        "helpWanted": "Are the automatically added speed values correct?"
+      }
+    },
+    "Master Dimmer": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Red": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "White": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Built-in effect": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 10],
+          "type": "Effect",
+          "effectName": "No effect"
+        },
+        {
+          "dmxRange": [11, 20],
+          "type": "Effect",
+          "effectName": "Built-in effect 1"
+        },
+        {
+          "dmxRange": [21, 31],
+          "type": "Effect",
+          "effectName": "Built-in effect 2"
+        },
+        {
+          "dmxRange": [32, 42],
+          "type": "Effect",
+          "effectName": "Built-in effect 3"
+        },
+        {
+          "dmxRange": [43, 53],
+          "type": "Effect",
+          "effectName": "Built-in effect 4"
+        },
+        {
+          "dmxRange": [54, 64],
+          "type": "Effect",
+          "effectName": "Built-in effect 5"
+        },
+        {
+          "dmxRange": [65, 75],
+          "type": "Effect",
+          "effectName": "Built-in effect 6"
+        },
+        {
+          "dmxRange": [76, 86],
+          "type": "Effect",
+          "effectName": "Built-in effect 7"
+        },
+        {
+          "dmxRange": [87, 97],
+          "type": "Effect",
+          "effectName": "Built-in effect 8"
+        },
+        {
+          "dmxRange": [98, 108],
+          "type": "Effect",
+          "effectName": "Built-in effect 9"
+        },
+        {
+          "dmxRange": [109, 119],
+          "type": "Effect",
+          "effectName": "Built-in effect 10"
+        },
+        {
+          "dmxRange": [120, 130],
+          "type": "Effect",
+          "effectName": "Built-in effect 11"
+        },
+        {
+          "dmxRange": [131, 141],
+          "type": "Effect",
+          "effectName": "Built-in effect 12"
+        },
+        {
+          "dmxRange": [142, 152],
+          "type": "Effect",
+          "effectName": "Built-in effect 13"
+        },
+        {
+          "dmxRange": [153, 163],
+          "type": "Effect",
+          "effectName": "Built-in effect 14"
+        },
+        {
+          "dmxRange": [164, 174],
+          "type": "Effect",
+          "effectName": "Built-in effect 15"
+        },
+        {
+          "dmxRange": [175, 185],
+          "type": "Effect",
+          "effectName": "Built-in effect 16"
+        },
+        {
+          "dmxRange": [186, 196],
+          "type": "Effect",
+          "effectName": "Built-in effect 17"
+        },
+        {
+          "dmxRange": [197, 207],
+          "type": "Effect",
+          "effectName": "Built-in effect 18"
+        },
+        {
+          "dmxRange": [208, 218],
+          "type": "Effect",
+          "effectName": "Built-in effect 19"
+        },
+        {
+          "dmxRange": [219, 229],
+          "type": "Effect",
+          "effectName": "Built-in effect 20"
+        },
+        {
+          "dmxRange": [230, 240],
+          "type": "Effect",
+          "effectName": "Built-in effect 21"
+        },
+        {
+          "dmxRange": [241, 250],
+          "type": "Effect",
+          "effectName": "Built-in effect 22"
+        },
+        {
+          "dmxRange": [251, 255],
+          "type": "Effect",
+          "effectName": "Voice control effect"
+        }
+      ]
+    },
+    "Strobe": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ShutterStrobe",
+        "shutterEffect": "Strobe",
+        "speedStart": "slow",
+        "speedEnd": "fast",
+        "helpWanted": "At which DMX values is strobe disabled?"
+      }
+    },
+    "BAR1 R dimming": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "BAR2 R dimming": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "BAR3 R dimming": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "BAR4 R dimming": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "BAR5 R dimming": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "BAR6 R dimming": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "BAR7 R dimming": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "BAR8 R dimming": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "BAR1 G dimming": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "BAR2 G dimming": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "BAR3 G dimming": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "BAR4 G dimming": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "BAR5 G dimming": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "BAR6 G dimming": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "BAR7 G dimming": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "BAR8 G dimming": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "BAR1 B dimming": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "BAR2 B dimming": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "BAR3 B dimming": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "BAR4 B dimming": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "BAR5 B dimming": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "BAR6 B dimming": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "BAR7 B dimming": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "BAR8 B dimming": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "BAR1 W dimming": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "BAR2 W dimming": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "BAR3 W dimming": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "BAR4 W dimming": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "BAR5 W dimming": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "BAR6 W dimming": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "BAR7 W dimming": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "BAR8 W dimming": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "9-channel",
+      "shortName": "9ch",
+      "channels": [
+        "Horizontal operation",
+        "Horizontal speed",
+        "Built-in effects",
+        "Built-in effect speed adjustment",
+        "Master Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "38-channel",
+      "shortName": "38ch",
+      "channels": [
+        "Horizontal operation",
+        "Horizontal speed",
+        "Built-in effect",
+        "Built-in effect speed adjustment",
+        "Master Dimmer",
+        "Strobe",
+        "BAR1 R dimming",
+        "BAR1 G dimming",
+        "BAR1 B dimming",
+        "BAR1 W dimming",
+        "BAR2 R dimming",
+        "BAR2 G dimming",
+        "BAR2 B dimming",
+        "BAR2 W dimming",
+        "BAR3 R dimming",
+        "BAR3 G dimming",
+        "BAR3 B dimming",
+        "BAR3 W dimming",
+        "BAR4 R dimming",
+        "BAR4 G dimming",
+        "BAR4 B dimming",
+        "BAR4 W dimming",
+        "BAR5 R dimming",
+        "BAR5 G dimming",
+        "BAR5 B dimming",
+        "BAR5 W dimming",
+        "BAR6 R dimming",
+        "BAR6 G dimming",
+        "BAR6 B dimming",
+        "BAR6 W dimming",
+        "BAR7 R dimming",
+        "BAR7 G dimming",
+        "BAR7 B dimming",
+        "BAR7 W dimming",
+        "BAR8 R dimming",
+        "BAR8 G dimming",
+        "BAR8 B dimming",
+        "BAR8 W dimming"
+      ]
+    }
+  ]
+}
