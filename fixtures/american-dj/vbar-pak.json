@@ -1,0 +1,323 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "VBar Pak",
+  "categories": ["Color Changer"],
+  "meta": {
+    "authors": ["René Bütikofer"],
+    "createDate": "2021-04-02",
+    "lastModifyDate": "2021-04-02",
+    "importPlugin": {
+      "plugin": "qlcplus_4.12.1",
+      "date": "2021-04-02",
+      "comment": "created by Q Light Controller Plus (version 4.12.3)"
+    }
+  },
+  "physical": {
+    "dimensions": [560, 90, 165],
+    "weight": 1.7,
+    "power": 21,
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "LED 5x4W RGBA"
+    }
+  },
+  "availableChannels": {
+    "Color Macros": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 15],
+          "type": "ColorPreset",
+          "comment": "Off"
+        },
+        {
+          "dmxRange": [16, 31],
+          "type": "ColorPreset",
+          "comment": "Red"
+        },
+        {
+          "dmxRange": [32, 47],
+          "type": "ColorPreset",
+          "comment": "Green"
+        },
+        {
+          "dmxRange": [48, 63],
+          "type": "ColorPreset",
+          "comment": "Blue"
+        },
+        {
+          "dmxRange": [64, 79],
+          "type": "ColorPreset",
+          "comment": "Amber"
+        },
+        {
+          "dmxRange": [80, 95],
+          "type": "ColorPreset",
+          "comment": "Red + Green"
+        },
+        {
+          "dmxRange": [96, 111],
+          "type": "ColorPreset",
+          "comment": "Red + Blue"
+        },
+        {
+          "dmxRange": [112, 127],
+          "type": "ColorPreset",
+          "comment": "Red + Amber"
+        },
+        {
+          "dmxRange": [128, 143],
+          "type": "ColorPreset",
+          "comment": "Green + Blue"
+        },
+        {
+          "dmxRange": [144, 159],
+          "type": "ColorPreset",
+          "comment": "Green + Amber"
+        },
+        {
+          "dmxRange": [160, 175],
+          "type": "ColorPreset",
+          "comment": "Blue + Amber"
+        },
+        {
+          "dmxRange": [176, 191],
+          "type": "ColorPreset",
+          "comment": "Red + Green + Blue"
+        },
+        {
+          "dmxRange": [192, 207],
+          "type": "ColorPreset",
+          "comment": "Red + Green + Amber"
+        },
+        {
+          "dmxRange": [208, 223],
+          "type": "ColorPreset",
+          "comment": "Red + Blue + Amber"
+        },
+        {
+          "dmxRange": [224, 239],
+          "type": "ColorPreset",
+          "comment": "Green + Blue + Amber"
+        },
+        {
+          "dmxRange": [240, 255],
+          "type": "ColorPreset",
+          "comment": "Red + Green + Blue + Amber"
+        }
+      ]
+    },
+    "Master Dimmer": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Strobe": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 15],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Strobe",
+          "comment": "Off",
+          "speedStart": "slow",
+          "speedEnd": "fast",
+          "helpWanted": "Are the automatically added speed values correct?"
+        },
+        {
+          "dmxRange": [16, 255],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Strobe",
+          "speedStart": "slow",
+          "speedEnd": "fast"
+        }
+      ]
+    },
+    "Red": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Amber": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Amber"
+      }
+    },
+    "Color Macros (if >15, channels 1-4 do not work)": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 15],
+          "type": "ColorPreset",
+          "comment": "Off"
+        },
+        {
+          "dmxRange": [16, 31],
+          "type": "ColorPreset",
+          "comment": "Red"
+        },
+        {
+          "dmxRange": [32, 47],
+          "type": "ColorPreset",
+          "comment": "Green"
+        },
+        {
+          "dmxRange": [48, 63],
+          "type": "ColorPreset",
+          "comment": "Blue"
+        },
+        {
+          "dmxRange": [64, 79],
+          "type": "ColorPreset",
+          "comment": "Amber"
+        },
+        {
+          "dmxRange": [80, 95],
+          "type": "ColorPreset",
+          "comment": "Red + Green"
+        },
+        {
+          "dmxRange": [96, 111],
+          "type": "ColorPreset",
+          "comment": "Red + Blue"
+        },
+        {
+          "dmxRange": [112, 127],
+          "type": "ColorPreset",
+          "comment": "Red + Amber"
+        },
+        {
+          "dmxRange": [128, 143],
+          "type": "ColorPreset",
+          "comment": "Green + Blue"
+        },
+        {
+          "dmxRange": [144, 159],
+          "type": "ColorPreset",
+          "comment": "Green + Amber"
+        },
+        {
+          "dmxRange": [160, 175],
+          "type": "ColorPreset",
+          "comment": "Blue + Amber"
+        },
+        {
+          "dmxRange": [176, 191],
+          "type": "ColorPreset",
+          "comment": "Red + Green + Blue"
+        },
+        {
+          "dmxRange": [192, 207],
+          "type": "ColorPreset",
+          "comment": "Red + Green + Amber"
+        },
+        {
+          "dmxRange": [208, 223],
+          "type": "ColorPreset",
+          "comment": "Red + Blue + Amber"
+        },
+        {
+          "dmxRange": [224, 239],
+          "type": "ColorPreset",
+          "comment": "Green + Blue + Amber"
+        },
+        {
+          "dmxRange": [240, 255],
+          "type": "ColorPreset",
+          "comment": "Red + Green + Blue + Amber"
+        }
+      ]
+    }
+  },
+  "modes": [
+    {
+      "name": "1-channel",
+      "shortName": "1ch",
+      "channels": [
+        "Color Macros"
+      ]
+    },
+    {
+      "name": "2-channel",
+      "shortName": "2ch",
+      "channels": [
+        "Color Macros",
+        "Master Dimmer"
+      ]
+    },
+    {
+      "name": "3-channel",
+      "shortName": "3ch",
+      "channels": [
+        "Color Macros",
+        "Master Dimmer",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "4-channel",
+      "shortName": "4ch",
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber"
+      ]
+    },
+    {
+      "name": "5-channel",
+      "shortName": "5ch",
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Master Dimmer"
+      ]
+    },
+    {
+      "name": "6-channel",
+      "shortName": "6ch",
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Master Dimmer",
+        "Color Macros (if >15, channels 1-4 do not work)"
+      ]
+    },
+    {
+      "name": "7-channel",
+      "shortName": "7ch",
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Master Dimmer",
+        "Strobe",
+        "Color Macros (if >15, channels 1-4 do not work)"
+      ]
+    }
+  ]
+}
