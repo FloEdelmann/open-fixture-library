@@ -1,0 +1,82 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "led bar 6 channels",
+  "shortName": "pixelbar",
+  "categories": ["Pixel Bar"],
+  "meta": {
+    "authors": ["Lowmate"],
+    "createDate": "2021-04-02",
+    "lastModifyDate": "2021-04-02"
+  },
+  "links": {
+    "productPage": [
+      "http://www.lanbolight.com/en/m/product/337.html"
+    ]
+  },
+  "physical": {
+    "weight": 5,
+    "power": 15,
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "led"
+    }
+  },
+  "availableChannels": {
+    "Dimmer": {
+      "defaultValue": 1,
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Red": {
+      "defaultValue": 2,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "defaultValue": 3,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "defaultValue": 4,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "White": {
+      "defaultValue": 5,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Strobe": {
+      "defaultValue": 6,
+      "capability": {
+        "type": "Speed",
+        "speedStart": "slow",
+        "speedEnd": "fast"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "one",
+      "shortName": "one",
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Strobe"
+      ]
+    }
+  ]
+}

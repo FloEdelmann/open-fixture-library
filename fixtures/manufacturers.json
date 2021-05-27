@@ -262,6 +262,11 @@
     "name": "Laserworld",
     "website": "https://www.laserworld.com/en/"
   },
+  "lb-w1512l-ip": {
+    "name": "LB-W1512L-IP",
+    "website": "http://www.lanbolight.com",
+    "rdmId": 0
+  },
   "ledj": {
     "name": "LEDJ",
     "comment": "Brand of the Prolight Concepts Group.",
