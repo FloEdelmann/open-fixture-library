@@ -1,0 +1,254 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "LED Tube Controller Basic",
+  "categories": ["Other"],
+  "meta": {
+    "authors": ["Michael Dorfinger"],
+    "createDate": "2021-04-03",
+    "lastModifyDate": "2021-04-03"
+  },
+  "links": {
+    "manual": [
+      "https://open-fixture-library.org/fixture-editor"
+    ]
+  },
+  "availableChannels": {
+    "Color Macros": {
+      "defaultValue": 0,
+      "highlightValue": 45,
+      "capabilities": [
+        {
+          "dmxRange": [0, 5],
+          "type": "ColorPreset",
+          "comment": "Blackout"
+        },
+        {
+          "dmxRange": [6, 11],
+          "type": "ColorPreset",
+          "comment": "Red"
+        },
+        {
+          "dmxRange": [12, 17],
+          "type": "ColorPreset",
+          "comment": "Green"
+        },
+        {
+          "dmxRange": [18, 23],
+          "type": "ColorPreset",
+          "comment": "Yellow"
+        },
+        {
+          "dmxRange": [24, 29],
+          "type": "ColorPreset",
+          "comment": "Blue"
+        },
+        {
+          "dmxRange": [30, 35],
+          "type": "ColorPreset",
+          "comment": "Purple"
+        },
+        {
+          "dmxRange": [36, 41],
+          "type": "ColorPreset",
+          "comment": "Cyan",
+          "colorTemperature": "default"
+        },
+        {
+          "dmxRange": [42, 47],
+          "type": "ColorPreset",
+          "comment": "White"
+        },
+        {
+          "dmxRange": [48, 53],
+          "type": "ColorPreset",
+          "comment": "Fast Change"
+        },
+        {
+          "dmxRange": [54, 59],
+          "type": "ColorPreset",
+          "comment": "Slow Flow 1"
+        },
+        {
+          "dmxRange": [60, 65],
+          "type": "ColorPreset",
+          "comment": "Fast Flow 1"
+        },
+        {
+          "dmxRange": [66, 71],
+          "type": "ColorPreset",
+          "comment": "Fast Flow 2"
+        },
+        {
+          "dmxRange": [72, 77],
+          "type": "ColorPreset",
+          "comment": "Black Run 1"
+        },
+        {
+          "dmxRange": [78, 83],
+          "type": "ColorPreset",
+          "comment": "Roll Chase"
+        },
+        {
+          "dmxRange": [84, 89],
+          "type": "ColorPreset",
+          "comment": "Roll Color"
+        },
+        {
+          "dmxRange": [90, 95],
+          "type": "ColorPreset",
+          "comment": "Color 1/4"
+        },
+        {
+          "dmxRange": [96, 101],
+          "type": "ColorPreset",
+          "comment": "Color1 1/4"
+        },
+        {
+          "dmxRange": [102, 107],
+          "type": "ColorPreset",
+          "comment": "Color 1/2"
+        },
+        {
+          "dmxRange": [108, 113],
+          "type": "ColorPreset",
+          "comment": "Color Flash"
+        },
+        {
+          "dmxRange": [114, 119],
+          "type": "ColorPreset",
+          "comment": "B & W Flow"
+        },
+        {
+          "dmxRange": [120, 125],
+          "type": "ColorPreset",
+          "comment": "R & G Flow"
+        },
+        {
+          "dmxRange": [126, 131],
+          "type": "ColorPreset",
+          "comment": "G & B Flow"
+        },
+        {
+          "dmxRange": [132, 137],
+          "type": "ColorPreset",
+          "comment": "R & B Flow"
+        },
+        {
+          "dmxRange": [138, 143],
+          "type": "ColorPreset",
+          "comment": "R & G Chase 1"
+        },
+        {
+          "dmxRange": [144, 149],
+          "type": "ColorPreset",
+          "comment": "R & G Chase 2 "
+        },
+        {
+          "dmxRange": [150, 155],
+          "type": "ColorPreset",
+          "comment": "R & B Chase 1"
+        },
+        {
+          "dmxRange": [156, 161],
+          "type": "ColorPreset",
+          "comment": "R & B Chase 2"
+        },
+        {
+          "dmxRange": [162, 167],
+          "type": "ColorPreset",
+          "comment": "R & W Chase 1"
+        },
+        {
+          "dmxRange": [168, 173],
+          "type": "ColorPreset",
+          "comment": "R & W Chase 2"
+        },
+        {
+          "dmxRange": [174, 179],
+          "type": "ColorPreset",
+          "comment": "B & G Chase 1"
+        },
+        {
+          "dmxRange": [180, 185],
+          "type": "ColorPreset",
+          "comment": "B & G Chase 2"
+        },
+        {
+          "dmxRange": [186, 191],
+          "type": "ColorPreset",
+          "comment": "W & G Chase 1"
+        },
+        {
+          "dmxRange": [192, 197],
+          "type": "ColorPreset",
+          "comment": "W & G Chase 2"
+        },
+        {
+          "dmxRange": [198, 203],
+          "type": "ColorPreset",
+          "comment": "Rainbow Chase 1"
+        },
+        {
+          "dmxRange": [204, 209],
+          "type": "ColorPreset",
+          "comment": "Rainbow Chase 2"
+        },
+        {
+          "dmxRange": [210, 215],
+          "type": "ColorPreset",
+          "comment": "Rainbow Chase 3"
+        },
+        {
+          "dmxRange": [216, 221],
+          "type": "ColorPreset",
+          "comment": "Rainbow Chase 4"
+        },
+        {
+          "dmxRange": [222, 255],
+          "type": "ColorPreset",
+          "comment": "Rainbow Chase 8"
+        }
+      ]
+    },
+    "Speed": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Speed",
+        "speedStart": "slow",
+        "speedEnd": "fast"
+      }
+    },
+    "Time": {
+      "capability": {
+        "type": "Speed",
+        "speedStart": "slow",
+        "speedEnd": "fast"
+      }
+    },
+    "Strobe": {
+      "capability": {
+        "type": "StrobeSpeed",
+        "speedStart": "0Hz",
+        "speedEnd": "300Hz"
+      }
+    },
+    "RGB Active": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "NoFunction"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "Standard",
+      "channels": [
+        "Color Macros",
+        "Speed",
+        "Time",
+        "Strobe",
+        "RGB Active"
+      ]
+    }
+  ]
+}
