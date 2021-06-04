@@ -1,0 +1,576 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "Galaxy 72W LED Wall Wash",
+  "categories": ["Color Changer"],
+  "meta": {
+    "authors": ["René Bütikofer"],
+    "createDate": "2021-03-30",
+    "lastModifyDate": "2021-03-30",
+    "importPlugin": {
+      "plugin": "qlcplus_4.12.1",
+      "date": "2021-03-30",
+      "comment": "created by Q Light Controller Plus (version 4.12.3)"
+    }
+  },
+  "physical": {
+    "dimensions": [1020, 65, 65],
+    "weight": 1.79,
+    "power": 38,
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "LED 24 x 3W RGB"
+    },
+    "lens": {
+      "degreesMinMax": [40, 40]
+    }
+  },
+  "availableChannels": {
+    "Red": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Colour Chase Table": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorPreset"
+      }
+    },
+    "Chase Speed, Slow to Fast": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Speed",
+        "comment": "Colour Chase Table",
+        "speedStart": "slow",
+        "speedEnd": "fast",
+        "helpWanted": "Are the automatically added speed values correct?"
+      }
+    },
+    "Master dimmer": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Strobe": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ShutterStrobe",
+        "shutterEffect": "Strobe",
+        "speedStart": "slow",
+        "speedEnd": "fast",
+        "helpWanted": "At which DMX values is strobe disabled?"
+      }
+    },
+    "Auto Program": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Effect",
+        "effectName": "Auto Program"
+      }
+    },
+    "All Dimmer 1": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Strobe 1": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ShutterStrobe",
+        "shutterEffect": "Strobe",
+        "speedStart": "slow",
+        "speedEnd": "fast",
+        "helpWanted": "At which DMX values is strobe disabled?"
+      }
+    },
+    "Red 1": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green 1": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue 1": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "All Dimmer 2": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Strobe 2": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ShutterStrobe",
+        "shutterEffect": "Strobe",
+        "speedStart": "slow",
+        "speedEnd": "fast",
+        "helpWanted": "At which DMX values is strobe disabled?"
+      }
+    },
+    "Auto Program 1": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Effect",
+        "effectName": "Auto Program 1"
+      }
+    },
+    "Auto Program 2": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Effect",
+        "effectName": "Auto Program 2"
+      }
+    },
+    "Auto Program 3": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Effect",
+        "effectName": "Auto Program 3"
+      }
+    },
+    "Auto Program 4": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Effect",
+        "effectName": "Auto Program 4"
+      }
+    },
+    "Red 2": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Red 3": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Red 4": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green 2": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Green 3": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Green 4": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "All Dimmer 3": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "All Dimmer 4": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Strobe 3": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ShutterStrobe",
+        "shutterEffect": "Strobe",
+        "speedStart": "slow",
+        "speedEnd": "fast",
+        "helpWanted": "At which DMX values is strobe disabled?"
+      }
+    },
+    "Strobe 4": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ShutterStrobe",
+        "shutterEffect": "Strobe",
+        "speedStart": "slow",
+        "speedEnd": "fast",
+        "helpWanted": "At which DMX values is strobe disabled?"
+      }
+    },
+    "Blue 2": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Blue 3": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Blue 4": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "All Dimmer 5": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Auto Program 5": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Effect",
+        "effectName": "Auto Program 5"
+      }
+    },
+    "Auto Program 6": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Effect",
+        "effectName": "Auto Program 6"
+      }
+    },
+    "Auto Program 7": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Effect",
+        "effectName": "Auto Program 7"
+      }
+    },
+    "Auto Program 8": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Effect",
+        "effectName": "Auto Program 8"
+      }
+    },
+    "Red 5": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Red 6": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Red 7": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Red 8": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green 5": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Green 6": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Green 7": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Green 8": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue 5": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Blue 6": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Blue 7": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Blue 8": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Strobe 5": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ShutterStrobe",
+        "shutterEffect": "Strobe",
+        "speedStart": "slow",
+        "speedEnd": "fast",
+        "helpWanted": "At which DMX values is strobe disabled?"
+      }
+    },
+    "Strobe 6": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ShutterStrobe",
+        "shutterEffect": "Strobe",
+        "speedStart": "slow",
+        "speedEnd": "fast",
+        "helpWanted": "At which DMX values is strobe disabled?"
+      }
+    },
+    "Strobe 7": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ShutterStrobe",
+        "shutterEffect": "Strobe",
+        "speedStart": "slow",
+        "speedEnd": "fast",
+        "helpWanted": "At which DMX values is strobe disabled?"
+      }
+    },
+    "Strobe 8": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ShutterStrobe",
+        "shutterEffect": "Strobe",
+        "speedStart": "slow",
+        "speedEnd": "fast",
+        "helpWanted": "At which DMX values is strobe disabled?"
+      }
+    },
+    "All Dimmer 6": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "All Dimmer 8": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "All Dimmer 7": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Intensity"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "5-channel",
+      "shortName": "5ch",
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Colour Chase Table",
+        "Chase Speed, Slow to Fast"
+      ]
+    },
+    {
+      "name": "8-channel",
+      "shortName": "8ch",
+      "channels": [
+        "Master dimmer",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "Auto Program",
+        "Colour Chase Table",
+        "Chase Speed, Slow to Fast"
+      ]
+    },
+    {
+      "name": "14-channel",
+      "shortName": "14ch",
+      "channels": [
+        "All Dimmer 1",
+        "Strobe 1",
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "Auto Program 1",
+        "All Dimmer 2",
+        "Strobe 2",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "Auto Program 2",
+        "Colour Chase Table",
+        "Chase Speed, Slow to Fast"
+      ]
+    },
+    {
+      "name": "26-channel",
+      "shortName": "26ch",
+      "channels": [
+        "All Dimmer 1",
+        "Strobe 1",
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "Auto Program 1",
+        "All Dimmer 2",
+        "Strobe 2",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "Auto Program 2",
+        "All Dimmer 3",
+        "Strobe 3",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "Auto Program 3",
+        "All Dimmer 4",
+        "Strobe 4",
+        "Red 4",
+        "Green 4",
+        "Blue 4",
+        "Auto Program 4",
+        "Colour Chase Table",
+        "Chase Speed, Slow to Fast"
+      ]
+    },
+    {
+      "name": "50-channel",
+      "shortName": "50ch",
+      "channels": [
+        "All Dimmer 1",
+        "Strobe 1",
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "Auto Program 1",
+        "All Dimmer 2",
+        "Strobe 2",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "Auto Program 2",
+        "All Dimmer 3",
+        "Strobe 3",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "Auto Program 3",
+        "All Dimmer 4",
+        "Strobe 4",
+        "Red 4",
+        "Green 4",
+        "Blue 4",
+        "Auto Program 4",
+        "All Dimmer 5",
+        "Strobe 5",
+        "Red 5",
+        "Green 5",
+        "Blue 5",
+        "Auto Program 5",
+        "All Dimmer 6",
+        "Strobe 6",
+        "Red 6",
+        "Green 6",
+        "Blue 6",
+        "Auto Program 6",
+        "All Dimmer 7",
+        "Strobe 7",
+        "Red 7",
+        "Green 7",
+        "Blue 7",
+        "Auto Program 7",
+        "All Dimmer 8",
+        "Strobe 8",
+        "Red 8",
+        "Green 8",
+        "Blue 8",
+        "Auto Program 8",
+        "Colour Chase Table",
+        "Chase Speed, Slow to Fast"
+      ]
+    }
+  ]
+}
