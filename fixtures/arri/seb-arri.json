@@ -1,0 +1,91 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "seb arri",
+  "categories": ["Matrix"],
+  "meta": {
+    "authors": ["SEB"],
+    "createDate": "2020-09-28",
+    "lastModifyDate": "2020-09-28"
+  },
+  "links": {
+    "manual": [
+      "https://www.arri.com/resource/blob/65958/560471fec7f8f2e186ef8ca9e6cdd489/l5-0019894-arri-skypanel-dmx-protocol-specification-v4-4-data.pdf"
+    ],
+    "productPage": [
+      "https://www.arri.com/resource/blob/65958/560471fec7f8f2e186ef8ca9e6cdd489/l5-0019894-arri-skypanel-dmx-protocol-specification-v4-4-data.pdf"
+    ],
+    "video": [
+      "https://www.arri.com/resource/blob/65958/560471fec7f8f2e186ef8ca9e6cdd489/l5-0019894-arri-skypanel-dmx-protocol-specification-v4-4-data.pdf"
+    ]
+  },
+  "availableChannels": {
+    "1 PIXEL DIMMER": {
+      "defaultValue": "0%",
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Color Temperature": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "GREN MAGENTA POINT": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Magenta"
+      }
+    },
+    "CROSSFADE TO COLOR": {
+      "capability": {
+        "type": "NoFunction"
+      }
+    },
+    "Red": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "White": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "pixel mapping",
+      "shortName": "sc360 pixel",
+      "channels": [
+        "1 PIXEL DIMMER",
+        "Color Temperature",
+        "GREN MAGENTA POINT",
+        "CROSSFADE TO COLOR",
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    }
+  ]
+}
