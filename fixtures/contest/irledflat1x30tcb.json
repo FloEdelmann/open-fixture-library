@@ -1,0 +1,79 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "irLEDFLAT1x30TCb",
+  "categories": ["Color Changer", "Dimmer", "Strobe"],
+  "meta": {
+    "authors": ["Laurent"],
+    "createDate": "2020-12-05",
+    "lastModifyDate": "2020-12-05"
+  },
+  "links": {
+    "manual": [
+      "http://www.contest-lighting.com/downloads/IrLED-1x30TCb_manuel.pdf"
+    ]
+  },
+  "physical": {
+    "dimensions": [208, 221, 120],
+    "weight": 2.1,
+    "power": 45,
+    "DMXconnector": "3-pin XLR IP65",
+    "bulb": {
+      "lumens": 413
+    },
+    "lens": {
+      "degreesMinMax": [25, 25]
+    }
+  },
+  "availableChannels": {
+    "Red": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Dimmer": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Strobe": {
+      "capability": {
+        "type": "StrobeSpeed",
+        "speedStart": "0Hz",
+        "speedEnd": "20Hz"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "3 ch RGB",
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "5 ch RGB dimmer strobe",
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Dimmer",
+        "Strobe"
+      ]
+    }
+  ]
+}
