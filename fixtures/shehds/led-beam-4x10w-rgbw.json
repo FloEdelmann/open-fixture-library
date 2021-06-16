@@ -1,0 +1,409 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "LED Beam 4x10W RGBW",
+  "categories": ["Moving Head"],
+  "meta": {
+    "authors": ["René Bütikofer"],
+    "createDate": "2021-04-02",
+    "lastModifyDate": "2021-04-02",
+    "importPlugin": {
+      "plugin": "qlcplus_4.12.1",
+      "date": "2021-04-02",
+      "comment": "created by Q Light Controller Plus (version 4.12.3)"
+    }
+  },
+  "physical": {
+    "dimensions": [810, 250, 130],
+    "weight": 7.5,
+    "power": 40,
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "LED 4 x 10W CREE RGBW"
+    },
+    "lens": {
+      "degreesMinMax": [8, 8]
+    }
+  },
+  "availableChannels": {
+    "Pan": {
+      "fineChannelAliases": ["Pan fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "Pan",
+        "angleStart": "0deg",
+        "angleEnd": "540deg"
+      }
+    },
+    "Tilt": {
+      "fineChannelAliases": ["Tilt fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "Tilt",
+        "angleStart": "0deg",
+        "angleEnd": "270deg"
+      }
+    },
+    "Pan/Tilt speed": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "PanTiltSpeed",
+        "speedStart": "slow",
+        "speedEnd": "fast"
+      }
+    },
+    "Master dimmer": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Strobe": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ShutterStrobe",
+        "shutterEffect": "Strobe",
+        "speedStart": "slow",
+        "speedEnd": "fast",
+        "helpWanted": "At which DMX values is strobe disabled?"
+      }
+    },
+    "Red": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "White": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Auto Mode": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Effect",
+        "effectName": "Auto Mode"
+      }
+    },
+    "Rest": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Effect",
+        "effectName": "Rest"
+      }
+    },
+    "Head 1 Pan": {
+      "fineChannelAliases": ["Head 1 Pan fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "Pan",
+        "angleStart": "0deg",
+        "angleEnd": "540deg"
+      }
+    },
+    "Head 2 Pan": {
+      "fineChannelAliases": ["Head 2 Pan fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "Pan",
+        "angleStart": "0deg",
+        "angleEnd": "540deg"
+      }
+    },
+    "Head 3 Pan": {
+      "fineChannelAliases": ["Head 3 Pan fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "Pan",
+        "angleStart": "0deg",
+        "angleEnd": "540deg"
+      }
+    },
+    "Head 4 Pan": {
+      "fineChannelAliases": ["Head 4 Pan fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "Pan",
+        "angleStart": "0deg",
+        "angleEnd": "540deg"
+      }
+    },
+    "Head 1 Tilt": {
+      "fineChannelAliases": ["Head 1 Tilt fine "],
+      "defaultValue": 0,
+      "capability": {
+        "type": "Tilt",
+        "angleStart": "0deg",
+        "angleEnd": "270deg"
+      }
+    },
+    "Head 2 Tilt": {
+      "fineChannelAliases": ["Head 2 Tilt fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "Tilt",
+        "angleStart": "0deg",
+        "angleEnd": "270deg"
+      }
+    },
+    "Head 3 Tilt": {
+      "fineChannelAliases": ["Head 3 Tilt fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "Tilt",
+        "angleStart": "0deg",
+        "angleEnd": "270deg"
+      }
+    },
+    "Head 4 Tilt": {
+      "fineChannelAliases": ["Head 4 Tilt fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "Tilt",
+        "angleStart": "0deg",
+        "angleEnd": "270deg"
+      }
+    },
+    "Head 1 Red": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Head 2 Red": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Head 3 Red": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Head 4 Red": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Head 1 Green": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Head 2 Green": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Head 3 Green": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Head 4 Green": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Heasd 1 Blue": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Heasd 2 Blue": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Heasd 3 Blue": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Heasd 4 Blue": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Reset": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 149],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [150, 255],
+          "type": "Effect",
+          "effectName": "Reset"
+        }
+      ]
+    },
+    "Head 1 Speed": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "PanTiltSpeed",
+        "speedStart": "slow",
+        "speedEnd": "fast"
+      }
+    },
+    "Head 2 Speed": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "PanTiltSpeed",
+        "speedStart": "slow",
+        "speedEnd": "fast"
+      }
+    },
+    "Head 3 Speed": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "PanTiltSpeed",
+        "speedStart": "slow",
+        "speedEnd": "fast"
+      }
+    },
+    "Head 4 Speed": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "PanTiltSpeed",
+        "speedStart": "slow",
+        "speedEnd": "fast"
+      }
+    },
+    "Head 1 White": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Head 2 White": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Head 3 White": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Head 4 White": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "13-channel",
+      "shortName": "13ch",
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Pan/Tilt speed",
+        "Master dimmer",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Auto Mode",
+        "Rest"
+      ]
+    },
+    {
+      "name": "39-channel",
+      "shortName": "39ch",
+      "channels": [
+        "Head 1 Pan",
+        "Head 1 Pan fine",
+        "Head 1 Tilt",
+        "Head 1 Tilt fine ",
+        "Head 1 Speed",
+        "Master dimmer",
+        "Strobe",
+        "Head 1 Red",
+        "Head 1 Green",
+        "Heasd 1 Blue",
+        "Head 1 White",
+        "Head 2 Pan",
+        "Head 2 Pan fine",
+        "Head 2 Tilt",
+        "Head 2 Tilt fine",
+        "Head 2 Speed",
+        "Head 2 Red",
+        "Head 2 Green",
+        "Heasd 2 Blue",
+        "Head 2 White",
+        "Head 3 Pan",
+        "Head 3 Pan fine",
+        "Head 3 Tilt",
+        "Head 3 Tilt fine",
+        "Head 3 Speed",
+        "Head 3 Red",
+        "Head 3 Green",
+        "Heasd 3 Blue",
+        "Head 3 White",
+        "Head 4 Pan",
+        "Head 4 Pan fine",
+        "Head 4 Tilt",
+        "Head 4 Tilt fine",
+        "Head 4 Speed",
+        "Head 4 Red",
+        "Head 4 Green",
+        "Heasd 4 Blue",
+        "Head 4 White",
+        "Reset"
+      ]
+    }
+  ]
+}
