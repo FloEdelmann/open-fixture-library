@@ -1,0 +1,190 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "ali express 60w Beam",
+  "categories": ["Moving Head"],
+  "meta": {
+    "authors": ["LIONELC"],
+    "createDate": "2021-04-09",
+    "lastModifyDate": "2021-04-09"
+  },
+  "links": {
+    "manual": [
+      "https://fr.aliexpress.com/item/32822445139.html?spm=a2g0s.9042311.0.0.608e6c37CPM3xp"
+    ],
+    "productPage": [
+      "https://fr.aliexpress.com/item/32822445139.html?spm=a2g0s.9042311.0.0.608e6c37CPM3xp"
+    ],
+    "video": [
+      "https://fr.aliexpress.com/item/32822445139.html?spm=a2g0s.9042311.0.0.608e6c37CPM3xp"
+    ]
+  },
+  "physical": {
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "60W RGBW 4 en 1 Osram LED"
+    },
+    "lens": {
+      "degreesMinMax": [0, 4]
+    }
+  },
+  "wheels": {
+    "FREE2": {
+      "slots": [
+        {
+          "type": "Color",
+          "name": "RED",
+          "colors": ["#ff0000"]
+        },
+        {
+          "type": "Color",
+          "name": "GREEN",
+          "colors": ["#00ff00"]
+        },
+        {
+          "type": "Color",
+          "name": "BLUE",
+          "colors": ["#0000ff"]
+        },
+        {
+          "type": "Color",
+          "name": "VIOLET",
+          "colors": ["#9900ff"]
+        },
+        {
+          "type": "Color",
+          "name": "MAGENTA",
+          "colors": ["#ff00ff"]
+        },
+        {
+          "type": "Color",
+          "name": "YELLOW",
+          "colors": ["#ffff00"]
+        },
+        {
+          "type": "Color",
+          "name": "ORANGE",
+          "colors": ["#ff9900"]
+        },
+        {
+          "type": "Color",
+          "name": "CYAN",
+          "colors": ["#00ffff"]
+        }
+      ]
+    }
+  },
+  "availableChannels": {
+    "Pan": {
+      "defaultValue": 1,
+      "highlightValue": 1,
+      "capability": {
+        "type": "Pan",
+        "angleStart": "0deg",
+        "angleEnd": "540deg",
+        "comment": "pan"
+      }
+    },
+    "Tilt": {
+      "defaultValue": 2,
+      "capability": {
+        "type": "Tilt",
+        "angleStart": "0deg",
+        "angleEnd": "270deg",
+        "comment": "TILT"
+      }
+    },
+    "Dimmer": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Strobe": {
+      "capability": {
+        "type": "StrobeSpeed",
+        "speedStart": "0Hz",
+        "speedEnd": "100Hz"
+      }
+    },
+    "Red": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Blue": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "BLANC": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "White": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "No function": {
+      "capability": {
+        "type": "NoFunction"
+      }
+    },
+    "FREE2": {
+      "capability": {
+        "type": "Generic"
+      }
+    },
+    "MANUAL COLOR CHANGE": {
+      "capability": {
+        "type": "NoFunction"
+      }
+    },
+    "Green": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "AUTO": {
+      "capability": {
+        "type": "NoFunction"
+      }
+    },
+    "PROG SPEED": {
+      "capability": {
+        "type": "NoFunction"
+      }
+    },
+    "Program Speed": {
+      "capability": {
+        "type": "EffectSpeed",
+        "speedStart": "slow",
+        "speedEnd": "fast"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "13 channel",
+      "shortName": "13ch",
+      "channels": [
+        "Pan",
+        "Tilt",
+        "White",
+        "Dimmer",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "BLANC",
+        "MANUAL COLOR CHANGE",
+        "AUTO",
+        "PROG SPEED",
+        "Program Speed"
+      ]
+    }
+  ]
+}
