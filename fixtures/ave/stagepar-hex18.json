@@ -1,0 +1,144 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "STAGEPAR HEX18",
+  "shortName": "HEX18",
+  "categories": ["Other"],
+  "meta": {
+    "authors": ["Lachlan Barrett"],
+    "createDate": "2021-04-13",
+    "lastModifyDate": "2021-04-13"
+  },
+  "comment": "LED Slim Par Can",
+  "links": {
+    "manual": [
+      "https://s3.avecorp.com.au/wp-content/uploads/2018/08/29114932/Stagepar-Hex18.pdf"
+    ],
+    "productPage": [
+      "https://avecorp.com.au/product/ave-stagepar-hex18-led-parcan/"
+    ]
+  },
+  "physical": {
+    "dimensions": [278, 271, 123],
+    "weight": 2.5,
+    "power": 200,
+    "DMXconnector": "3-pin and 5-pin",
+    "bulb": {
+      "type": "LED",
+      "colorTemperature": 4000
+    },
+    "lens": {
+      "degreesMinMax": [33, 33]
+    }
+  },
+  "availableChannels": {
+    "Red": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "White": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Amber": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Amber"
+      }
+    },
+    "UV": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "UV"
+      }
+    },
+    "Dimmer": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Strobe Speed": {
+      "capability": {
+        "type": "ShutterStrobe",
+        "shutterEffect": "Strobe",
+        "speedStart": "0Hz",
+        "speedEnd": "12Hz"
+      }
+    },
+    "Colour Step": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 7],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [8, 255],
+          "type": "Effect",
+          "effectName": "Colour Step"
+        }
+      ]
+    },
+    "Auto Colour/Sound": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 7],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [8, 199],
+          "type": "Effect",
+          "effectName": "Auto Colour"
+        },
+        {
+          "dmxRange": [200, 255],
+          "type": "SoundSensitivity",
+          "soundSensitivityStart": "off",
+          "soundSensitivityEnd": "high"
+        }
+      ]
+    }
+  },
+  "modes": [
+    {
+      "name": "6ch",
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV"
+      ]
+    },
+    {
+      "name": "10ch",
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "Dimmer",
+        "Strobe Speed",
+        "Colour Step",
+        "Auto Colour/Sound"
+      ]
+    }
+  ]
+}
