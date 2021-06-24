@@ -1,0 +1,99 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "K-UV 16X3W",
+  "categories": ["Effect"],
+  "meta": {
+    "authors": ["Cnayl"],
+    "createDate": "2021-04-17",
+    "lastModifyDate": "2021-04-17",
+    "importPlugin": {
+      "plugin": "qlcplus_4.12.1",
+      "date": "2021-04-17",
+      "comment": "created by Q Light Controller Plus (version 4.12.3)"
+    }
+  },
+  "physical": {
+    "dimensions": [320, 75, 180],
+    "weight": 2.2,
+    "power": 50,
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "HTI 2500W"
+    }
+  },
+  "availableChannels": {
+    "Brightness": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "UV"
+      }
+    },
+    "Strobe": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ShutterStrobe",
+        "shutterEffect": "Strobe",
+        "speedStart": "slow",
+        "speedEnd": "fast",
+        "helpWanted": "At which DMX values is strobe disabled?"
+      }
+    },
+    "Bank brightness": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 29],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [30, 255],
+          "type": "Intensity",
+          "comment": "Adjusts the brightness of each bank (for static use)"
+        }
+      ]
+    },
+    "Fade/pulse effect": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 84],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [85, 169],
+          "type": "Intensity",
+          "comment": "Fade/pulse effect - speed can be adjusted by CH5 (addr 240-255)"
+        },
+        {
+          "dmxRange": [170, 255],
+          "type": "Intensity",
+          "comment": "Chase effect - speed can be adjusted by CH5 (addr 240-255)"
+        }
+      ]
+    },
+    "Speed": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Speed",
+        "comment": "Speed adjust when CH4 is set to 085-169 or 170-255",
+        "speedStart": "slow",
+        "speedEnd": "fast",
+        "helpWanted": "Are the automatically added speed values correct?"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "5-channel",
+      "shortName": "5ch",
+      "channels": [
+        "Brightness",
+        "Strobe",
+        "Bank brightness",
+        "Fade/pulse effect",
+        "Speed"
+      ]
+    }
+  ]
+}
