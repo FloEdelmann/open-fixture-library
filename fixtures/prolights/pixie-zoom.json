@@ -1,0 +1,117 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "Pixie_zoom",
+  "shortName": "Pixie",
+  "categories": ["Color Changer"],
+  "meta": {
+    "authors": ["claus"],
+    "createDate": "2021-04-16",
+    "lastModifyDate": "2021-04-16"
+  },
+  "links": {
+    "manual": [
+      "https://support.musiclights.it/ajx.php?usst=1&docs=20554&ID_USER=21337"
+    ],
+    "productPage": [
+      "https://www.musiclights.it/product/PIXIEZOOM?lang=IT"
+    ],
+    "video": [
+      "https://www.youtube.com/watch?v=OPDALaPKaF0"
+    ]
+  },
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": 926
+    },
+    "lens": {
+      "name": "zoom",
+      "degreesMinMax": [6, 41.6]
+    }
+  },
+  "availableChannels": {
+    "Red": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red",
+        "brightness": "off"
+      }
+    },
+    "Dimmer": {
+      "capability": {
+        "type": "Intensity",
+        "brightness": "0%"
+      }
+    },
+    "Green": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green",
+        "brightness": "off"
+      }
+    },
+    "Blue": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue",
+        "brightness": "off"
+      }
+    },
+    "White": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White",
+        "brightness": "off"
+      }
+    },
+    "Strobe": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 30],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [31, 100],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Strobe",
+          "speed": "fast"
+        },
+        {
+          "dmxRange": [101, 130],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [131, 200],
+          "type": "Generic"
+        },
+        {
+          "dmxRange": [201, 255],
+          "type": "NoFunction"
+        }
+      ]
+    },
+    "Zoom": {
+      "capability": {
+        "type": "Zoom",
+        "angleStart": "narrow",
+        "angleEnd": "wide"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "7 channels",
+      "shortName": "7ch",
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Strobe",
+        "Zoom"
+      ]
+    }
+  ]
+}
