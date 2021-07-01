@@ -1,0 +1,52 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "aliexpress Beam",
+  "shortName": "aliexpress Beam",
+  "categories": ["Moving Head"],
+  "meta": {
+    "authors": ["LIONEL"],
+    "createDate": "2021-04-09",
+    "lastModifyDate": "2021-04-09"
+  },
+  "links": {
+    "manual": [
+      "https://ae01.alicdn.com/kf/Ha3d86fc557b34d43b30e8f0edd74afc6m/Projecteur-de-lumi-re-t-te-mobile-clairage-LED-60W-de-couleur-RGBW-4-en-1.jpg_Q90.jpg"
+    ],
+    "productPage": [
+      "https://fr.aliexpress.com/item/32822445139.html?spm=a2g0s.9042311.0.0.608e6c37CPM3xp"
+    ],
+    "video": [
+      "https://ae01.alicdn.com/kf/Ha3d86fc557b34d43b30e8f0edd74afc6m/Projecteur-de-lumi-re-t-te-mobile-clairage-LED-60W-de-couleur-RGBW-4-en-1.jpg_Q90.jpg"
+    ]
+  },
+  "physical": {
+    "DMXconnector": "3-pin"
+  },
+  "availableChannels": {
+    "Pan": {
+      "defaultValue": 1,
+      "capability": {
+        "type": "Pan",
+        "angle": "360deg"
+      }
+    },
+    "TILT": {
+      "defaultValue": 17,
+      "capability": {
+        "type": "Tilt",
+        "angleStart": "0deg",
+        "angleEnd": "270deg"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "CH13",
+      "shortName": "CH13",
+      "channels": [
+        "Pan",
+        "TILT"
+      ]
+    }
+  ]
+}
