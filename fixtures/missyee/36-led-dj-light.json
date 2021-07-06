@@ -1,0 +1,128 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "36 led DJ light",
+  "shortName": "36 led DJ light",
+  "categories": ["Other", "Color Changer"],
+  "meta": {
+    "authors": ["Christopher Deardeuff"],
+    "createDate": "2020-10-07",
+    "lastModifyDate": "2020-10-07"
+  },
+  "links": {
+    "manual": [
+      "https://images-na.ssl-images-amazon.com/images/I/B1TmOuEgH2S.pdf"
+    ],
+    "productPage": [
+      "https://www.amazon.com/Missyee-Activated-Compatible-Nightclub-Late-Night/dp/B01AA3YJ4O/ref=sr_1_5?crid=1NBFC87BL7101&dchild=1&keywords=missyee+36+led+stage+light&qid=1602029336&sprefix=Missyee+%2Caps%2C365&sr=8-5"
+    ]
+  },
+  "physical": {
+    "power": 90,
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "LED"
+    },
+    "lens": {
+      "degreesMinMax": [25, 25]
+    }
+  },
+  "availableChannels": {
+    "Intensity": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Red": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Shutter / Strobe": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 6],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [7, 255],
+          "type": "StrobeSpeed",
+          "speedStart": "slow",
+          "speedEnd": "fast"
+        }
+      ]
+    },
+    "Effects": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 10],
+          "type": "Generic",
+          "comment": "Manual Control (CH 1-5)"
+        },
+        {
+          "dmxRange": [11, 60],
+          "type": "Generic",
+          "comment": "Color Selection (Color controlled by Ch 7)"
+        },
+        {
+          "dmxRange": [61, 110],
+          "type": "Effect",
+          "effectName": "Gradual Fade",
+          "speedStart": "slow",
+          "speedEnd": "fast"
+        },
+        {
+          "dmxRange": [111, 160],
+          "type": "Effect",
+          "effectName": "Variable Pulse",
+          "speedStart": "slow",
+          "speedEnd": "fast"
+        },
+        {
+          "dmxRange": [161, 210],
+          "type": "Effect",
+          "effectName": "Jump Change"
+        },
+        {
+          "dmxRange": [211, 255],
+          "type": "Effect",
+          "effectName": "Sound Activated Mode",
+          "soundControlled": true,
+          "soundSensitivity": "high"
+        }
+      ]
+    },
+    "Color Selection": {
+      "capability": {
+        "type": "Generic",
+        "comment": "Color Selection/ Discoloration speed from slow to fast"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "7 Ch.",
+      "channels": [
+        "Intensity",
+        "Red",
+        "Green",
+        "Blue",
+        "Shutter / Strobe",
+        "Effects",
+        "Color Selection"
+      ]
+    }
+  ]
+}
