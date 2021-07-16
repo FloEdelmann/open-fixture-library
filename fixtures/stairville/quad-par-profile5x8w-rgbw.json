@@ -1,0 +1,255 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "Quad Par Profile5x8W RGBW",
+  "categories": ["Color Changer"],
+  "meta": {
+    "authors": ["Hannes Rüger"],
+    "createDate": "2021-03-04",
+    "lastModifyDate": "2021-03-04"
+  },
+  "links": {
+    "manual": [
+      "https://im.static-thomann.de/pics/atg/atgdata/document/manual/414496_c_307515_405343_414496_414497_v5_de_online.pdf"
+    ]
+  },
+  "physical": {
+    "dimensions": [164, 164, 105],
+    "weight": 2.1,
+    "power": 32,
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "LED",
+      "lumens": 4850
+    },
+    "lens": {
+      "degreesMinMax": [45, 45]
+    }
+  },
+  "availableChannels": {
+    "Red": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "White": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Dimmer": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Strobe": {
+      "capability": {
+        "type": "ShutterStrobe",
+        "shutterEffect": "Strobe",
+        "speedStart": "0Hz",
+        "speedEnd": "50Hz"
+      }
+    },
+    "Mode": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 0],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [1, 24],
+          "type": "Effect",
+          "effectName": "Constant color",
+          "comment": "depending on channel 7"
+        },
+        {
+          "dmxRange": [25, 49],
+          "type": "Effect",
+          "effectName": "Auto Show 2"
+        },
+        {
+          "dmxRange": [50, 74],
+          "type": "Effect",
+          "effectName": "Auto Show 3"
+        },
+        {
+          "dmxRange": [75, 99],
+          "type": "Effect",
+          "effectName": "Auto Show 4"
+        },
+        {
+          "dmxRange": [100, 124],
+          "type": "Effect",
+          "effectName": "Auto Show 5"
+        },
+        {
+          "dmxRange": [125, 149],
+          "type": "Effect",
+          "effectName": "Auto Show 6"
+        },
+        {
+          "dmxRange": [150, 174],
+          "type": "Effect",
+          "effectName": "Auto Show 7"
+        },
+        {
+          "dmxRange": [175, 199],
+          "type": "Effect",
+          "effectName": "Auto Show 8"
+        },
+        {
+          "dmxRange": [200, 224],
+          "type": "Effect",
+          "effectName": "Auto Show 9"
+        },
+        {
+          "dmxRange": [225, 249],
+          "type": "Effect",
+          "effectName": "Auto Show 10"
+        },
+        {
+          "dmxRange": [250, 255],
+          "type": "Effect",
+          "effectName": "Music Show",
+          "soundControlled": true
+        }
+      ]
+    },
+    "Color": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 18],
+          "type": "ColorPreset",
+          "comment": "Dark",
+          "colors": ["#000000"]
+        },
+        {
+          "dmxRange": [19, 37],
+          "type": "ColorPreset",
+          "comment": "Red",
+          "colors": ["#ff0000"]
+        },
+        {
+          "dmxRange": [38, 56],
+          "type": "ColorPreset",
+          "comment": "Orange",
+          "colors": ["#ff8800"]
+        },
+        {
+          "dmxRange": [57, 75],
+          "type": "ColorPreset",
+          "comment": "Yellow",
+          "colors": ["#ffff00"]
+        },
+        {
+          "dmxRange": [76, 94],
+          "type": "ColorPreset",
+          "comment": "Light Green",
+          "colors": ["#00ff00"]
+        },
+        {
+          "dmxRange": [95, 113],
+          "type": "ColorPreset",
+          "comment": "Light Blue",
+          "colors": ["#00bbff"]
+        },
+        {
+          "dmxRange": [114, 132],
+          "type": "ColorPreset",
+          "comment": "Blue",
+          "colors": ["#0000ff"]
+        },
+        {
+          "dmxRange": [133, 151],
+          "type": "ColorPreset",
+          "comment": "Violet",
+          "colors": ["#ad03fc"]
+        },
+        {
+          "dmxRange": [152, 170],
+          "type": "ColorPreset",
+          "comment": "Pink",
+          "colors": ["#fc03d7"]
+        },
+        {
+          "dmxRange": [171, 189],
+          "type": "ColorPreset",
+          "comment": "DarkWhite",
+          "colors": ["#ffffff"]
+        },
+        {
+          "dmxRange": [190, 208],
+          "type": "ColorPreset",
+          "comment": "Red",
+          "colors": ["#ff0000"]
+        },
+        {
+          "dmxRange": [209, 227],
+          "type": "ColorPreset",
+          "comment": "Green",
+          "colors": ["#00ff00"]
+        },
+        {
+          "dmxRange": [228, 246],
+          "type": "ColorPreset",
+          "comment": "Blue",
+          "colors": ["#0000ff"]
+        },
+        {
+          "dmxRange": [247, 255],
+          "type": "ColorPreset",
+          "comment": "Red + Green + Blue + White",
+          "colors": ["#ff0000", "#00ff00", "#0000ff", "#ffffff"]
+        }
+      ]
+    }
+  },
+  "modes": [
+    {
+      "name": "4ch",
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "6ch",
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Dimmer",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "8ch",
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Mode",
+        "Color",
+        "Strobe"
+      ]
+    }
+  ]
+}
