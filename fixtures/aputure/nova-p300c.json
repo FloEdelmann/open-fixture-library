@@ -1,0 +1,115 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "NOVA P300C",
+  "shortName": "P300C",
+  "categories": ["Other"],
+  "meta": {
+    "authors": ["Parenthesis"],
+    "createDate": "2021-04-21",
+    "lastModifyDate": "2021-04-21"
+  },
+  "links": {
+    "manual": [
+      "https://www.aputure.com/products/nova-p300c/"
+    ],
+    "productPage": [
+      "https://www.aputure.com/products/nova-p300c/"
+    ],
+    "video": [
+      "https://www.aputure.com/products/nova-p300c/"
+    ]
+  },
+  "physical": {
+    "dimensions": [561, 457, 166],
+    "weight": 10.35,
+    "power": 360,
+    "DMXconnector": "5-pin",
+    "bulb": {
+      "type": "LED",
+      "colorTemperature": 10000,
+      "lumens": 9000
+    },
+    "lens": {
+      "name": "LED",
+      "degreesMinMax": [120, 120]
+    }
+  },
+  "availableChannels": {
+    "Green Magenta Shift": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 126],
+          "type": "Generic",
+          "comment": "-1.0 to -0.1 (GREEN)"
+        },
+        {
+          "dmxRange": [127, 127],
+          "type": "Generic",
+          "comment": "0 value"
+        },
+        {
+          "dmxRange": [128, 255],
+          "type": "Generic",
+          "comment": "0.1 to +1.0 (MAGENTA)"
+        }
+      ]
+    },
+    "Intensity": {
+      "defaultValue": 0,
+      "highlightValue": "100%",
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "CCT/HSI Mode": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 127],
+          "type": "Generic",
+          "comment": "CCT Mode"
+        },
+        {
+          "dmxRange": [128, 255],
+          "type": "Generic",
+          "comment": "HSI Mode"
+        }
+      ]
+    },
+    "CCT": {
+      "defaultValue": 116,
+      "capability": {
+        "type": "ColorTemperature",
+        "colorTemperatureStart": "2000K",
+        "colorTemperatureEnd": "10000K"
+      }
+    },
+    "HSI Mode - HUE": {
+      "capability": {
+        "type": "BeamAngle",
+        "angleStart": "0deg",
+        "angleEnd": "360deg",
+        "comment": "Hue Shift"
+      }
+    },
+    "HSI Mode - SAT": {
+      "capability": {
+        "type": "Intensity",
+        "brightnessStart": "0%",
+        "brightnessEnd": "100%"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "CCT & HSI",
+      "channels": [
+        "Intensity",
+        "CCT",
+        "Green Magenta Shift",
+        "CCT/HSI Mode",
+        "HSI Mode - HUE",
+        "HSI Mode - SAT"
+      ]
+    }
+  ]
+}

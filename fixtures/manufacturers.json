@@ -28,6 +28,11 @@
     "name": "Ape Labs",
     "website": "https://apelabs.com/"
   },
+  "aputure": {
+    "name": "Aputure",
+    "website": "https://www.aputure.com/",
+    "rdmId": 9
+  },
   "arri": {
     "name": "ARRI",
     "website": "https://www.arri.com/en/",
