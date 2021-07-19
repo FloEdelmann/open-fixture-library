@@ -1,0 +1,126 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "TP46",
+  "categories": ["Other", "Color Changer"],
+  "meta": {
+    "authors": ["Anonymous"],
+    "createDate": "2021-04-26",
+    "lastModifyDate": "2021-04-26"
+  },
+  "comment": "PAR",
+  "links": {
+    "manual": [
+      "https://www.tronios.com/fileuploader/download/download/?d=0&file=custom%2Fupload%2F151.170+TP46+Truss+Par+4x+4W+4-in-1+RGB-UV+DMX+IRC+V1.0.pdf"
+    ],
+    "productPage": [
+      "https://www.tronios.com/tp46-truss-par/"
+    ],
+    "video": [
+      "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjyvZ-AnZvwAhXUF3IKHUzCDZEQwqsBMAB6BAgHEAM&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D7dV5MNklI2A&usg=AOvVaw2zix1f40uCVHTH3_j3DT9l"
+    ]
+  },
+  "physical": {
+    "dimensions": [144, 121, 144],
+    "weight": 1.6,
+    "power": 30,
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "LED"
+    }
+  },
+  "availableChannels": {
+    "Red": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "UV": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "UV"
+      }
+    },
+    "Master Dimmer": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Strobe": {
+      "capability": {
+        "type": "ShutterStrobe",
+        "shutterEffect": "Strobe",
+        "speedStart": "slow",
+        "speedEnd": "fast"
+      }
+    },
+    "Colour Macro": {
+      "capability": {
+        "type": "NoFunction",
+        "comment": "No Function"
+      }
+    },
+    "Auto/sound": {
+      "capability": {
+        "type": "NoFunction"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "3 Channel",
+      "shortName": "3ch",
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "4-1 Channels",
+      "shortName": "4-1ch",
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "UV"
+      ]
+    },
+    {
+      "name": "4 Channels",
+      "shortName": "4ch",
+      "channels": [
+        "Master Dimmer",
+        "Strobe",
+        "Colour Macro",
+        "Auto/sound"
+      ]
+    },
+    {
+      "name": "8 Channels",
+      "shortName": "8ch",
+      "channels": [
+        "Master Dimmer",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "UV",
+        "Colour Macro",
+        "Auto/sound"
+      ]
+    }
+  ]
+}
