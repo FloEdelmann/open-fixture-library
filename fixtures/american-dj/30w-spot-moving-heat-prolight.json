@@ -1,0 +1,37 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "30w Spot Moving Heat (prolight) ",
+  "categories": ["Moving Head"],
+  "meta": {
+    "authors": ["Denis Kaltenbach "],
+    "createDate": "2021-06-16",
+    "lastModifyDate": "2021-06-16"
+  },
+  "comment": "Hello, I cannot get may Moving Heat loaded onto may MyDMX Go program",
+  "links": {
+    "productPage": [
+      "https://www.aliexpress.com/item/2037905039.html"
+    ]
+  },
+  "physical": {
+    "weight": 6.5,
+    "power": 30
+  },
+  "availableChannels": {
+    "Advanced Mode 12 chnnel": {
+      "defaultValue": 12,
+      "capability": {
+        "type": "Generic"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "Prolight",
+      "shortName": "Denis.Kaltenbach@web.de",
+      "channels": [
+        "Advanced Mode 12 chnnel"
+      ]
+    }
+  ]
+}
