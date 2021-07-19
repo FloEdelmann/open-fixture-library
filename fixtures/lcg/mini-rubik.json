@@ -1,0 +1,123 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": " MINI RUBIK",
+  "shortName": "LCG MINI RUBIK",
+  "categories": ["Moving Head"],
+  "meta": {
+    "authors": ["anon"],
+    "createDate": "2021-06-10",
+    "lastModifyDate": "2021-06-10"
+  },
+  "links": {
+    "manual": [
+      "https://www.manualslib.com/manual/1878852/Lcg-Mini-Rubik-Led-Lcg-623a.html?page=13#manual"
+    ]
+  },
+  "rdm": {
+    "modelId": 623,
+    "softwareVersion": "623A"
+  },
+  "availableChannels": {
+    "Pan ": {
+      "capability": {
+        "type": "Pan",
+        "angleStart": "0deg",
+        "angleEnd": "630deg"
+      }
+    },
+    "Tilt": {
+      "capability": {
+        "type": "Tilt",
+        "angleStart": "0deg",
+        "angleEnd": "196deg"
+      }
+    },
+    "Infinite tilt": {
+      "capability": {
+        "type": "PanTiltSpeed",
+        "speedStart": "slow",
+        "speedEnd": "fast"
+      }
+    },
+    "Speed": {
+      "capability": {
+        "type": "Speed",
+        "speedStart": "slow",
+        "speedEnd": "fast"
+      }
+    },
+    "Red": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "White": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Strobe": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 15],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [16, 95],
+          "type": "StrobeSpeed",
+          "speedStart": "1Hz",
+          "speedEnd": "1Hz"
+        },
+        {
+          "dmxRange": [96, 175],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Strobe"
+        },
+        {
+          "dmxRange": [176, 255],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Strobe",
+          "speedStart": "slow",
+          "speedEnd": "fast",
+          "randomTiming": true
+        }
+      ]
+    },
+    "Dimmer": {
+      "capability": {
+        "type": "Intensity"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "Channels",
+      "channels": [
+        "Pan ",
+        "Tilt",
+        "Infinite tilt",
+        "Speed",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Strobe",
+        "Dimmer"
+      ]
+    }
+  ]
+}
