@@ -1,0 +1,46 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "Nova P300C",
+  "categories": ["Dimmer", "Strobe"],
+  "meta": {
+    "authors": ["Romain Donnot"],
+    "createDate": "2021-04-22",
+    "lastModifyDate": "2021-04-22"
+  },
+  "links": {
+    "manual": [
+      "https://cdn.static-bl.com/images/manual/Nova_P300c-Product_Manual.pdf"
+    ],
+    "productPage": [
+      "https://www.aputure.com/products/nova-p300c/"
+    ],
+    "video": [
+      "https://www.youtube.com/watch?v=xHEZTiPOg3Q"
+    ]
+  },
+  "physical": {
+    "dimensions": [56.19, 45.7, 16.6],
+    "weight": 10.35,
+    "power": 360,
+    "DMXconnector": "5-pin",
+    "bulb": {
+      "type": "LED"
+    }
+  },
+  "availableChannels": {
+    "Intensity": {
+      "defaultValue": "15%",
+      "capability": {
+        "type": "Intensity"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "P01-CCT",
+      "channels": [
+        "Intensity"
+      ]
+    }
+  ]
+}
