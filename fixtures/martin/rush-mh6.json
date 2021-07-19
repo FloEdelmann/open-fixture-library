@@ -1,0 +1,557 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "Rush MH6",
+  "shortName": "MH6",
+  "categories": ["Moving Head", "Color Changer"],
+  "meta": {
+    "authors": ["PM"],
+    "createDate": "2021-05-12",
+    "lastModifyDate": "2021-05-12"
+  },
+  "comment": "Wash Led Moving Head by Martin",
+  "links": {
+    "manual": [
+      "https://www.martin.com/en/site_elements/rush-mh-6-wash-manuel-d-utilisation"
+    ],
+    "productPage": [
+      "https://www.martin.com/en/products/rush-mh-6-wash"
+    ],
+    "video": [
+      "https://www.youtube.com/watch?v=B2aqplqEHqU&feature=emb_imp_woyt"
+    ]
+  },
+  "physical": {
+    "dimensions": [290, 189, 360],
+    "weight": 7.1,
+    "power": 155,
+    "DMXconnector": "3-pin and 5-pin",
+    "bulb": {
+      "type": "Led"
+    },
+    "lens": {
+      "degreesMinMax": [10, 60]
+    }
+  },
+  "availableChannels": {
+    "Shutter / Strobe": {
+      "defaultValue": 12,
+      "capabilities": [
+        {
+          "dmxRange": [0, 7],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Closed",
+          "comment": "Closed"
+        },
+        {
+          "dmxRange": [8, 15],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open",
+          "comment": "Open"
+        },
+        {
+          "dmxRange": [16, 131],
+          "type": "StrobeSpeed",
+          "speedStart": "fast",
+          "speedEnd": "slow",
+          "comment": "Strobe from fast to slow"
+        },
+        {
+          "dmxRange": [132, 139],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open",
+          "comment": "Open"
+        },
+        {
+          "dmxRange": [140, 181],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Pulse",
+          "speedStart": "fast",
+          "speedEnd": "slow",
+          "durationStart": "0ms",
+          "durationEnd": "100ms",
+          "comment": "Close cut / Open fade"
+        },
+        {
+          "dmxRange": [182, 189],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open",
+          "comment": "Open"
+        },
+        {
+          "dmxRange": [190, 231],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Pulse",
+          "speedStart": "0Hz",
+          "speedEnd": "0Hz",
+          "durationStart": "0ms",
+          "durationEnd": "100ms",
+          "comment": "Open cut / Close fade"
+        },
+        {
+          "dmxRange": [232, 239],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open",
+          "comment": "Open"
+        },
+        {
+          "dmxRange": [240, 247],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Strobe",
+          "randomTiming": true,
+          "comment": "Random Strobe"
+        },
+        {
+          "dmxRange": [248, 255],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open",
+          "comment": "Open"
+        }
+      ]
+    },
+    "Intensity": {
+      "fineChannelAliases": ["Intensity fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "Intensity",
+        "comment": "Intensity"
+      }
+    },
+    "Intensity 2": {
+      "name": "Intensity",
+      "fineChannelAliases": ["Intensity 2 fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Red": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red",
+        "comment": "Red"
+      }
+    },
+    "Green": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green",
+        "comment": "Green"
+      }
+    },
+    "Blue": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue",
+        "comment": "Blue"
+      }
+    },
+    "White": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White",
+        "comment": "White"
+      }
+    },
+    "Color Presets": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 10],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open",
+          "comment": "White"
+        },
+        {
+          "dmxRange": [11, 15],
+          "type": "ColorPreset",
+          "comment": "Color 1"
+        },
+        {
+          "dmxRange": [16, 20],
+          "type": "ColorPreset",
+          "comment": "Color 2"
+        },
+        {
+          "dmxRange": [21, 25],
+          "type": "ColorPreset",
+          "comment": "Color 3"
+        },
+        {
+          "dmxRange": [26, 30],
+          "type": "ColorPreset",
+          "comment": "Color 4"
+        },
+        {
+          "dmxRange": [31, 35],
+          "type": "ColorPreset",
+          "comment": "Color 5"
+        },
+        {
+          "dmxRange": [36, 40],
+          "type": "ColorPreset",
+          "comment": "Color 6"
+        },
+        {
+          "dmxRange": [41, 45],
+          "type": "ColorPreset",
+          "comment": "Color 7"
+        },
+        {
+          "dmxRange": [46, 50],
+          "type": "ColorPreset",
+          "comment": "Color 8"
+        },
+        {
+          "dmxRange": [51, 55],
+          "type": "ColorPreset",
+          "comment": "Color 9"
+        },
+        {
+          "dmxRange": [56, 60],
+          "type": "ColorPreset",
+          "comment": "Color 10"
+        },
+        {
+          "dmxRange": [61, 65],
+          "type": "ColorPreset",
+          "comment": "Color 11"
+        },
+        {
+          "dmxRange": [66, 70],
+          "type": "ColorPreset",
+          "comment": "Color 12"
+        },
+        {
+          "dmxRange": [71, 75],
+          "type": "ColorPreset",
+          "comment": "Color 13"
+        },
+        {
+          "dmxRange": [76, 80],
+          "type": "ColorPreset",
+          "comment": "Color 14"
+        },
+        {
+          "dmxRange": [81, 85],
+          "type": "ColorPreset",
+          "comment": "Color 15"
+        },
+        {
+          "dmxRange": [86, 90],
+          "type": "ColorPreset",
+          "comment": "Color 16"
+        },
+        {
+          "dmxRange": [91, 95],
+          "type": "ColorPreset",
+          "comment": "Color 17"
+        },
+        {
+          "dmxRange": [96, 100],
+          "type": "ColorPreset",
+          "comment": "Color 18"
+        },
+        {
+          "dmxRange": [101, 105],
+          "type": "ColorPreset",
+          "comment": "Color 19"
+        },
+        {
+          "dmxRange": [106, 110],
+          "type": "ColorPreset",
+          "comment": "Color 20"
+        },
+        {
+          "dmxRange": [111, 115],
+          "type": "ColorPreset",
+          "comment": "Color 21"
+        },
+        {
+          "dmxRange": [116, 120],
+          "type": "ColorPreset",
+          "comment": "Color 22"
+        },
+        {
+          "dmxRange": [121, 125],
+          "type": "ColorPreset",
+          "comment": "Color 23"
+        },
+        {
+          "dmxRange": [126, 130],
+          "type": "ColorPreset",
+          "comment": "Color 24"
+        },
+        {
+          "dmxRange": [131, 135],
+          "type": "ColorPreset",
+          "comment": "Color 25"
+        },
+        {
+          "dmxRange": [136, 140],
+          "type": "ColorPreset",
+          "comment": "Color 26"
+        },
+        {
+          "dmxRange": [141, 145],
+          "type": "ColorPreset",
+          "comment": "Color 27"
+        },
+        {
+          "dmxRange": [146, 150],
+          "type": "ColorPreset",
+          "comment": "Color 28"
+        },
+        {
+          "dmxRange": [151, 155],
+          "type": "ColorPreset",
+          "comment": "Color 29"
+        },
+        {
+          "dmxRange": [156, 160],
+          "type": "ColorPreset",
+          "comment": "Color 30"
+        },
+        {
+          "dmxRange": [161, 165],
+          "type": "ColorPreset",
+          "comment": "Color 31"
+        },
+        {
+          "dmxRange": [166, 170],
+          "type": "ColorPreset",
+          "comment": "Color 32"
+        },
+        {
+          "dmxRange": [171, 175],
+          "type": "ColorPreset",
+          "comment": "Color 33"
+        },
+        {
+          "dmxRange": [176, 180],
+          "type": "ColorPreset",
+          "comment": "Color 34"
+        },
+        {
+          "dmxRange": [181, 185],
+          "type": "ColorPreset",
+          "comment": "Color 35"
+        },
+        {
+          "dmxRange": [186, 190],
+          "type": "ColorPreset",
+          "comment": "Color 36"
+        },
+        {
+          "dmxRange": [191, 192],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open"
+        },
+        {
+          "dmxRange": [193, 214],
+          "type": "ColorPreset",
+          "comment": "Ascending"
+        },
+        {
+          "dmxRange": [215, 221],
+          "type": "ColorPreset",
+          "comment": "Stop"
+        },
+        {
+          "dmxRange": [222, 243],
+          "type": "ColorPreset",
+          "comment": "Descending"
+        },
+        {
+          "dmxRange": [244, 247],
+          "type": "ColorPreset",
+          "comment": "Fast"
+        },
+        {
+          "dmxRange": [248, 251],
+          "type": "ColorPreset",
+          "comment": "Medium"
+        },
+        {
+          "dmxRange": [252, 255],
+          "type": "ColorPreset",
+          "comment": "Slow"
+        }
+      ]
+    },
+    "Zoom": {
+      "defaultValue": 128,
+      "capability": {
+        "type": "Zoom",
+        "angleStart": "wide",
+        "angleEnd": "narrow",
+        "comment": "Zoom 60-10"
+      }
+    },
+    "Pan": {
+      "fineChannelAliases": ["Pan fine"],
+      "defaultValue": 128,
+      "capability": {
+        "type": "Pan",
+        "angleStart": "0deg",
+        "angleEnd": "540deg",
+        "comment": "Pan"
+      }
+    },
+    "Tilt": {
+      "fineChannelAliases": ["Tilt fine"],
+      "defaultValue": 128,
+      "capability": {
+        "type": "Tilt",
+        "angleStart": "0deg",
+        "angleEnd": "270deg",
+        "comment": "Tilt"
+      }
+    },
+    "Reserved": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 9],
+          "type": "NoFunction",
+          "comment": "No Function"
+        },
+        {
+          "dmxRange": [10, 14],
+          "type": "Maintenance",
+          "parameter": "instant",
+          "hold": "instant",
+          "comment": "Reset Fixture"
+        },
+        {
+          "dmxRange": [15, 54],
+          "type": "NoFunction",
+          "comment": "No Function"
+        },
+        {
+          "dmxRange": [55, 59],
+          "type": "Maintenance",
+          "parameter": "instant",
+          "hold": "instant",
+          "comment": "Enable Caibration"
+        },
+        {
+          "dmxRange": [60, 74],
+          "type": "NoFunction",
+          "comment": "No Function"
+        },
+        {
+          "dmxRange": [75, 79],
+          "type": "PanTiltSpeed",
+          "duration": "instant",
+          "comment": "Normal"
+        },
+        {
+          "dmxRange": [80, 89],
+          "type": "PanTiltSpeed",
+          "duration": "instant",
+          "comment": "Fast"
+        },
+        {
+          "dmxRange": [90, 94],
+          "type": "PanTiltSpeed",
+          "duration": "instant",
+          "comment": "Slow"
+        },
+        {
+          "dmxRange": [95, 144],
+          "type": "NoFunction",
+          "comment": "No Function"
+        },
+        {
+          "dmxRange": [145, 149],
+          "type": "EffectParameter",
+          "parameter": "instant",
+          "comment": "P/T Blackout On"
+        },
+        {
+          "dmxRange": [150, 154],
+          "type": "EffectParameter",
+          "parameter": "off",
+          "comment": "P/T Blackout OFF"
+        },
+        {
+          "dmxRange": [155, 159],
+          "type": "Maintenance",
+          "parameter": "instant",
+          "hold": "instant",
+          "comment": "Illuminate Display"
+        },
+        {
+          "dmxRange": [160, 164],
+          "type": "Maintenance",
+          "parameter": "off",
+          "hold": "instant",
+          "comment": "Display Off"
+        },
+        {
+          "dmxRange": [165, 229],
+          "type": "NoFunction",
+          "comment": "No Function"
+        },
+        {
+          "dmxRange": [230, 234],
+          "type": "Maintenance",
+          "hold": "instant",
+          "comment": "Store Zoom Cal."
+        },
+        {
+          "dmxRange": [235, 239],
+          "type": "Maintenance",
+          "parameter": "instant",
+          "hold": "instant",
+          "comment": "Store Pan. Cal."
+        },
+        {
+          "dmxRange": [240, 244],
+          "type": "Maintenance",
+          "parameter": "instant",
+          "hold": "instant",
+          "comment": "Store Tilt Cal."
+        },
+        {
+          "dmxRange": [245, 249],
+          "type": "Maintenance",
+          "parameter": "instant",
+          "hold": "instant",
+          "comment": "Reset All Cal. To Factory Default"
+        },
+        {
+          "dmxRange": [250, 255],
+          "type": "NoFunction",
+          "comment": "No Function"
+        }
+      ]
+    }
+  },
+  "modes": [
+    {
+      "name": "Standard",
+      "shortName": "1",
+      "channels": [
+        "Shutter / Strobe",
+        "Intensity",
+        "Intensity fine",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Color Presets",
+        "Zoom",
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Reserved"
+      ]
+    }
+  ]
+}
