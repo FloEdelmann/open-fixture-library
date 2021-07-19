@@ -1,0 +1,33 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "Axcor Spot 300",
+  "categories": ["Moving Head"],
+  "meta": {
+    "authors": ["Pepito"],
+    "createDate": "2021-05-15",
+    "lastModifyDate": "2021-05-15"
+  },
+  "links": {
+    "productPage": [
+      "https://www.claypaky.it/en/products/axcor-spot-300"
+    ]
+  },
+  "availableChannels": {
+    "Cyan": {
+      "defaultValue": "100%",
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Cyan"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "00",
+      "shortName": "00",
+      "channels": [
+        "Cyan"
+      ]
+    }
+  ]
+}
