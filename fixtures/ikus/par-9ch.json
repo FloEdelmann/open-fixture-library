@@ -1,0 +1,81 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "Par 9ch",
+  "categories": ["Color Changer"],
+  "meta": {
+    "authors": ["Snlg"],
+    "createDate": "2021-05-23",
+    "lastModifyDate": "2021-05-23"
+  },
+  "links": {
+    "productPage": [
+      "https://ikusarte.com"
+    ]
+  },
+  "physical": {
+    "DMXconnector": "3-pin"
+  },
+  "availableChannels": {
+    "2": {
+      "capability": {
+        "type": "Generic"
+      }
+    },
+    "3": {
+      "capability": {
+        "type": "Generic"
+      }
+    },
+    "4": {
+      "capability": {
+        "type": "Generic"
+      }
+    },
+    "5": {
+      "capability": {
+        "type": "Generic"
+      }
+    },
+    "6": {
+      "capability": {
+        "type": "Generic"
+      }
+    },
+    "7": {
+      "capability": {
+        "type": "Generic"
+      }
+    },
+    "8": {
+      "capability": {
+        "type": "Generic"
+      }
+    },
+    "9": {
+      "capability": {
+        "type": "Generic"
+      }
+    },
+    "9ch": {
+      "capability": {
+        "type": "Intensity"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "Full",
+      "channels": [
+        "9ch",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    }
+  ]
+}
