@@ -1,0 +1,71 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "Par Light",
+  "categories": ["Color Changer"],
+  "meta": {
+    "authors": ["Wyatt L Vaughan"],
+    "createDate": "2021-07-08",
+    "lastModifyDate": "2021-07-08"
+  },
+  "links": {
+    "manual": [
+      "https://www.missyee.com/collections/lamp-series"
+    ],
+    "productPage": [
+      "https://www.missyee.com/collections/lamp-series"
+    ],
+    "video": [
+      "https://www.missyee.com/collections/lamp-series"
+    ]
+  },
+  "availableChannels": {
+    "Dimmer": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Red": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Strobe Speed": {
+      "capability": {
+        "type": "StrobeSpeed",
+        "speed": "0Hz"
+      }
+    },
+    "Color Presets": {
+      "capability": {
+        "type": "WheelRotation",
+        "speed": "1Hz"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "Normal",
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Strobe Speed",
+        "Color Presets"
+      ]
+    }
+  ]
+}
