@@ -1,0 +1,363 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "Rush MH 6 Wash",
+  "shortName": "MH6",
+  "categories": ["Moving Head", "Dimmer", "Color Changer", "Effect", "Strobe"],
+  "meta": {
+    "authors": ["Dark_Llama"],
+    "createDate": "2021-07-05",
+    "lastModifyDate": "2021-07-05"
+  },
+  "links": {
+    "manual": [
+      "https://www.martin.com/en/site_elements/rush-mh-6-wash-user-manual-86188b7a-e2b6-4e95-8a61-13fa5199720c"
+    ],
+    "productPage": [
+      "https://www.martin.com/en/products/rush-mh-6-wash"
+    ],
+    "video": [
+      "https://www.youtube.com/watch?v=B2aqplqEHqU"
+    ]
+  },
+  "physical": {
+    "dimensions": [189, 360, 290],
+    "weight": 7.1,
+    "power": 150,
+    "DMXconnector": "3-pin and 5-pin",
+    "bulb": {
+      "type": "LED",
+      "lumens": 2000
+    },
+    "lens": {
+      "degreesMinMax": [10, 60]
+    }
+  },
+  "wheels": {
+    "Color Presets": {
+      "slots": [
+        {
+          "type": "Color"
+        },
+        {
+          "type": "Color"
+        },
+        {
+          "type": "Color"
+        }
+      ]
+    }
+  },
+  "availableChannels": {
+    "Shutter / Strobe": {
+      "defaultValue": 12,
+      "capabilities": [
+        {
+          "dmxRange": [0, 7],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Closed"
+        },
+        {
+          "dmxRange": [8, 15],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open"
+        },
+        {
+          "dmxRange": [16, 131],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Strobe",
+          "speedStart": "slow",
+          "speedEnd": "fast"
+        },
+        {
+          "dmxRange": [132, 139],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open"
+        },
+        {
+          "dmxRange": [140, 181],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Pulse",
+          "comment": "Fast close & slow open"
+        },
+        {
+          "dmxRange": [182, 189],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open"
+        },
+        {
+          "dmxRange": [190, 231],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Pulse",
+          "comment": "Fast open & slow close"
+        },
+        {
+          "dmxRange": [232, 239],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open"
+        },
+        {
+          "dmxRange": [240, 247],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Strobe",
+          "randomTiming": true
+        },
+        {
+          "dmxRange": [248, 255],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open"
+        }
+      ]
+    },
+    "Dimmer": {
+      "fineChannelAliases": ["Dimmer fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Red": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green",
+        "brightnessStart": "dark",
+        "brightnessEnd": "bright"
+      }
+    },
+    "Blue": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "White": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Color Presets": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 10],
+          "type": "WheelSlot",
+          "slotNumber": 0,
+          "comment": "Open"
+        },
+        {
+          "dmxRange": [11, 15],
+          "type": "WheelSlot",
+          "slotNumber": 1,
+          "comment": "Color 1 - 36"
+        },
+        {
+          "dmxRange": [16, 20],
+          "type": "WheelSlot",
+          "slotNumber": 2
+        },
+        {
+          "dmxRange": [21, 190],
+          "type": "WheelSlot",
+          "slotNumber": 3
+        },
+        {
+          "dmxRange": [191, 192],
+          "type": "WheelSlot",
+          "slotNumber": 0,
+          "comment": "Open"
+        },
+        {
+          "dmxRange": [193, 214],
+          "type": "WheelRotation",
+          "speedStart": "fast CCW",
+          "speedEnd": "slow CCW"
+        },
+        {
+          "dmxRange": [215, 221],
+          "type": "WheelRotation",
+          "speed": "stop"
+        },
+        {
+          "dmxRange": [222, 243],
+          "type": "WheelRotation",
+          "speedStart": "slow CW",
+          "speedEnd": "fast CW"
+        },
+        {
+          "dmxRange": [244, 247],
+          "type": "WheelRotation",
+          "speed": "fast CW",
+          "comment": "Random Slots Fast"
+        },
+        {
+          "dmxRange": [248, 251],
+          "type": "WheelRotation",
+          "speed": "50%",
+          "comment": "Random Slots Medium"
+        },
+        {
+          "dmxRange": [252, 255],
+          "type": "WheelRotation",
+          "speed": "slow CW",
+          "comment": "Random Slots Slow"
+        }
+      ]
+    },
+    "Zoom": {
+      "defaultValue": 128,
+      "capability": {
+        "type": "Zoom",
+        "angleStart": "wide",
+        "angleEnd": "narrow"
+      }
+    },
+    "Pan": {
+      "fineChannelAliases": ["Pan fine"],
+      "defaultValue": 128,
+      "capability": {
+        "type": "Pan",
+        "angleStart": "0deg",
+        "angleEnd": "540deg"
+      }
+    },
+    "Tilt": {
+      "fineChannelAliases": ["Tilt fine"],
+      "defaultValue": 128,
+      "capability": {
+        "type": "Tilt",
+        "angleStart": "0deg",
+        "angleEnd": "220deg"
+      }
+    },
+    "Fixture Control Settings": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 9],
+          "type": "NoFunction",
+          "comment": "No function (disables calibration)"
+        },
+        {
+          "dmxRange": [10, 14],
+          "type": "Maintenance",
+          "comment": "Reset Fixture"
+        },
+        {
+          "dmxRange": [15, 54],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [55, 59],
+          "type": "Maintenance",
+          "comment": "Enable calibration"
+        },
+        {
+          "dmxRange": [60, 74],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [75, 79],
+          "type": "PanTiltSpeed",
+          "speed": "50%",
+          "comment": "Normal"
+        },
+        {
+          "dmxRange": [80, 89],
+          "type": "PanTiltSpeed",
+          "speed": "100%",
+          "comment": "Fast (default)"
+        },
+        {
+          "dmxRange": [90, 94],
+          "type": "PanTiltSpeed",
+          "speed": "slow",
+          "comment": "Slow"
+        },
+        {
+          "dmxRange": [95, 144],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [145, 149],
+          "type": "Maintenance",
+          "comment": "Pan/tilt blackout = ON"
+        },
+        {
+          "dmxRange": [150, 154],
+          "type": "Maintenance",
+          "comment": "Pan/tilt blackout = OFF"
+        },
+        {
+          "dmxRange": [155, 159],
+          "type": "Maintenance",
+          "comment": "Illuminate display"
+        },
+        {
+          "dmxRange": [160, 164],
+          "type": "Maintenance",
+          "comment": "Display illumination off"
+        },
+        {
+          "dmxRange": [165, 229],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [230, 234],
+          "type": "Maintenance",
+          "comment": "Store zoom calibration"
+        },
+        {
+          "dmxRange": [235, 239],
+          "type": "Maintenance",
+          "comment": "Store pan calibration"
+        },
+        {
+          "dmxRange": [240, 244],
+          "type": "Maintenance",
+          "comment": "Store tilt calibration"
+        },
+        {
+          "dmxRange": [245, 249],
+          "type": "Maintenance",
+          "comment": "Reset all calibrations to factory default"
+        },
+        {
+          "dmxRange": [250, 255],
+          "type": "NoFunction"
+        }
+      ]
+    }
+  },
+  "modes": [
+    {
+      "name": "14 Channel",
+      "shortName": "14ch",
+      "channels": [
+        "Shutter / Strobe",
+        "Dimmer",
+        "Dimmer fine",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Color Presets",
+        "Zoom",
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Fixture Control Settings"
+      ]
+    }
+  ]
+}
