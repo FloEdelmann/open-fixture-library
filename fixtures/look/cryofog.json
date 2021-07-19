@@ -1,0 +1,71 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "Cryofog",
+  "categories": ["Smoke"],
+  "meta": {
+    "authors": ["coffeeholic"],
+    "createDate": "2021-06-23",
+    "lastModifyDate": "2021-06-23"
+  },
+  "comment": "Low fog machine with CO2 cooling.",
+  "links": {
+    "manual": [
+      "https://www.looksolutions.com/uploads/pdf/bed_cryo_hp_d.pdf"
+    ],
+    "productPage": [
+      "https://www.looksolutions.com/produkte/cryo_fog/2.html"
+    ]
+  },
+  "physical": {
+    "dimensions": [510, 300, 670],
+    "weight": 33,
+    "power": 2300,
+    "DMXconnector": "5-pin"
+  },
+  "availableChannels": {
+    "Fog Intensity": {
+      "defaultValue": "0%",
+      "capability": {
+        "type": "FogOutput",
+        "fogOutputStart": "off",
+        "fogOutputEnd": "strong"
+      }
+    },
+    "Fan": {
+      "defaultValue": "0%",
+      "capability": {
+        "type": "Generic"
+      }
+    },
+    "Cooling": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 0],
+          "type": "Generic",
+          "comment": "No Cooling"
+        },
+        {
+          "dmxRange": [1, 254],
+          "type": "NoFunction",
+          "comment": "Valve destruction mode"
+        },
+        {
+          "dmxRange": [255, 255],
+          "type": "Generic",
+          "comment": "Cooling"
+        }
+      ]
+    }
+  },
+  "modes": [
+    {
+      "name": "Normal",
+      "shortName": "3ch",
+      "channels": [
+        "Fog Intensity",
+        "Fan",
+        "Cooling"
+      ]
+    }
+  ]
+}
