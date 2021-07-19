@@ -428,6 +428,9 @@
     "website": "https://www.soundlight.de/",
     "rdmId": 21324
   },
+  "spl": {
+    "name": "SPL"
+  },
   "stage-right": {
     "name": "Stage Right",
     "comment": "Store brand of Monoprice",
