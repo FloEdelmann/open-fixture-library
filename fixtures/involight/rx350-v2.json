@@ -1,0 +1,111 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "RX350 V2",
+  "categories": ["Flower"],
+  "meta": {
+    "authors": ["Olivier Fischer", "letrial"],
+    "createDate": "2021-06-06",
+    "lastModifyDate": "2021-06-06",
+    "importPlugin": {
+      "plugin": "qlcplus_4.12.1",
+      "date": "2021-06-06",
+      "comment": "created by Q Light Controller Plus (version 4.12.3)"
+    }
+  },
+  "physical": {
+    "dimensions": [930, 150, 95],
+    "weight": 5.7,
+    "power": 45,
+    "DMXconnector": "5-pin",
+    "bulb": {
+      "type": "LED"
+    }
+  },
+  "availableChannels": {
+    "Effect": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 22],
+          "type": "Effect",
+          "effectName": "RED"
+        },
+        {
+          "dmxRange": [23, 45],
+          "type": "Effect",
+          "effectName": "GREEN"
+        },
+        {
+          "dmxRange": [46, 68],
+          "type": "Effect",
+          "effectName": "BLUE"
+        },
+        {
+          "dmxRange": [69, 91],
+          "type": "Effect",
+          "effectName": "Yellow"
+        },
+        {
+          "dmxRange": [92, 114],
+          "type": "Effect",
+          "effectName": "White"
+        },
+        {
+          "dmxRange": [115, 137],
+          "type": "Effect",
+          "effectName": "YELLOW White"
+        },
+        {
+          "dmxRange": [138, 160],
+          "type": "Effect",
+          "effectName": "RED GREEN"
+        },
+        {
+          "dmxRange": [161, 183],
+          "type": "Effect",
+          "effectName": "RED BLUE"
+        },
+        {
+          "dmxRange": [184, 206],
+          "type": "Effect",
+          "effectName": "GREEN BLUE"
+        },
+        {
+          "dmxRange": [207, 229],
+          "type": "Effect",
+          "effectName": "RGB"
+        },
+        {
+          "dmxRange": [230, 252],
+          "type": "Effect",
+          "effectName": "RGB W Yellow"
+        },
+        {
+          "dmxRange": [253, 255],
+          "type": "Effect",
+          "effectName": "MUSIC MODE"
+        }
+      ]
+    },
+    "STROB": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "ShutterStrobe",
+        "shutterEffect": "Strobe",
+        "comment": "blitz frequency",
+        "speedStart": "slow",
+        "speedEnd": "fast",
+        "helpWanted": "Are the automatically added speed values correct?"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "2",
+      "channels": [
+        "Effect",
+        "STROB"
+      ]
+    }
+  ]
+}
