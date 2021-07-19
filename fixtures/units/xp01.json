@@ -1,0 +1,66 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "XP01",
+  "shortName": "XP01",
+  "categories": ["Moving Head", "Other", "Matrix", "Fan"],
+  "meta": {
+    "authors": ["Anon"],
+    "createDate": "2021-05-31",
+    "lastModifyDate": "2021-05-31"
+  },
+  "links": {
+    "other": [
+      "http://xpunit.com"
+    ]
+  },
+  "physical": {
+    "power": 200,
+    "DMXconnector": "5-pin"
+  },
+  "availableChannels": {
+    "Red": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Motorspeed": {
+      "capability": {
+        "type": "Rotation",
+        "speedStart": "slow CCW",
+        "speedEnd": "fast CCW"
+      }
+    },
+    "Motordirection": {
+      "capability": {
+        "type": "Speed",
+        "speed": "stop"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "basic",
+      "shortName": "01",
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Motorspeed",
+        "Motordirection"
+      ]
+    }
+  ]
+}
