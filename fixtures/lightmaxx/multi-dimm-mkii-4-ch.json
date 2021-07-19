@@ -1,0 +1,69 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "Multi Dimm MKII 4-Ch",
+  "categories": ["Dimmer"],
+  "meta": {
+    "authors": ["Goetz"],
+    "createDate": "2021-05-01",
+    "lastModifyDate": "2021-05-01"
+  },
+  "links": {
+    "manual": [
+      "https://www.manualslib.com/manual/1947466/Lightmaxx-Multi-Dimm-Mkii.html#manual"
+    ],
+    "productPage": [
+      "https://www.musicstore.de/de_DE/EUR/lightmaXX-Multi-Dimm-MKII-4-CH-DMX-Dimmer/art-LIG0004891-000"
+    ],
+    "video": [
+      "https://www.youtube.com/watch?v=yJik1ITyqGc"
+    ]
+  },
+  "physical": {
+    "dimensions": [260, 190, 75],
+    "weight": 2.7,
+    "power": 3680,
+    "DMXconnector": "3-pin"
+  },
+  "availableChannels": {
+    "Channel 1": {
+      "capability": {
+        "type": "Intensity",
+        "brightnessStart": "0%",
+        "brightnessEnd": "100%"
+      }
+    },
+    "Channel 2": {
+      "capability": {
+        "type": "Intensity",
+        "brightnessStart": "0%",
+        "brightnessEnd": "100%"
+      }
+    },
+    "Channel 3": {
+      "capability": {
+        "type": "Intensity",
+        "brightnessStart": "0%",
+        "brightnessEnd": "100%"
+      }
+    },
+    "Channel 4": {
+      "capability": {
+        "type": "Intensity",
+        "brightnessStart": "0%",
+        "brightnessEnd": "100%"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "4-Channel Dimmer",
+      "shortName": "4ch",
+      "channels": [
+        "Channel 1",
+        "Channel 2",
+        "Channel 3",
+        "Channel 4"
+      ]
+    }
+  ]
+}
