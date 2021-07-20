@@ -1,0 +1,114 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "Stage Wash 18x18w LED Par Zoom",
+  "shortName": "18x18w LED Par Zoom",
+  "categories": ["Color Changer"],
+  "meta": {
+    "authors": ["Beerady"],
+    "createDate": "2021-07-20",
+    "lastModifyDate": "2021-07-20"
+  },
+  "links": {
+    "productPage": [
+      "https://www.monoprice.com/product?p_id=612788"
+    ]
+  },
+  "physical": {
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "LED"
+    }
+  },
+  "availableChannels": {
+    "Dimmer": {
+      "capability": {
+        "type": "Intensity",
+        "brightness": "off"
+      }
+    },
+    "Strobe": {
+      "capability": {
+        "type": "StrobeSpeed",
+        "speed": "0Hz"
+      }
+    },
+    "No function": {
+      "capability": {
+        "type": "NoFunction"
+      }
+    },
+    "No function 2": {
+      "name": "No function",
+      "capability": {
+        "type": "NoFunction"
+      }
+    },
+    "Red": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red",
+        "brightness": "off"
+      }
+    },
+    "Green": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green",
+        "brightness": "off"
+      }
+    },
+    "Blue": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue",
+        "brightness": "off"
+      }
+    },
+    "White": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White",
+        "brightness": "off"
+      }
+    },
+    "Amber": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Amber",
+        "brightness": "off"
+      }
+    },
+    "UV": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "UV",
+        "brightness": "off"
+      }
+    },
+    "Zoom": {
+      "capability": {
+        "type": "Zoom",
+        "angle": "narrow"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "11 Channel",
+      "shortName": "11ch",
+      "channels": [
+        "Dimmer",
+        "Strobe",
+        "No function",
+        "No function 2",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "Zoom"
+      ]
+    }
+  ]
+}
