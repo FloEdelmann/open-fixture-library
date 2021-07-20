@@ -1,0 +1,114 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "9x18w RGBWA+UV",
+  "shortName": "RGBWA+UV",
+  "categories": ["Color Changer"],
+  "meta": {
+    "authors": ["Beerady"],
+    "createDate": "2021-07-20",
+    "lastModifyDate": "2021-07-20"
+  },
+  "comment": "Par Light",
+  "links": {
+    "productPage": [
+      "https://www.amazon.com/Lights-Testing-Activated-Control-Wedding/dp/B07YXM14JP/ref=sr_1_5?dchild=1&keywords=rgbwa%2Buv%2Bpar&qid=1621524063&sr=8-5&th=1"
+    ]
+  },
+  "rdm": {
+    "modelId": 851,
+    "softwareVersion": "1.1"
+  },
+  "physical": {
+    "power": 162,
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "LED"
+    }
+  },
+  "availableChannels": {
+    "Dimmer": {
+      "capability": {
+        "type": "Intensity",
+        "brightness": "off"
+      }
+    },
+    "Red": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red",
+        "brightness": "off"
+      }
+    },
+    "Green": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green",
+        "brightness": "off"
+      }
+    },
+    "Blue": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue",
+        "brightness": "off"
+      }
+    },
+    "White": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White",
+        "brightness": "off"
+      }
+    },
+    "Amber": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Amber",
+        "brightness": "off"
+      }
+    },
+    "UV": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "UV",
+        "brightness": "off"
+      }
+    },
+    "Strobe": {
+      "capability": {
+        "type": "StrobeSpeed",
+        "speed": "0Hz"
+      }
+    },
+    "Effect Duration": {
+      "capability": {
+        "type": "EffectDuration",
+        "duration": "short"
+      }
+    },
+    "Effect Speed": {
+      "capability": {
+        "type": "EffectSpeed",
+        "speed": "slow"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "10 Channel",
+      "shortName": "10ch",
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "Strobe",
+        "Effect Duration",
+        "Effect Speed"
+      ]
+    }
+  ]
+}

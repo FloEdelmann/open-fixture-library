@@ -476,5 +476,10 @@
     "name": "Venue",
     "comment": "Venue by Proline",
     "website": "https://venuelightingeffects.com/"
+  },
+  "wisihmall": {
+    "name": "Wisihmall",
+    "comment": "Low Budget Amazon",
+    "rdmId": 0
   }
 }
