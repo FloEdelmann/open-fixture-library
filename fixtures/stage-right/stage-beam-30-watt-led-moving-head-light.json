@@ -1,0 +1,205 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "Stage Beam 30 Watt LED Moving Head Light",
+  "shortName": "30w Moving Beam",
+  "categories": ["Moving Head", "Color Changer", "Effect"],
+  "meta": {
+    "authors": ["Beerady"],
+    "createDate": "2021-07-20",
+    "lastModifyDate": "2021-07-20"
+  },
+  "links": {
+    "productPage": [
+      "https://www.monoprice.com/product?p_id=612830"
+    ]
+  },
+  "rdm": {
+    "modelId": 12830,
+    "softwareVersion": "1.1"
+  },
+  "physical": {
+    "power": 42,
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "LED"
+    }
+  },
+  "wheels": {
+    "Color Wheel": {
+      "slots": [
+        {
+          "type": "Color",
+          "name": "White"
+        },
+        {
+          "type": "Color",
+          "name": "Orange"
+        },
+        {
+          "type": "Color",
+          "name": "Cyan"
+        },
+        {
+          "type": "Color",
+          "name": "Magenta"
+        },
+        {
+          "type": "Color",
+          "name": "Yellow"
+        },
+        {
+          "type": "Color",
+          "name": "Green"
+        },
+        {
+          "type": "Color",
+          "name": "Blue"
+        },
+        {
+          "type": "Color",
+          "name": "Red"
+        },
+        {
+          "type": "Color",
+          "name": "Cycle"
+        },
+        {
+          "type": "Color"
+        },
+        {
+          "type": "Color"
+        },
+        {
+          "type": "Color"
+        },
+        {
+          "type": "Color"
+        },
+        {
+          "type": "Color"
+        },
+        {
+          "type": "Color"
+        },
+        {
+          "type": "Color"
+        },
+        {
+          "type": "Color"
+        },
+        {
+          "type": "Color"
+        },
+        {
+          "type": "Color"
+        },
+        {
+          "type": "Color"
+        },
+        {
+          "type": "Color"
+        },
+        {
+          "type": "Color"
+        },
+        {
+          "type": "Color"
+        }
+      ]
+    },
+    "Gobo Wheel": {
+      "slots": [
+        {
+          "type": "Open"
+        },
+        {
+          "type": "Gobo"
+        }
+      ]
+    }
+  },
+  "availableChannels": {
+    "Pan": {
+      "fineChannelAliases": ["Pan fine"],
+      "capability": {
+        "type": "Pan",
+        "angle": "0deg"
+      }
+    },
+    "Tilt": {
+      "fineChannelAliases": ["Tilt fine"],
+      "capability": {
+        "type": "Tilt",
+        "angle": "0deg"
+      }
+    },
+    "Pan/Tilt Speed": {
+      "capability": {
+        "type": "PanTiltSpeed",
+        "speed": "fast"
+      }
+    },
+    "Dimmer": {
+      "capability": {
+        "type": "Intensity",
+        "brightness": "off"
+      }
+    },
+    "Shutter / Strobe": {
+      "capability": {
+        "type": "ShutterStrobe",
+        "shutterEffect": "Closed"
+      }
+    },
+    "Color Wheel": {
+      "capability": {
+        "type": "WheelSlot",
+        "slotNumberStart": 1,
+        "slotNumberEnd": 9
+      }
+    },
+    "Gobo Wheel": {
+      "capability": {
+        "type": "WheelSlot",
+        "slotNumber": 1
+      }
+    },
+    "No function": {
+      "capability": {
+        "type": "NoFunction"
+      }
+    },
+    "No function 2": {
+      "name": "No function",
+      "capability": {
+        "type": "NoFunction"
+      }
+    },
+    "No function 3": {
+      "name": "No function",
+      "capability": {
+        "type": "NoFunction"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "12 Channel",
+      "shortName": "12ch",
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Pan/Tilt Speed",
+        "Dimmer",
+        "Shutter / Strobe",
+        "Color Wheel",
+        "Gobo Wheel",
+        "No function",
+        "No function 2",
+        "No function 3"
+      ]
+    }
+  ]
+}
