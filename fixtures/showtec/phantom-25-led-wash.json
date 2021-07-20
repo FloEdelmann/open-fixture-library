@@ -1,0 +1,413 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "Phantom 25 LED Wash",
+  "categories": ["Moving Head", "Color Changer"],
+  "meta": {
+    "authors": ["Hannes Rüger"],
+    "createDate": "2021-07-20",
+    "lastModifyDate": "2021-07-20"
+  },
+  "links": {
+    "manual": [
+      "https://www.manualslib.com/manual/835871/Showtec-Phantom-25-Led-Wash.html"
+    ],
+    "productPage": [
+      "https://www.musikhaus-korn.de/de/showtec-phantom-25-led-wash-moving-head/pd/47262"
+    ]
+  },
+  "physical": {
+    "dimensions": [205, 230, 210],
+    "weight": 3.7,
+    "power": 105,
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "25W White LED",
+      "lumens": 543
+    },
+    "lens": {
+      "degreesMinMax": [13, 13]
+    }
+  },
+  "availableChannels": {
+    "Pan": {
+      "capability": {
+        "type": "Pan",
+        "angleStart": "0deg",
+        "angleEnd": "540deg"
+      }
+    },
+    "Tilt": {
+      "capability": {
+        "type": "Tilt",
+        "angleStart": "0deg",
+        "angleEnd": "270deg"
+      }
+    },
+    "Shutter / Strobe": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 7],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Closed"
+        },
+        {
+          "dmxRange": [8, 132],
+          "type": "Intensity"
+        },
+        {
+          "dmxRange": [133, 134],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Closed"
+        },
+        {
+          "dmxRange": [135, 239],
+          "type": "StrobeSpeed",
+          "speedStart": "slow",
+          "speedEnd": "fast"
+        },
+        {
+          "dmxRange": [240, 255],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open"
+        }
+      ]
+    },
+    "White": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Macro": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 7],
+          "type": "Intensity",
+          "brightness": "off"
+        },
+        {
+          "dmxRange": [8, 21],
+          "type": "Intensity",
+          "brightness": "bright"
+        },
+        {
+          "dmxRange": [22, 35],
+          "type": "ColorPreset",
+          "comment": "Red",
+          "colors": ["#ff0000"]
+        },
+        {
+          "dmxRange": [36, 49],
+          "type": "ColorPreset",
+          "comment": "Green",
+          "colors": ["#00ff00"]
+        },
+        {
+          "dmxRange": [50, 63],
+          "type": "ColorPreset",
+          "comment": "Blue",
+          "colors": ["#0000ff"]
+        },
+        {
+          "dmxRange": [64, 77],
+          "type": "ColorPreset",
+          "comment": "White",
+          "colors": ["#ffffff"]
+        },
+        {
+          "dmxRange": [78, 91],
+          "type": "Effect",
+          "effectName": "Macro 1"
+        },
+        {
+          "dmxRange": [92, 105],
+          "type": "Effect",
+          "effectName": "Macro 2"
+        },
+        {
+          "dmxRange": [106, 119],
+          "type": "Effect",
+          "effectName": "Macro 3"
+        },
+        {
+          "dmxRange": [120, 133],
+          "type": "Effect",
+          "effectName": "Macro 4"
+        },
+        {
+          "dmxRange": [134, 147],
+          "type": "Effect",
+          "effectName": "Macro 5"
+        },
+        {
+          "dmxRange": [148, 161],
+          "type": "Effect",
+          "effectName": "Macro 6"
+        },
+        {
+          "dmxRange": [162, 175],
+          "type": "Effect",
+          "effectName": "Macro 7"
+        },
+        {
+          "dmxRange": [176, 189],
+          "type": "Effect",
+          "effectName": "Macro 8"
+        },
+        {
+          "dmxRange": [190, 203],
+          "type": "Effect",
+          "effectName": "Macro 9"
+        },
+        {
+          "dmxRange": [204, 217],
+          "type": "Effect",
+          "effectName": "Macro 10"
+        },
+        {
+          "dmxRange": [218, 231],
+          "type": "Effect",
+          "effectName": "Macro 11"
+        },
+        {
+          "dmxRange": [232, 255],
+          "type": "Effect",
+          "effectName": "Rainbow"
+        }
+      ]
+    },
+    "LED Color Saturation": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Pan 2": {
+      "name": "Pan",
+      "fineChannelAliases": ["Pan 2 fine"],
+      "capability": {
+        "type": "Pan",
+        "angleStart": "0deg",
+        "angleEnd": "540deg"
+      }
+    },
+    "Tilt 2": {
+      "name": "Tilt",
+      "fineChannelAliases": ["Tilt 2 fine"],
+      "capability": {
+        "type": "Tilt",
+        "angleStart": "0deg",
+        "angleEnd": "240deg"
+      }
+    },
+    "Pan/Tilt Speed": {
+      "capability": {
+        "type": "PanTiltSpeed",
+        "speedStart": "fast",
+        "speedEnd": "slow"
+      }
+    },
+    "Red": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "White 2": {
+      "name": "White",
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "LED Speed": {
+      "capability": {
+        "type": "Speed",
+        "speedStart": "slow",
+        "speedEnd": "fast"
+      }
+    },
+    "Channel Functions": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 7],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [8, 27],
+          "type": "Generic",
+          "comment": "Blackout during Pan/Tilt movement"
+        },
+        {
+          "dmxRange": [28, 147],
+          "type": "Generic",
+          "comment": "Disable blackout during Pan/Tilt movement"
+        },
+        {
+          "dmxRange": [148, 167],
+          "type": "Generic",
+          "comment": "Reset Pan"
+        },
+        {
+          "dmxRange": [168, 187],
+          "type": "Generic",
+          "comment": "Reset Tilt"
+        },
+        {
+          "dmxRange": [188, 227],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [228, 247],
+          "type": "Generic",
+          "comment": "Reset All channels"
+        },
+        {
+          "dmxRange": [248, 255],
+          "type": "NoFunction"
+        }
+      ]
+    },
+    "Programs": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 7],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [8, 23],
+          "type": "Effect",
+          "effectName": "Built-in Program 1"
+        },
+        {
+          "dmxRange": [24, 39],
+          "type": "Effect",
+          "effectName": "Built-in Program 2"
+        },
+        {
+          "dmxRange": [40, 55],
+          "type": "Effect",
+          "effectName": "Built-in Program 3"
+        },
+        {
+          "dmxRange": [56, 71],
+          "type": "Effect",
+          "effectName": "Built-in Program 4"
+        },
+        {
+          "dmxRange": [72, 87],
+          "type": "Effect",
+          "effectName": "Built-in Program 5"
+        },
+        {
+          "dmxRange": [88, 103],
+          "type": "Effect",
+          "effectName": "Built-in Program 6"
+        },
+        {
+          "dmxRange": [104, 119],
+          "type": "Effect",
+          "effectName": "Built-in Program 7"
+        },
+        {
+          "dmxRange": [120, 135],
+          "type": "Effect",
+          "effectName": "Built-in Program 8"
+        },
+        {
+          "dmxRange": [136, 151],
+          "type": "Effect",
+          "effectName": "Sound-controlled Program 1",
+          "soundControlled": true
+        },
+        {
+          "dmxRange": [152, 167],
+          "type": "Effect",
+          "effectName": "Sound-controlled Program 2",
+          "soundControlled": true
+        },
+        {
+          "dmxRange": [168, 183],
+          "type": "Effect",
+          "effectName": "Sound-controlled Program 3",
+          "soundControlled": true
+        },
+        {
+          "dmxRange": [184, 199],
+          "type": "Effect",
+          "effectName": "Sound-controlled Program 4",
+          "soundControlled": true
+        },
+        {
+          "dmxRange": [200, 215],
+          "type": "Effect",
+          "effectName": "Sound-controlled Program 5",
+          "soundControlled": true
+        },
+        {
+          "dmxRange": [216, 231],
+          "type": "Effect",
+          "effectName": "Sound-controlled Program 6",
+          "soundControlled": true
+        },
+        {
+          "dmxRange": [232, 247],
+          "type": "Effect",
+          "effectName": "Sound-controlled Program 7",
+          "soundControlled": true
+        },
+        {
+          "dmxRange": [248, 255],
+          "type": "Effect",
+          "effectName": "Sound-controlled Program 8",
+          "soundControlled": true
+        }
+      ]
+    }
+  },
+  "modes": [
+    {
+      "name": "6ch",
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Shutter / Strobe",
+        "White",
+        "Macro",
+        "LED Color Saturation"
+      ]
+    },
+    {
+      "name": "15ch",
+      "channels": [
+        "Pan 2",
+        "Tilt 2",
+        "Pan 2 fine",
+        "Tilt 2 fine",
+        "Pan/Tilt Speed",
+        "Shutter / Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "LED Color Saturation",
+        "Macro",
+        "LED Speed",
+        "Channel Functions",
+        "Programs"
+      ]
+    }
+  ]
+}
