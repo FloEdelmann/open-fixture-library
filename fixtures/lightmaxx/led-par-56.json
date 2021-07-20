@@ -1,0 +1,76 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "Led Par 56",
+  "categories": ["Color Changer"],
+  "meta": {
+    "authors": ["Hannes Rüger"],
+    "createDate": "2021-07-20",
+    "lastModifyDate": "2021-07-20"
+  },
+  "links": {
+    "manual": [
+      "https://www.scherloc.com/_media/notice-par56led-10mm.pdf"
+    ],
+    "productPage": [
+      "https://www.musicstore.de/en_US/USD/lightmaXX-LED-Par-56-RGB-Short-Polish-10mm-LEDs/art-LIG0002658-000;pgid=G5DgGZqm6ZhSRpOuA8.4nmNI0000jBb-eVsI"
+    ]
+  },
+  "physical": {
+    "dimensions": [220, 210, 220],
+    "weight": 1.4,
+    "power": 22,
+    "DMXconnector": "3-pin",
+    "bulb": {
+      "type": "108x LED"
+    }
+  },
+  "availableChannels": {
+    "Red": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Dimmer": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 189],
+          "type": "Intensity"
+        },
+        {
+          "dmxRange": [190, 250],
+          "type": "StrobeSpeed",
+          "speedStart": "slow",
+          "speedEnd": "fast"
+        },
+        {
+          "dmxRange": [251, 255],
+          "type": "NoFunction"
+        }
+      ]
+    }
+  },
+  "modes": [
+    {
+      "name": "4ch",
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Dimmer"
+      ]
+    }
+  ]
+}
