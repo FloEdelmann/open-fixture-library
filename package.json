@@ -79,7 +79,7 @@
     "eslint": "~7.31.0",
     "eslint-plugin-array-func": "~3.1.7",
     "eslint-plugin-import": "^2.23.4",
-    "eslint-plugin-jsdoc": "~35.4.6",
+    "eslint-plugin-jsdoc": "~35.5.0",
     "eslint-plugin-jsonc": "~1.4.0",
     "eslint-plugin-markdown": "~2.2.0",
     "eslint-plugin-nuxt": "^2.0.0",
