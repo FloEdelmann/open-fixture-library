@@ -1,0 +1,691 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "P3 Color",
+  "categories": ["Dimmer", "Color Changer"],
+  "meta": {
+    "authors": ["Dyami Caliri"],
+    "createDate": "2021-06-30",
+    "lastModifyDate": "2021-06-30"
+  },
+  "links": {
+    "manual": [
+      "https://fiilex.com/downloads/P3/5870148-005_A2_USER%20GUIDE%20for%20P3%20COLOR.pdf",
+      "https://fiilex.com/downloads/DMX_Mapping_Color_Series_210428A.pdf"
+    ],
+    "productPage": [
+      "https://fiilex.com/products/P3_Color.php"
+    ]
+  },
+  "rdm": {
+    "modelId": 30
+  },
+  "physical": {
+    "dimensions": [119, 142, 206],
+    "weight": 0.84,
+    "power": 90,
+    "DMXconnector": "5-pin",
+    "bulb": {
+      "type": "LED"
+    },
+    "lens": {
+      "degreesMinMax": [20, 65]
+    }
+  },
+  "availableChannels": {
+    "Master Intensity": {
+      "fineChannelAliases": ["Master Intensity fine"],
+      "dmxValueResolution": "8bit",
+      "defaultValue": 0,
+      "highlightValue": 255,
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Color Temperature": {
+      "fineChannelAliases": ["Color Temperature fine"],
+      "capability": {
+        "type": "ColorTemperature",
+        "colorTemperatureStart": "2000K",
+        "colorTemperatureEnd": "10000K"
+      }
+    },
+    "CCT Base": {
+      "name": "Color Temperature Base",
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 99],
+          "type": "ColorTemperature",
+          "colorTemperature": "3200K"
+        },
+        {
+          "dmxRange": [100, 255],
+          "type": "ColorTemperature",
+          "colorTemperature": "6500K"
+        }
+      ]
+    },
+    "Green-Magenta Point 8bit": {
+      "name": "Green-Magenta Point",
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 9],
+          "type": "Generic",
+          "comment": "Neutral"
+        },
+        {
+          "dmxRange": [10, 255],
+          "type": "Generic",
+          "comment": "-100%…+100%"
+        }
+      ]
+    },
+    "Green-Magenta Point 16bit": {
+      "name": "Green-Magenta Point",
+      "fineChannelAliases": ["Green-Magenta Point 16bit fine"],
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 9],
+          "type": "Generic",
+          "comment": "Neutral"
+        },
+        {
+          "dmxRange": [10, 65535],
+          "type": "Generic",
+          "comment": "-100%…+100%"
+        }
+      ]
+    },
+    "Fan": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 9],
+          "type": "Maintenance",
+          "comment": "Fan auto"
+        },
+        {
+          "dmxRange": [10, 69],
+          "type": "Rotation",
+          "speed": "slow CW"
+        },
+        {
+          "dmxRange": [70, 129],
+          "type": "Rotation",
+          "speedStart": "slow CW",
+          "speedEnd": "fast CW"
+        },
+        {
+          "dmxRange": [130, 189],
+          "type": "Rotation",
+          "speed": "fast CW"
+        },
+        {
+          "dmxRange": [190, 255],
+          "type": "Rotation",
+          "speed": "stop"
+        }
+      ]
+    },
+    "Dimming": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 9],
+          "type": "Generic",
+          "comment": "Use current setting in fixture"
+        },
+        {
+          "dmxRange": [10, 99],
+          "type": "Generic",
+          "comment": "Sharp dimming"
+        },
+        {
+          "dmxRange": [100, 255],
+          "type": "Generic",
+          "comment": "Smooth dimming"
+        }
+      ]
+    },
+    "Strobe": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 9],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open"
+        },
+        {
+          "dmxRange": [10, 255],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Strobe",
+          "speedStart": "1Hz",
+          "speedEnd": "25Hz"
+        }
+      ]
+    },
+    "Crossfade": {
+      "fineChannelAliases": ["Crossfade fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "Generic",
+        "comment": "CCT … Color Mix"
+      }
+    },
+    "Red": {
+      "fineChannelAliases": ["Red fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "fineChannelAliases": ["Green fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "fineChannelAliases": ["Blue fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "White": {
+      "fineChannelAliases": ["White fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Hue": {
+      "fineChannelAliases": ["Hue fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "Generic",
+        "comment": "0…360°"
+      }
+    },
+    "Saturation": {
+      "fineChannelAliases": ["Saturation fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "Generic",
+        "comment": "0…100%"
+      }
+    },
+    "Gel Filter": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 9],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [10, 19],
+          "type": "ColorPreset",
+          "comment": "Bastard Amber",
+          "colors": ["#ffb783"]
+        },
+        {
+          "dmxRange": [20, 29],
+          "type": "ColorPreset",
+          "comment": "Straw",
+          "colors": ["#ffc069"]
+        },
+        {
+          "dmxRange": [30, 39],
+          "type": "ColorPreset",
+          "comment": "Light Amber",
+          "colors": ["#ffba45"]
+        },
+        {
+          "dmxRange": [40, 49],
+          "type": "ColorPreset",
+          "comment": "Light Flame",
+          "colors": ["#ff391b"]
+        },
+        {
+          "dmxRange": [50, 59],
+          "type": "ColorPreset",
+          "comment": "Golden Amber",
+          "colors": ["#ff8944"]
+        },
+        {
+          "dmxRange": [60, 69],
+          "type": "ColorPreset",
+          "comment": "Light Red",
+          "colors": ["#ff3914"]
+        },
+        {
+          "dmxRange": [70, 79],
+          "type": "ColorPreset",
+          "comment": "No Color Pink",
+          "colors": ["#ffaaaa"]
+        },
+        {
+          "dmxRange": [80, 89],
+          "type": "ColorPreset",
+          "comment": "Middle Rose",
+          "colors": ["#ff9ba1"]
+        },
+        {
+          "dmxRange": [90, 99],
+          "type": "ColorPreset",
+          "comment": "Light Rose Purple",
+          "colors": ["#ff95e0"]
+        },
+        {
+          "dmxRange": [100, 109],
+          "type": "ColorPreset",
+          "comment": "Surprise Pink",
+          "colors": ["#e5c7ff"]
+        },
+        {
+          "dmxRange": [110, 119],
+          "type": "ColorPreset",
+          "comment": "No Color Blue",
+          "colors": ["#00a0ff"]
+        },
+        {
+          "dmxRange": [120, 129],
+          "type": "ColorPreset",
+          "comment": "Daylight Blue",
+          "colors": ["#00c2ff"]
+        },
+        {
+          "dmxRange": [130, 139],
+          "type": "ColorPreset",
+          "comment": "Primary Blue",
+          "colors": ["#64deff"]
+        },
+        {
+          "dmxRange": [140, 149],
+          "type": "ColorPreset",
+          "comment": "Moss Green",
+          "colors": ["#a7ff58"]
+        },
+        {
+          "dmxRange": [150, 159],
+          "type": "ColorPreset",
+          "comment": "Blue Green",
+          "colors": ["#ffe5b3"]
+        },
+        {
+          "dmxRange": [160, 169],
+          "type": "ColorPreset",
+          "comment": "Gel 1"
+        },
+        {
+          "dmxRange": [170, 179],
+          "type": "ColorPreset",
+          "comment": "Gel 2"
+        },
+        {
+          "dmxRange": [180, 189],
+          "type": "ColorPreset",
+          "comment": "Gel 3"
+        },
+        {
+          "dmxRange": [190, 199],
+          "type": "ColorPreset",
+          "comment": "Gel 4"
+        },
+        {
+          "dmxRange": [200, 209],
+          "type": "ColorPreset",
+          "comment": "Gel 5"
+        },
+        {
+          "dmxRange": [210, 255],
+          "type": "NoFunction",
+          "comment": "Reserved"
+        }
+      ]
+    },
+    "Reserved for future use": {
+      "capability": {
+        "type": "NoFunction"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "1: CCT 8bit",
+      "shortName": "M01",
+      "channels": [
+        "Master Intensity",
+        "Color Temperature",
+        "Green-Magenta Point 8bit",
+        "Fan",
+        "Dimming",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "2: HSI 8bit",
+      "shortName": "M02",
+      "channels": [
+        "Master Intensity",
+        "Hue",
+        "Saturation",
+        "Fan",
+        "Dimming",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "3: RGBW 8bit",
+      "shortName": "M03",
+      "channels": [
+        "Master Intensity",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Fan",
+        "Dimming",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "4: CCT + HSI 8bit",
+      "shortName": "M04",
+      "channels": [
+        "Master Intensity",
+        "Color Temperature",
+        "Green-Magenta Point 8bit",
+        "Crossfade",
+        "Hue",
+        "Saturation",
+        "Fan",
+        "Dimming",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "5: CCT + RGBW 8bit",
+      "shortName": "M05",
+      "channels": [
+        "Master Intensity",
+        "Color Temperature",
+        "Green-Magenta Point 8bit",
+        "Crossfade",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Fan",
+        "Dimming",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "7: GEL 8bit",
+      "shortName": "M07",
+      "channels": [
+        "Master Intensity",
+        "Gel Filter",
+        "CCT Base",
+        "Fan",
+        "Dimming",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "9: CCT 16bit",
+      "shortName": "M09",
+      "channels": [
+        "Master Intensity",
+        "Master Intensity fine",
+        "Color Temperature",
+        "Color Temperature fine",
+        "Green-Magenta Point 16bit",
+        "Green-Magenta Point 16bit fine",
+        "Fan",
+        "Dimming",
+        "Strobe",
+        "Reserved for future use"
+      ]
+    },
+    {
+      "name": "10: HSI 16bit",
+      "shortName": "M10",
+      "channels": [
+        "Master Intensity",
+        "Master Intensity fine",
+        "Hue",
+        "Hue fine",
+        "Saturation",
+        "Saturation fine",
+        "Fan",
+        "Dimming",
+        "Strobe",
+        "Reserved for future use"
+      ]
+    },
+    {
+      "name": "11: RGBW 16bit",
+      "shortName": "M11",
+      "channels": [
+        "Master Intensity",
+        "Master Intensity fine",
+        "Red",
+        "Red fine",
+        "Green",
+        "Green fine",
+        "Blue",
+        "Blue fine",
+        "White",
+        "White fine",
+        "Fan",
+        "Dimming",
+        "Strobe",
+        "Reserved for future use"
+      ]
+    },
+    {
+      "name": "12: CCT + HSI 16bit",
+      "shortName": "M12",
+      "channels": [
+        "Master Intensity",
+        "Master Intensity fine",
+        "Color Temperature",
+        "Color Temperature fine",
+        "Green-Magenta Point 16bit",
+        "Green-Magenta Point 16bit fine",
+        "Crossfade",
+        "Crossfade fine",
+        "Hue",
+        "Hue fine",
+        "Saturation",
+        "Saturation fine",
+        "Fan",
+        "Dimming",
+        "Strobe",
+        "Reserved for future use"
+      ]
+    },
+    {
+      "name": "13: CCT + RGBW 16bit",
+      "shortName": "M13",
+      "channels": [
+        "Master Intensity",
+        "Master Intensity fine",
+        "Color Temperature",
+        "Color Temperature fine",
+        "Green-Magenta Point 16bit",
+        "Green-Magenta Point 16bit fine",
+        "Crossfade",
+        "Crossfade fine",
+        "Red",
+        "Red fine",
+        "Green",
+        "Green fine",
+        "Blue",
+        "Blue fine",
+        "White",
+        "White fine",
+        "Fan",
+        "Dimming",
+        "Strobe",
+        "Reserved for future use"
+      ]
+    },
+    {
+      "name": "15: GEL 16bit",
+      "shortName": "M15",
+      "channels": [
+        "Master Intensity",
+        "Master Intensity fine",
+        "Gel Filter",
+        "CCT Base",
+        "Fan",
+        "Dimming",
+        "Strobe",
+        "Reserved for future use"
+      ]
+    },
+    {
+      "name": "50: EZ CCT 8bit",
+      "shortName": "M50",
+      "channels": [
+        "Master Intensity",
+        "Color Temperature",
+        "Green-Magenta Point 8bit"
+      ]
+    },
+    {
+      "name": "51: EZ HSI 8bit",
+      "shortName": "M51",
+      "channels": [
+        "Master Intensity",
+        "Hue",
+        "Saturation"
+      ]
+    },
+    {
+      "name": "52: EZ RGBW 8bit",
+      "shortName": "M42",
+      "channels": [
+        "Master Intensity",
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "53: EZ CCT + HSI 8bit",
+      "shortName": "M53",
+      "channels": [
+        "Master Intensity",
+        "Color Temperature",
+        "Green-Magenta Point 8bit",
+        "Crossfade",
+        "Hue",
+        "Saturation"
+      ]
+    },
+    {
+      "name": "54: EZ CCT + RGBW 8bit",
+      "shortName": "M54",
+      "channels": [
+        "Master Intensity",
+        "Color Temperature",
+        "Green-Magenta Point 8bit",
+        "Crossfade",
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "63: EZ CCT 16bit",
+      "shortName": "M63",
+      "channels": [
+        "Master Intensity",
+        "Master Intensity fine",
+        "Color Temperature",
+        "Color Temperature fine",
+        "Green-Magenta Point 16bit",
+        "Green-Magenta Point 16bit fine"
+      ]
+    },
+    {
+      "name": "64: EZ HSI 16bit",
+      "shortName": "M64",
+      "channels": [
+        "Master Intensity",
+        "Master Intensity fine",
+        "Hue",
+        "Hue fine",
+        "Saturation",
+        "Saturation fine"
+      ]
+    },
+    {
+      "name": "65: EZ RGBW 16bit",
+      "shortName": "M65",
+      "channels": [
+        "Master Intensity",
+        "Master Intensity fine",
+        "Red",
+        "Red fine",
+        "Green",
+        "Green fine",
+        "Blue",
+        "Blue fine",
+        "White",
+        "White fine"
+      ]
+    },
+    {
+      "name": "66: EZ CCT + HSI 16bit",
+      "shortName": "M66",
+      "channels": [
+        "Master Intensity",
+        "Master Intensity fine",
+        "Color Temperature",
+        "Color Temperature fine",
+        "Green-Magenta Point 16bit",
+        "Green-Magenta Point 16bit fine",
+        "Crossfade",
+        "Crossfade fine",
+        "Hue",
+        "Hue fine",
+        "Saturation",
+        "Saturation fine"
+      ]
+    },
+    {
+      "name": "67: EZ CCT + RGBW 16bit",
+      "shortName": "M67",
+      "channels": [
+        "Master Intensity",
+        "Master Intensity fine",
+        "Color Temperature",
+        "Color Temperature fine",
+        "Green-Magenta Point 16bit",
+        "Green-Magenta Point 16bit fine",
+        "Crossfade",
+        "Crossfade fine",
+        "Red",
+        "Red fine",
+        "Green",
+        "Green fine",
+        "Blue",
+        "Blue fine",
+        "White",
+        "White fine"
+      ]
+    }
+  ]
+}
